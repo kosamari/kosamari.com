@@ -10,87 +10,87 @@
     <title>Mariko Kosaka - about me</title>
     <meta name="description" content="The portfolio of Mariko Kosaka." />
     <meta name="author" content="Mariko Kosaka" />
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT Sans">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
     <style type="text/css">
-    * {
-      font-family: sans-serif;
-    }
-    body{
-      background-image: url('/img/slash_full.gif');
-    }
-
-    p,ul {
-      color: #333333;
-      font-size:14px;
-    }
-
-    h3{
-      color: #333333;
-      font-size:18px;
-    }
-
-    header{
-      color: #333333; 
-      padding-left:10px;
-      padding-top:20px;
-      text-align: center;
-    }
-    header h1{
-      display:inline;
-    }
-
-    #container{
-      background-color: #FFFFFF;
-      width: 600px;
-      padding:20px;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    .list_done{
-      color:#999999;
-    }
-
-
-    footer{
-      text-align: center;
-      padding-top:30px;
-      padding-bottom:10px;
-    }
-
+      #head{
+        height:90px;
+        padding-top: 50px;
+      }
+      #head-icon{
+        width: 130px;
+      }
     </style>
 
   </head>
 
   <body>
-    <div id="container">
-      <header>
-        <div><img src="/img/head.jpg" width="150px" height="150px"></div>
-        <div><h1>Mariko Kosaka</h1></div>
-      </header>
+  {{> sidebar}}
+  <div id="main">
+  <div id="head">
+    <h1>Mariko Kosaka</h1>
+  </div>
+ 
+  <h2>About</h2>
+    <h4>current</h4>
+    <p>
+      I'm a developper currently working at <a href="http://www.liveintent.com" target="blank">LiveIntent</a> Labs.
+    </p>
+    <h4>past</h4>
+    <p>
+      I used to be a project manager at video application startup. I managed various UGC marketing campaigns.
+    </p>
+    <h4>extra</h4>
+    <p>
+      When I am not coding, I enjoy good dose of <a href="http://vimeo.com/25464537" target="blank">3D printing</a> (have you seen <a href="http://www.makerbot.com/blog/2011/08/16/makerbot-sends-colbert-into-space/" target="blank">Stephen Colbert into Space</a> video?)<br>
+      hack 80s knitting machine and cook delicious food.
+    </p>
 
-      <div id="top" class="content">
-        <p>
-          Hi, I am ex project manager turned web developer. Currently working at LiveIntent Lab.
-        </p>
-        <p>
-          I used to work at web-application startup in Tokyo. I got to manager many content-rich application such as video slideshow, song generator, and digital signage content distribution app. I grew my love for user generated contents marketing as well as computer vision, image processing system, and anything about DATA!.
-        </p>
-        <p>
-          I started to teach myself Javascript in 2012 and currently turning ideas to prototypes at LiveIntent Labs - mainly focused on data products and data visualization.
-        </p>
-          
-        <p>You can read more about my professional experience on my <a href="http://www.linkedin.com/in/kosamari">LinkedIn</a>.</p>
-        <p>
-          In case you are wondering about the image on top, that is <a href="http://vimeo.com/25464537">3D print of myself</a>. I do fun things like <a href="http://www.makerbot.com/blog/2011/08/16/makerbot-sends-colbert-into-space/">send Stephen Colbert into Space</a>, hack knitting machine, and <a href="http://makerfaireny.tumblr.com/">write about fun things</a> around Make: community in Japanese.
-        </p>
-        <p>If you find me interesting, I would love to have chat with you. I mostly go with the name "<a href="https://twitter.com/kosamari">kosamari</a>" on the web.</p>
-      </div>
-      
-      <footer>
-        <p>
-          &copy; Copyright  by Mariko Kosaka
-        </p>
-      </footer>
-    </div>
+  <h2>Speak</h2>
+    <h4>Empire Node</h4>
+    <p>
+      I'm excited to be speaking at <a href="http://empirenode.org/" target="blank">Empire Node</a> on Oct 27, 2014.
+    </p>
+    <h4>Brooklyn JS</h4>
+    <p>
+      Oct 16, 2014 : Desktopify Your Web Chops
+    </p>
+  
+  <h2>Write</h2>
+    <h4><a href="https://medium.com/@kosamari/you-can-use-your-front-end-chops-to-build-desktop-app-e1467412d8f0" target="blank">You can use your front-end chops to build desktop app!</a></h4>
+    <p>
+      Why node-webkit is so awesome
+    </p>
+    <h4><a href="https://medium.com/@kosamari/an-introverts-guide-to-startup-networking-a3569f1aaac0" target="blank"> An Introvert’s Guide To Startup Networking </a></h4>
+    <p>
+      How I tackled networking problem as introverts.
+    </p>
+
+  <h2>Organize</h2>
+    <h4>EcoHack</h4>
+    <p>
+      Hackathon focused on using technology to improve and better understand our natural environment.<br>
+      New York Co-Organizer. <a href="http://ecohack.org/" target="blank">Website <i class="fa fa-external-link"></i></a>
+    </p>
+    <h4>Re3 StoryHack</h4>
+    <p>
+      A justice-oriented storytelling hackathon.<br>
+      Co-Organizer. <a href="re3storyhack.org/" target="blank">Website <i class="fa fa-external-link"></i></a>
+    </p>
+    <h4>NY Enterprise Technology Meetup</h4>
+    <p>
+      Monthly meetup to foster innovation in the NY enterprise technology ecosystem.<br>
+      Volunteer. <a href="http://nyetm.com/" target="blank">Website <i class="fa fa-external-link"></i></a>
+    </p>
+  <footer>
+    <p>
+      &copy; Copyright  by Mariko Kosaka
+    </p>
+  </footer>
+    
+  </div>
   </body>
 </html>

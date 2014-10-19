@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #FFFFFE;
+  color: #333333; }
+
+#side {
+  background-image: url('/img/slash_full.gif');
+  width: 80px;
+  position: fixed;
+  top: 0;
+  bottom: 0; }
+  #side ul {
+    text-decoration: none;
+    padding: 0; }
+  #side li {
+    font-size: 25px;
+    padding: 0px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+    text-shadow: 2px 2px 0 white; }
+  #side a {
+    color: #333333; }
+    #side a :hover {
+      color: #9266CC; }
+
+#main {
+  padding: 0 40px;
+  overflow: scroll;
+  margin-left: 100px; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px;
+  margin-top: 50px; }
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 0px; }
+
+p {
+  margin: 0px 0px 10px 0px;
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  color: #9266CC; }
+
+footer {
+  padding-top: 30px;
+  text-align: center; }

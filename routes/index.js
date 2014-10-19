@@ -1,6 +1,5 @@
 exports.apps = function(req, res, next){
-  res.render('index',{
-    'name': req.url,
+  res.render('app',{
     'css': [{'path': '/builds/main'}, {'path': '/builds' + req.url}],
     'js': [{'path': '/builds/main'}, {'path': '/builds' + req.url}]
     }
@@ -8,7 +7,9 @@ exports.apps = function(req, res, next){
 };
 
 exports.root = function(req, res, next){
-  res.render('root');
+  res.render('root',{
+    'css': [{'path': '/builds/main'}],
+  });
 };
 
 require('./path');

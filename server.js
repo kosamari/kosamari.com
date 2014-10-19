@@ -18,6 +18,7 @@ app.use(checkapps)
 app.use('/builds',express.static(path.join(__dirname + '/builds')));
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(notfound);
+hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
 
 app.listen(process.env.PORT || 5000);
 console.log('listening on port 5000');
