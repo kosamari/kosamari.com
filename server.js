@@ -14,7 +14,8 @@ var routes = require('./routes');
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
-app.use(require('body-parser').json());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 app.use(checkapps)
 app.use('/builds',express.static(path.join(__dirname + '/builds')));
 app.use(express.static(path.join(__dirname + '/public')));
