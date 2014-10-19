@@ -8,12 +8,7 @@ exports.apps = function(req, res, next){
 };
 
 exports.root = function(req, res, next){
-  res.render('index',{
-    'name': req.url,
-    'css': [{'path': '/builds/main'}],
-    'js': [{'path': '/builds/main'}]
-    }
-  );
+  res.render('root');
 };
 
 require('./path');
