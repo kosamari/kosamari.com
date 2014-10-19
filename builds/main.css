@@ -1,0 +1,26 @@
+span.edit-in-place {
+  border-bottom: 1px dashed orange;
+  min-width: 300px;
+  display: inline; }
+
+span.edit-in-place:focus {
+  outline: 0; }
+
+/* new form elements */
+.button {
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: 300;
+  background-color: #fff;
+  float: right; }
+
+.card {
+  width: 350px;
+  height: 300px;
+  padding: 0px 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left; }
