@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var hbs = require('hbs');
 var fs = require('fs');
+var favicon = require('serve-favicon');
 var appsPath;
 
 fs.readdir(__dirname +'/src', function(err, files){
@@ -14,11 +15,13 @@ var routes = require('./routes');
 
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
+hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
+
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(checkapps)
 app.use('/builds',express.static(path.join(__dirname + '/builds')));
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(notfound);
-hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
 
 app.listen(process.env.PORT || 5000);
 console.log('listening on port 5000');
