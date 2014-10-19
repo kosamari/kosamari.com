@@ -27,5 +27,9 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "node node_modules/.bin/gulp default"
   }
 }
