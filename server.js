@@ -16,6 +16,7 @@ var routes = require('./routes');
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
+hbs.registerPartial('ga', fs.readFileSync(__dirname + '/views/ga.html', 'utf8'));
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(checkapps)
