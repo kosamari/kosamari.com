@@ -1,5 +1,19 @@
 [
 {
+  "image":"/img/d3-clock.png",
+  "name":"D3 Clock",
+  "url" :"http://bl.ocks.org/kosamari/2a2decddf88ddb2079a8",
+  "cta" :"Arc clock on bl.ocks <i class='fa fa-external-link'></i>",
+  "desc":"D3.js exercise to create clock. Part of Design element for reporting dashboard. <ul><li>D3.js</li></ul><p><a href='http://bl.ocks.org/kosamari/90cc3862ea68957e19de' target='blank'>Line clock on bl.ocks <i class='fa fa-external-link'></i></a></p>"
+},
+{
+  "image":"/img/underscore-r.png",
+  "name":"R core functions for Underscore.js",
+  "url" :"https://gist.github.com/kosamari/b8d559210963f5b1fa07",
+  "cta" :"gist <i class='fa fa-external-link'></i>",
+  "desc":"My attempt to re-create R core functions in Javascript. Made as mixin for Underscore.js <ul><li>Underscore.js</li></ul>"
+},
+{
   "image":"/img/code-bookmark.gif",
   "name":"Tag Bookmark : Chrome Extension",
   "url" :"https://github.com/kosamari/TagBookmark",
