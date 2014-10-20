@@ -10,9 +10,13 @@ gulp.task('watch', ['setWatch'], function() {
     var dir = getDirName(event);
      browserify('./src/'+dir+'/javascript/main.js','./builds',dir);
   });
+  gulp.watch('./src/**/templates/**', function(event){
+    var dir = getDirName(event);
+     browserify('./src/'+dir+'/javascript/main.js','./builds',dir);
+  });
 
   //compile Sass for each app dir
-  gulp.watch('./src/apps/**/styles/**', function(event) {
+  gulp.watch('./src/**/styles/**', function(event) {
     var dir = getDirName(event);
     sass('./src/'+dir+'/styles/main.scss','./builds',dir);
   });
