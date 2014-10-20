@@ -4,7 +4,21 @@
   "name":"D3 Clock",
   "url" :"http://bl.ocks.org/kosamari/2a2decddf88ddb2079a8",
   "cta" :"Arc clock on bl.ocks <i class='fa fa-external-link'></i>",
-  "desc":"D3.js exercise to create clock. Part of Design element for reporting dashboard. <ul><li>D3.js</li></ul><p><a href='http://bl.ocks.org/kosamari/90cc3862ea68957e19de' target='blank'>Line clock on bl.ocks <i class='fa fa-external-link'></i></a></p>"
+  "desc":"D3.js exercise to create clock. Part of design element for reporting dashboard. <ul><li>D3.js</li></ul><p><a href='http://bl.ocks.org/kosamari/90cc3862ea68957e19de' target='blank'>Line clock on bl.ocks <i class='fa fa-external-link'></i></a></p>"
+},
+{
+  "image":"/img/node-website.png",
+  "name":"Website in Node.js",
+  "url" :"https://github.com/kosamari/kosamari.com",
+  "cta" :"Github <i class='fa fa-external-link'></i>",
+  "desc":"This website built from scratch with Node.js, hosted on nginx. <ul><li>Node.js(Express)</li><li>Backbone.js</li><li>Sass/Browserify/Gulp</li></ul></p>"
+},
+{
+  "image":"/img/webrtc-socketio.png",
+  "name":"WebRTC with Socket.IO",
+  "url" :"https://github.com/kosamari/WebRTCwithSocketIO",
+  "cta" :"Github <i class='fa fa-external-link'></i>",
+  "desc":"WebRTC proof of concept application for 2 way video stream. Part of research to create screen cast application.<ul><li>Node.js</li><li>WebRTC</li><li>Socket.IO</li></ul></p>"
 },
 {
   "image":"/img/underscore-r.png",
