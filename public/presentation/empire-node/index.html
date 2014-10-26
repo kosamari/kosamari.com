@@ -364,7 +364,7 @@ gui.Window.get().menu = menubar;
                     <li class="fragment">start local server</li>
                     <li class="fragment">scoket.io</li>
                       <ul>
-                        <li class="fragment">revive message</li>
+                        <li class="fragment">receive message</li>
                         <li class="fragment">WebRTC handshake</li>
                       </ul>
                     <li class="fragment">edit DOM from server.js</li>
@@ -540,9 +540,7 @@ exports.run = function(callback){
 &lt;body&gt;
   &lt;div id=&quot;graph&quot;&gt;graph(map)&lt;/div&gt;
   &lt;div id=&quot;video&quot; hidden&gt;video stream&lt;/div&gt;
-  &lt;div id=&quot;sidebar&quot;&gt;
-    &lt;div id=&quot;message-data&quot;&gt;message&lt;/div&gt;
-  &lt;/div&gt;
+  &lt;div id=&quot;message-data&quot;&gt;message&lt;/div&gt;
 
   &lt;script src="jquery-1.11.0.min.js"&gt;&lt;/script&gt;
   &lt;script src="js/map.js"&gt;&lt;/script&gt;
@@ -561,9 +559,7 @@ server.run(function(){
     })
 
 });
-.
-.
-.
+...
   &lt;/script&gt;
 &lt;/body&gt;
             </code></pre>
@@ -572,18 +568,18 @@ server.run(function(){
           <h2>client.html</h2>
             <pre><code data-trim class="expand">
 &lt;body&gt;
-...
-&lt;textarea id=&quot;message&quot; maxlength=&quot;60&quot;&gt;&lt;/textarea&gt;
+.
+.
+&lt;textarea id=&quot;message&quot;&gt;&lt;/textarea&gt;
 &lt;button class=&quot;btn&quot; onclick=&quot;send()&quot;/&gt;send&lt;/button&gt;
-...
+
 &lt;video id=&quot;videopreview&quot; autoplay&gt;&lt;/video&gt;
 &lt;button class=&quot;btn&quot; onclick=&quot;connect()&quot;&gt;Broadcast&lt;/button&gt;
-...
-&lt;script src=&quot;jquery-1.11.0.min.js&quot;&gt;&lt;/script&gt;
+.
+.
 &lt;script src=&quot;http://ip:port/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
-
 &lt;script&gt;
-// connect to local server
+
 var socket = io.connect('http://ip:port');
 
 // socket.io connection check
@@ -594,10 +590,11 @@ socket.on('disconnect', function (client) {
   $('.btn').prop('disabled', true);
 });
 
-//send &quot;message&quot; to the app
+
 function sendMessage() {
   socket.emit('msg', {message:message});
 }
+
 .
 .
 //webRTC handling
