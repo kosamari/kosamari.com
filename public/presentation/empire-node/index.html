@@ -30,10 +30,13 @@
     }
 
     .reveal pre code.expand {
-      max-height: 500px;
+      max-height: 600px;
     }
     .pointer{
       cursor: pointer;
+    }
+    .textfocus{
+      color:#FFA500
     }
 
     </style>
@@ -79,103 +82,151 @@
           <h2>Past Life...</h2>
           <img src="img/spreadsheet.png" class="fragment">
         </section>
-
         <section>
-          <h1>TINY SYSTEM</h1>
-          <h2 class="fragment">Tools</h2>
-        </section>
+          <section>
+            <h1>TINY SYSTEM</h1>
+            <h2 class="fragment">Tools</h2>
+          </section>
 
-        <section>
-          <h2>TOOLS</h2>
-          <br>
-          <ul class="list">
-            <li class="fragment">portable/reusable</li>
-            <li class="fragment">easily editable</li>
-            <li class="fragment">maintainable</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Spread Sheet</h2>
-          <ul class="list left">
-            <li class="fragment">Only one file</li>
-            <li class="fragment">Shared drive / Email</li>
-            <li class="fragment">Everyone has access</li>
-            <li class="fragment">holds data</li>
+          <section>
+            <h2>TOOLS</h2>
             <br>
-            <li class="fragment">Margin for error</li>
-          </ul>
-        </section>
+            <ul class="list">
+              <li class="fragment">portable/reusable</li>
+              <li class="fragment">easily editable</li>
+              <li class="fragment">maintainable</li>
+            </ul>
+          </section>
 
+          <section>
+            <h2>Spread Sheet</h2>
+            <ul class="list left">
+              <li class="fragment">Only one file</li>
+              <li class="fragment">Shared drive / Email</li>
+              <li class="fragment">Everyone has access</li>
+              <li class="fragment">holds data</li>
+              <br>
+              <li class="fragment">Margin for error</li>
+            </ul>
+          </section>
+        </section>
         <section>
-          <h1>BIG SCREEN</h1>
-        </section>
+          <section>
+            <h1>BIG SCREEN</h1>
+          </section>
 
-        <section data-background="img/li.jpg">
-        </section>
+          <section data-background="img/li.jpg">
+          </section>
 
-        <section data-background="img/fb.png">
-        </section>
+          <section data-background="img/fb.png">
+          </section>
 
-        <section>
-          <h2>But how ?</h2>
-        </section>
+          <section>
+            <h2>But how ?</h2>
+          </section>
 
-        <section>
-          <h2>Darkside...</h2>
-          <img src="img/air.png">
-        </section>
+          <section>
+            <h2>Darkside...</h2>
+            <img src="img/air.png">
+          </section>
 
-        <section>
-          <h2>I know...</h2>
-          <ul class="list">
-            <li class="fragment">HTML</li>
-            <li class="fragment">CSS</li>
-            <li class="fragment">Javascript</li>
-          </ul>
-        </section>
+          <section>
+            <h2>I know...</h2>
+            <ul class="list">
+              <li class="fragment">HTML</li>
+              <li class="fragment">CSS</li>
+              <li class="fragment">Javascript</li>
+            </ul>
+          </section>
 
-        <section>
-          <h2>OK google?</h2>
-          <img src="img/devconf.png" class="fragment">
+          <section>
+            <h2>OK google?</h2>
+            <a href="https://www.youtube.com/watch?v=d2tYH7vXMUM"><img src="img/devconf.png" class="fragment"></a>
+          </section>
         </section>
-
 <!-- Segment 2, what is node-webkit -->
         <section>
-          <h1>WHAT IS NODE-WEBKIT ?</h1>
-        </section>
-        <section>
+          <section>
+            <h1>WHAT IS NODE-WEBKIT ?</h1>
+          </section>
           <section>
             <h2>node-webkit</h2>
             <ul class="list">
               <li class="fragment">Web application runtime</li>
-               <ul class="fragment">
-                  <li>Node.js (system API)</li>
-                  <li>chromium browser (rendering)</li>
+               <ul>
+                  <li class="fragment">Node.js (system API)</li>
+                  <li class="fragment">chromium browser (rendering)</li>
                 </ul>
-              <li class="fragment">Runs on OSX, Windows and Linux</li>
+              <li class="fragment">Runs on OS X, Windows and Linux</li>
             </ul>
           </section>
           <section>
             <img src="img/node-webkit-graph.png" height="314" width="444">
+
             <ul class="list">
-              <li class="fragment">Single, Shared event loop</li>
+              <li class="fragment">Shared event loop</li>
               <li class="fragment">@rogerwang</li>
-              <li class="fragment">github.com/rogerwang/node-webkit</li>
+              <a href="https://github.com/rogerwang/node-webkit" class="fragment">https://github.com/rogerwang/node-webkit</a>
             </ul>
           </section>
         </section>
 
         <section>
+        <section data-transition="none">
+          <h2>Quick Start</h2>
+          <table width="100%">
+            <tr>
+              <td width="50%"></td>
+              <td width="50%">
+<code>
+slideshow/<br>
+├── index.html<br>
+│<br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└──reveal.js<br>
+└──css/<br>
+&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+&nbsp;<br>
+</code>
+
+              </td>
+            </tr>
+          </table>
+          
+        </section>
+        <section data-transition="none">
           <h2>Quick Start</h2>
           <table width="100%">
             <tr>
               <td width="50%">
 
-          <pre class="fragment"><code data-trim class="bash">
+          <pre><code data-trim class="nohighlight">
 $ npm install nodewebit
           </code></pre>
-          <pre class="fragment"><code data-trim class="javascript">
+              </td>
+              <td width="50%">
+<code>
+slideshow/<br>
+├── index.html<br>
+│<br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+<b>nodewebkit/</b><br>
+</code>
+
+              </td>
+            </tr>
+          </table>
+          
+        </section>
+<section data-transition="none">
+          <h2>Quick Start</h2>
+          <table width="100%">
+            <tr>
+              <td width="50%">
+          <pre><code data-trim class="nohighlight">
 {
   "name": "MyApp",
   "main": "index.html"
@@ -186,37 +237,45 @@ $ /path/to/nw/runtime
           </code></pre>
               </td>
               <td width="50%">
-                <img src="img/app-dir.png">
+<code>
+slideshow/<br>
+├── index.html<br>
+├── <b>package.json</b><br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+nodewebkit/<br>
+</code>
+
               </td>
             </tr>
           </table>
           
         </section>
-
+        </section>
 
         <section>
           <section>
             <h2>More : package.json</h2>
-            <pre><code data-trim class="javascript">
-// package.json
+            <pre><code data-trim class="nohighlight">
 {
-"name": "Myapp",
-"main": "index.html",
+"name": "MyApp",
+"main": "app.html",
 "window": {
     "frame": false,
     "toolbar": false,
-    "resizable": true,
     "width": 600,
     "height": 400
   }
 }
             </code></pre>
-            <p><a href="https://github.com/rogerwang/node-webkit/wiki/Manifest-format">https://github.com/rogerwang/node-webkit/wiki/Manifest-format</a></p>
+            <a href="https://github.com/rogerwang/node-webkit/wiki/Manifest-format">https://github.com/rogerwang/node-webkit/wiki/Manifest-format</a>
           </section>
           <section>
-          <h2>More : require / module</h2>
+          <h2>More : Node frames</h2>
           <pre><code data-trim class="javascript">
-//index.html
+//app.html
 &lt;script&gt;
   var app = require('./js/app.js');
   app.run();
@@ -226,204 +285,326 @@ $ /path/to/nw/runtime
 //app.js
 exports.run = function(arg){…}
           </code></pre>
+          <p>Access to require, global, process, Buffer and root from Node</p>
+          
           </section>
           <section>
-          <h2>More : GUI control</h2>
-          <pre><code data-trim class="html">
-&lt;p id="close"&gt; CLOSE WINDOW &lt;/p&gt;
-          </code></pre>
-          <pre><code data-trim>
-var gui = require('nw.gui');
-
-$('#close').click(function(){
-  gui.App.quit();
-});
-          </code></pre>
-          </section>
-
-          <section>
-          <h2>More : Menu Bar</h2>
+          <h2>More : GUI</h2>
           <pre><code data-trim class="expand">
 var gui = require('nw.gui');
 var menubar = new gui.Menu({ type: 'menubar' });
 var mainMenu = new gui.Menu();
+
 
 mainMenu.append(new gui.MenuItem({
   label: 'version',
   click: function(){ alert('Version : 0.0.1');}
 }));
 
+
 menubar.append(new gui.MenuItem({
   label: 'MainMenu',
   submenu: mainMenu
 }));
+
 
 gui.Window.get().menu = menubar;
           </code></pre>
           </section>
         </section>
         <section>
-          <h2>Execute Node.js script</h2>
-          <pre><code data-trim class="expand javascript">
-var exec = require('child_process').exec;
-  exec('npm start', {cwd:'/path/to/'});
-}
-          </code></pre>
-          <h4 onclick="runSlide()" class="pointer">Run</h4>
-        </section>
-
-        <section>
-          <h2>PACKAGE</h2>
-          <img src="img/webkit-package.png" height="413" width="753">
-          <p><a href="https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps" target="blank">https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps</a></p>
-        </section>
-
-        <section>
-          <h1>Recap</h1>
-          <ul class="list">
-            <li class="fragment">You only need HTML/CSS/Javascript</li>
-            <li class="fragment">VERY easy to start</li>
-            <li class="fragment">Node.js + UI  FTW !</li>
-          </ul>
-        </section>
-
-        <section data-background="img/li-low.jpg">
-          <h1>BACK TO THE SCREEN</h1>
-        </section>
-
-        <section>
           <section>
-            <img src="img/plan1.png" height="768" width="1023">
+            <h2>Execute Node.js script</h2>
+            <pre><code data-trim class="expand javascript">
+  var exec = require('child_process').exec;
+    exec('npm start', {cwd:'/path/to/'});
+  }
+            </code></pre>
+            <h4 onclick="runSlide()" class="pointer">Run</h4>
           </section>
+
           <section>
-            <img src="img/plan2.png" height="768" width="1023">
+            <h2>PACKAGE</h2>
+            <img src="img/webkit-package.png" height="413" width="753">
+            <p><a href="https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps" target="blank">https://github.com/rogerwang/node-webkit/wiki/How-to-package-and-distribute-your-apps</a></p>
           </section>
+
           <section>
-            <img src="img/plan3.png" height="768" width="1023">
+            <h1>Recap</h1>
+            <ul class="list">
+              <li class="fragment">You only need HTML/CSS/Javascript</li>
+              <li class="fragment">VERY easy to start</li>
+              <li class="fragment">Node.js + UI  FTW !</li>
+            </ul>
           </section>
         </section>
+
         <section>
-          <section>
+          <section data-background="img/li-low.jpg">
+            <h1>BACK TO THE SCREEN</h1>
+          </section>
+          <section data-transition="none">
+            <img src="img/plan1.png" >
+          </section>
+          <section data-transition="none">
+            <img src="img/plan2.png">
+          </section>
+          <section data-transition="none">
+            <img src="img/plan3.png">
+          </section>
+        </section>
+        <section>
+          <section data-transition="none">
             <table width="100%">
               <tr>
-                <td width="70%">
-            <pre class="fragment"><code data-trim class="expand javascript">
+                <td width="60%">
+                  <h2>node-webkit app</h2>
+                  <br>
+                  <ul class="list">
+                    <li class="fragment">start local server</li>
+                    <li class="fragment">scoket.io</li>
+                      <ul>
+                        <li class="fragment">revive message</li>
+                        <li class="fragment">WebRTC handshake</li>
+                      </ul>
+                    <li class="fragment">edit DOM from server.js</li>
+                  </ul>
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── <b class="textfocus">app.html</b><br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── admin.html<br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── <b class="textfocus">server.js</b><br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.js</b><br>
+├──css/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.css</b><br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── admin.js<br>
+&nbsp;&nbsp;&nbsp;└── admin.css<br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>Admin page</h2>
+                  <br>
+                  <ul class="list">
+                    <li class="fragment">access from local network</li>
+                    <li class="fragment">socket.io to send message</li>
+                    <li class="fragment">connect to web-cam for video stream</li>
+                  </ul>
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
+&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                <h2>package.json</h2>
+            <pre><code data-trim class="expand nohighlight">
 {
   "name": "MyApp",
   "main": "app.html",
+
   "dependencies": {
     "socket.io": "~1.1.0",
     "hbs": "~2.7.0",
     "express": "~4.10.0"
   },
+
   "window": {
     "frame": false,
     "fullscreen": true
   },
+
   "scripts": {
     "start": "../path/to/nw"
   }
 }
             </code></pre>
                 </td>
-                <td width="30%">
-                  <img src="img/project-dir.png">
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── <b class="textfocus">package.json</b><br>
+├── views/<br>
+│&nbsp;&nbsp;└── admin.html<br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── admin.js<br>
+&nbsp;&nbsp;&nbsp;└── admin.css<br>
+
+</code>
                 </td>
               </tr>
             </table>
           </section>
+          </section>
+          <section>
+          <section>
+          <h2>server.js</h2>
+            <pre><code data-trim class="expand">
+var express = require('express');
+
+exports.run = function(callback){
+  var app = express();
+  var ip;
+
+  /* look up ip address*/
+  require('dns').lookup(require('os').hostname(), 
+    function (err, add, fam) {
+      ip = add;
+  });
+
+
+  /*
+  express server
+  */
+  app.set('view engine', 'html');
+  app.engine('html', require('hbs').__express);
+
+  app.get('/', function (req, res) {
+    res.render('admin',{ ip:ip , port:9001 });
+  });
+
+  app.use(express.static(__dirname + '/../public'));
+
+  app.listen(5000);
+
+
+
+  /*
+  socket.io
+  */
+  var io = require('socket.io').listen(9001);
+
+  io.on('connection', function (socket) {
+
+    socket.on('message', function(message) {
+      socket.broadcast.emit('message', message);
+    });
+
+    socket.on('msg', function (data) {
+      $('#message-data').text(data.message);
+    });
+    
+    ...
+
+  });
+
+  callback();
+};
+            </code></pre>
+          </section>
+
           <section>
           <h2>app.html</h2>
             <pre><code data-trim class="expand">
-&lt;html&gt;
-  &lt;body&gt;
+&lt;body&gt;
+  &lt;div id=&quot;graph&quot;&gt;graph(map)&lt;/div&gt;
+  &lt;div id=&quot;video&quot; hidden&gt;video stream&lt;/div&gt;
+  &lt;div id=&quot;sidebar&quot;&gt;
+    &lt;div id=&quot;message-data&quot;&gt;message&lt;/div&gt;
+  &lt;/div&gt;
 
-    &lt;div id=&quot;graph&quot;&gt;charts&graphs&lt;/div&gt;
-    &lt;div id=&quot;sidebar&quot;&gt;
-      &lt;div id=&quot;msg&quot;&gt;message via socket.io&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;script src="jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+  &lt;script src="js/map.js"&gt;&lt;/script&gt;
 
-    &lt;script&gt;
-      require('./js/server.js');
-      require('./js/app.js');
-      ...
-    &lt;/script&gt;
+  &lt;script&gt;
+//require('./js/server.js')
+var server = require('./js/server.js');
 
-  &lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-          </section>
+server.run(function(){
 
-          <section>
-          <h2>server.js</h2>
-            <pre><code data-trim class="expand">
-var app = require('express')();
-var server = require('http').createServer(app);
-var port = 3000;
+  $.getScript('http://ip:port/socket.io/socket.io.js',
 
-server.listen(port);
-
-var hbs = require('hbs');
-app.set('view engine', 'html');
-app.engine('html', require('hbs').__express);
-
-app.get('/', function (req, res) {
-  res.render('control'{ip:ip,port:port});
-});
-
-
-
-
-// IP address
-var ip;
-require('dns').lookup(require('os').hostname(), 
-  function (err, address, fam) {
-    ip = address;
-  }
-)
-            </code></pre>
-          </section>
-
-          <section>
-          <h2>server.js</h2>
-            <pre><code data-trim class="expand">
-var app = require('express')();
-var server = require('http').createServer(app);
-...
-
-var io = require('socket.io')(server);
-
-io.sockets.on('connection', function (socket) {
-
-  socket.on('C2S', function (data) {
-    io.sockets.emit('S2C', {value:data.value});
-    document.getElementById('msg').innerHTML = value;
-  });
+    function(){
+      socket = io.connect('http://ip:port');
+      $.getScript('./js/webrtc.js');
+    })
 
 });
+.
+.
+.
+  &lt;/script&gt;
+&lt;/body&gt;
             </code></pre>
-          </section>
-
+          </section>  
           <section>
           <h2>client.html</h2>
             <pre><code data-trim class="expand">
-&lt;html&gt;
-&lt;head&gt;
-  &lt;script src=&quot;/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
-  &lt;script&gt;
-  var s = io.connect('http://{{ip}}:{{port}}');
-  function sendMessage() {
-    var msg = $('#message').val();
-    s.emit('C2S', {value:msg}); 
-  } 
-  &lt;/script&gt;
 &lt;body&gt;
-  &lt;form&gt;
-    &lt;input type=&quot;text&quot; id=&quot;message&quot;/&gt;
-    &lt;input type=&quot;submit&quot; onclick=&quot;sendMessage()&quot;/&gt;
-  &lt;/form&gt;
+...
+&lt;textarea id=&quot;message&quot; maxlength=&quot;60&quot;&gt;&lt;/textarea&gt;
+&lt;button class=&quot;btn&quot; onclick=&quot;send()&quot;/&gt;send&lt;/button&gt;
+...
+&lt;video id=&quot;videopreview&quot; autoplay&gt;&lt;/video&gt;
+&lt;button class=&quot;btn&quot; onclick=&quot;connect()&quot;&gt;Broadcast&lt;/button&gt;
+...
+&lt;script src=&quot;jquery-1.11.0.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://ip:port/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// connect to local server
+var socket = io.connect('http://ip:port');
+
+// socket.io connection check
+socket.on('connect', function () {
+  $('.btn').prop('disabled', false);
+});
+socket.on('disconnect', function (client) {
+  $('.btn').prop('disabled', true);
+});
+
+//send &quot;message&quot; to the app
+function sendMessage() {
+  socket.emit('msg', {message:message});
+}
+.
+.
+//webRTC handling
+.
+.
+&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
             </code></pre>
           </section>
         </section>
@@ -434,10 +615,9 @@ io.sockets.on('connection', function (socket) {
         </section>
 
         <section>
-          <h2>Why not make web apps?</h2>
-        </section>
-
-        <section>
+          <section>
+            <h2>Why not make web apps?</h2>
+          </section>
           <section>
           <p  class="fragment left">Hey I made this app</p>
           <p  class="fragment right">oh cool!</p>

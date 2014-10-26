@@ -144,5 +144,5 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .xml .hljs-cdata,
 .xml .php,
 .php .xml {
-  opacity: 0.5;
+  opacity:1;
 }
