@@ -92,23 +92,12 @@
             <h2>TOOLS</h2>
             <br>
             <ul class="list">
-              <li class="fragment">portable/reusable</li>
-              <li class="fragment">easily editable</li>
+              <li class="fragment">portable</li>
+              <li class="fragment">reusable</li>
               <li class="fragment">maintainable</li>
             </ul>
           </section>
 
-          <section>
-            <h2>Spread Sheet</h2>
-            <ul class="list left">
-              <li class="fragment">Only one file</li>
-              <li class="fragment">Shared drive / Email</li>
-              <li class="fragment">Everyone has access</li>
-              <li class="fragment">holds data</li>
-              <br>
-              <li class="fragment">Margin for error</li>
-            </ul>
-          </section>
         </section>
         <section>
           <section>
@@ -183,9 +172,9 @@ slideshow/<br>
 ├── index.html<br>
 │<br>
 ├── javascript/<br>
-│ &nbsp;&nbsp;└──reveal.js<br>
-└──css/<br>
-&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
 &nbsp;<br>
 </code>
 
@@ -212,8 +201,8 @@ slideshow/<br>
 ├── javascript/<br>
 │ &nbsp;&nbsp;└── reveal.js<br>
 └── css/<br>
-&nbsp;&nbsp;&nbsp;└── reveal.css<br>
-<b>nodewebkit/</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+<b class="textfocus">nodewebkit/</b><br>
 </code>
 
               </td>
@@ -240,11 +229,11 @@ $ /path/to/nw/runtime
 <code>
 slideshow/<br>
 ├── index.html<br>
-├── <b>package.json</b><br>
+├── <b class="textfocus">package.json</b><br>
 ├── javascript/<br>
 │ &nbsp;&nbsp;└── reveal.js<br>
 └── css/<br>
-&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
 nodewebkit/<br>
 </code>
 
@@ -260,13 +249,17 @@ nodewebkit/<br>
             <h2>More : package.json</h2>
             <pre><code data-trim class="nohighlight">
 {
-"name": "MyApp",
-"main": "app.html",
-"window": {
-    "frame": false,
-    "toolbar": false,
-    "width": 600,
-    "height": 400
+  "name": "MyApp",
+  "main": "app.html",
+
+  "window": {
+      "frame": false,
+      "width": 600,
+      "height": 400
+    },
+
+  "scripts": {
+    "start": "path/to/nodewebkit/"
   }
 }
             </code></pre>
@@ -276,14 +269,20 @@ nodewebkit/<br>
           <h2>More : Node frames</h2>
           <pre><code data-trim class="javascript">
 //app.html
+&lt;script src="./js/client.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-  var app = require('./js/app.js');
+  var app = require('./js/nodeapp.js');
   app.run();
 ...
           </code></pre>
           <pre><code data-trim>
-//app.js
+//nodeapp.js
 exports.run = function(arg){…}
+
+window.document.getElementById('id') 
+//err  document.getElementById('id')
+
+
           </code></pre>
           <p>Access to require, global, process, Buffer and root from Node</p>
           
@@ -334,7 +333,7 @@ gui.Window.get().menu = menubar;
             <ul class="list">
               <li class="fragment">You only need HTML/CSS/Javascript</li>
               <li class="fragment">VERY easy to start</li>
-              <li class="fragment">Node.js + UI  FTW !</li>
+              <li class="fragment">Node.js + UI = powerful !</li>
             </ul>
           </section>
         </section>
@@ -353,7 +352,38 @@ gui.Window.get().menu = menubar;
             <img src="img/plan3.png">
           </section>
         </section>
+
         <section>
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>node-webkit app</h2>
+                  <img src="img/desktopapp.png" height="85%">
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── <b class="textfocus">app.html</b><br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── admin.html<br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── <b class="textfocus">server.js</b><br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.js</b><br>
+├──css/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.css</b><br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── admin.js<br>
+&nbsp;&nbsp;&nbsp;└── admin.css<br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+
           <section data-transition="none">
             <table width="100%">
               <tr>
@@ -392,93 +422,7 @@ app/<br>
               </tr>
             </table>
           </section>
-
-          <section data-transition="none">
-            <table width="100%">
-              <tr>
-                <td width="60%">
-                  <h2>Admin page</h2>
-                  <br>
-                  <ul class="list">
-                    <li class="fragment">access from local network</li>
-                    <li class="fragment">socket.io to send message</li>
-                    <li class="fragment">connect to web-cam for video stream</li>
-                  </ul>
-                </td>
-                <td width="40%">
-<code>
-app/<br>
-├── node_modules/<br>
-├── app.html<br>
-├── package.json<br>
-├── views/<br>
-│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
-├── javascript/<br>
-│&nbsp;&nbsp;├── server.js<br>
-│&nbsp;&nbsp;└── app.js<br>
-├──css/<br>
-│&nbsp;&nbsp;└── app.css<br>
-└── public/<br>
-&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
-&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
-
-</code>
-                </td>
-              </tr>
-            </table>
-          </section>
-          <section data-transition="none">
-            <table width="100%">
-              <tr>
-                <td width="60%">
-                <h2>package.json</h2>
-            <pre><code data-trim class="expand nohighlight">
-{
-  "name": "MyApp",
-  "main": "app.html",
-
-  "dependencies": {
-    "socket.io": "~1.1.0",
-    "hbs": "~2.7.0",
-    "express": "~4.10.0"
-  },
-
-  "window": {
-    "frame": false,
-    "fullscreen": true
-  },
-
-  "scripts": {
-    "start": "../path/to/nw"
-  }
-}
-            </code></pre>
-                </td>
-                <td width="40%">
-<code>
-app/<br>
-├── node_modules/<br>
-├── app.html<br>
-├── <b class="textfocus">package.json</b><br>
-├── views/<br>
-│&nbsp;&nbsp;└── admin.html<br>
-├── javascript/<br>
-│&nbsp;&nbsp;├── server.js<br>
-│&nbsp;&nbsp;└── app.js<br>
-├──css/<br>
-│&nbsp;&nbsp;└── app.css<br>
-└── public/<br>
-&nbsp;&nbsp;&nbsp;├── admin.js<br>
-&nbsp;&nbsp;&nbsp;└── admin.css<br>
-
-</code>
-                </td>
-              </tr>
-            </table>
-          </section>
-          </section>
-          <section>
-          <section>
+           <section>
           <h2>server.js</h2>
             <pre><code data-trim class="expand">
 var express = require('express');
@@ -563,20 +507,83 @@ server.run(function(){
   &lt;/script&gt;
 &lt;/body&gt;
             </code></pre>
-          </section>  
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>Admin page</h2>
+                  <img src="img/clientapp.png">
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
+&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>Admin page</h2>
+                  <br>
+                  <ul class="list">
+                    <li class="fragment">access from local network</li>
+                    <li class="fragment">socket.io to send message</li>
+                    <li class="fragment">connect to web-cam for video stream</li>
+                  </ul>
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
+&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
           <section>
-          <h2>client.html</h2>
+          <h2>admin.html</h2>
             <pre><code data-trim class="expand">
 &lt;body&gt;
-.
-.
+
 &lt;textarea id=&quot;message&quot;&gt;&lt;/textarea&gt;
 &lt;button class=&quot;btn&quot; onclick=&quot;send()&quot;/&gt;send&lt;/button&gt;
 
 &lt;video id=&quot;videopreview&quot; autoplay&gt;&lt;/video&gt;
 &lt;button class=&quot;btn&quot; onclick=&quot;connect()&quot;&gt;Broadcast&lt;/button&gt;
-.
-.
+
 &lt;script src=&quot;http://ip:port/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
 
@@ -586,6 +593,7 @@ var socket = io.connect('http://ip:port');
 socket.on('connect', function () {
   $('.btn').prop('disabled', false);
 });
+
 socket.on('disconnect', function (client) {
   $('.btn').prop('disabled', true);
 });
@@ -646,12 +654,16 @@ function sendMessage() {
           <ul class="list">
             <li class="fragment">Package your front-end project</li>
             <li class="fragment">Server side app ? no problem !</li>
-            <li class="fragment">Node.js + UI FTW !</li>
+            <li class="fragment">Node.js + UI = awesome !</li>
           </ul>
         </section>
 
         <section>
-          <h1>Thank you</h1>
+          <h1 class="left fragment">Thank you</h1>
+          <br>
+          <h3 class="left">@kosamari</h3>
+          <h4 class="left">Slides : <a href="http://kosamari.com/presentation/empire-node">http://kosamari.com/presentation/empire-node</a></h4>
+          <h4 class="left">Demo App : <a href="https://github.com/kosamari/TalksAndDemos">https://github.com/kosamari/TalksAndDemos</a></h4>
         </section>
       </div>
 
