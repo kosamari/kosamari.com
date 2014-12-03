@@ -1,0 +1,148 @@
+html,body{
+  height:100%; /*height set so #timeline can be window height*/
+  margin: 0px;
+}
+
+#timeline {
+  height:100%;
+  min-width: 650px;
+  position: relative;
+  font-family: 'Open Sans';
+  color:#666;
+  fill:#666;
+}
+#timeline #tl-slideshow {
+  position:relative;
+  overflow:hidden;
+}
+#tl-focus, #tl-control{
+  background-color:#f5f5f5;
+  padding:none;
+  margin:none;
+}
+#tl-control{
+  position: absolute;
+}
+/* Slideshow */
+#timeline #tl-slide-container {
+  position: relative;
+  top:0;
+  left:0;
+  transition: left;
+  transition-duration: 0.5s;
+}
+#timeline .notransition {
+  transition: none !important;
+}
+
+#timeline .slide {
+  min-height: 300px;
+  float:left;
+}
+#timeline .slide{
+  display: table;
+}
+#timeline .slide-contents {
+  padding-left:80px;
+  padding-right:80px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*
+CSS for each slide template.
+Put together rather quick, better re-factored & re-orgnized.
+*/
+.slide-person-image{text-align: center;width:50%;float: left;}
+.slide-person-text{width:50%;float:right;}
+.slide-contents h1{font-weight: 300;margin-bottom: 0px;}
+.slide-person-text h1{font-weight: 300;margin-bottom: 0px;}
+.slide-person-text h3{margin-top: 0px;}
+.slide-2people h1{font-weight: 300; margin-bottom: 0px;}
+.slide-2people h3{ margin-top: 0px;}
+.slide-paragraph-title{}
+.slide-paragraph-text{}
+.slide-paragraph-title h1{ font-size:100px; margin:0px;}
+.slide-list-title{}
+.slide-list-title h1{font-size:100px; margin:0px;}
+.slide-quote-image{text-align: center; width:50%; float: left;}
+.slide-quote-image img{ width:80%;}
+.slide-quote-text{width:50%; float:right;}
+.slide-quote-text h1{ font-weight: 300;margin-bottom: 0px;}
+.slide-quote-text h3{font-weight: 300;margin-top: 0px;}
+
+
+
+
+
+
+/* Arrows */
+#timeline .tl-navigation {
+  z-index: 1;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#timeline .right{
+  right:0;
+  padding-right:10px;
+  text-align: right;
+}
+#timeline .left{
+  left:0;
+  padding-left:10px;
+  text-align: left;
+}
+#timeline .arrow{
+  font-size: 60px;
+  cursor: pointer;
+}
+
+/* D3 Chart settings */
+#timeline .axis path,
+#timeline .axis line {
+  fill: none;
+  stroke: #666;
+  shape-rendering: crispEdges;
+}
+#timeline .axis text {
+  font: 10px sans-serif;
+}
+
+/* Graph */
+.line {
+  fill: #29ABE2;
+}
+.circle{
+  stroke : #ddd;
+}
+/* Focus */
+#timeline .focus-text{
+  font-size:0.8em;
+}
+#timeline .circle.person{
+  fill:#FFA500;
+}
+#timeline .circle.event{
+  fill:#2279bd;
+}
+#timeline .circle.release{
+  fill:#A6E22E;
+}
+
+/* Control */
+#timeline .brush .extent {
+  fill-opacity: .5;
+  shape-rendering: crispEdges;
+}
+
+#timeline #graph {
+  /*clip-path: url(#graphClip);*/
+}
+#timeline #focus {
+  clip-path: url(#focusClip);
+}
+#timeline #control {
+  clip-path: url(#controlClip);
+}

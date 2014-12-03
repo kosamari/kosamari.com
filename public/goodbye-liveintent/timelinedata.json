@@ -1,0 +1,182 @@
+[
+{
+  "timestamp" : "2013-10-07",
+  "template" : "noimage",
+  "type" : "bottom",
+  "guideText" : "Joined LiveIntent",
+  "assets" : {
+    "name" : "First day",
+    "title" : null,
+    "headline" : "After 2 hours of meeting with Jerry, Audrey, and Graham Gnall, I joined LiveIntent.<br>It was a day after I organized 100+ participants Hackathon. To tell you the truth, I was very tired the first day. "
+  }
+},
+{
+  "timestamp" : "2013-10-10",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "1st project",
+  "assets" : {
+    "name" : "Dedicated Email Doc",
+    "title" : null,
+    "headline" : "My 1st Project was to update Dedicated Process Doc on Evernote as I learn the process. <br><br> I re-wrote these documents in Confluence 4 months later when handing over dedicated email production to AdOps team.",
+    "media" : "img/1.png"
+  }
+},
+{
+  "timestamp" : "2013-11-16",
+  "template" : "image",
+  "type" : "bottom",
+  "guideText" : "remember SARD?",
+  "assets" : {
+    "name" : "Server Assisted Responsive Email",
+    "title" : null,
+    "headline" : "1st month at LiveIntent, I leaned a lot about email, especially HTML email production. I played around a lot with HTML Tables, tbody, tr, td td td... ",
+    "media" : "img/2.jpg"
+  }
+},
+{
+  "timestamp" : "2013-12-01",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "my first app!",
+  "assets" : {
+    "name" : "Dedicated monitoring app",
+    "title" : null,
+    "headline" : "Asset for Covered California dedicated campaign was delayed for a week, so I used the freed up time for making dedicated campaign monitoring tool.",
+    "media" : "img/3.png"
+  }
+},
+{
+  "timestamp" : "2014-01-07",
+  "template" : "image",
+  "type" : "bottom",
+  "guideText" : "Weekly Newsletter",
+  "assets" : {
+    "name" : "Coded & Deployed LiveIntent Newsletter",
+    "title" : null,
+    "headline" : "Graham Gnall moved to LSD project, and I took over newsletter production.",
+    "media" :  "img/4.png"
+  }
+},
+{
+  "timestamp" : "2014-02-01",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "dashboard v1",
+  "assets" : {
+    "name" : "Realtime dashboard",
+    "title" : null,
+    "headline" : "Remember these that was on iMac for a while? <br> Hacked access to Graphite using PHP, got realtime data, and made dashboard. <br><br> Sounds super easy now, but It wasn't for the first time!",
+    "media" : "img/5.png"
+  }
+},
+{
+  "timestamp" : "2014-02-18",
+  "template" : "image",
+  "type" : "bottom",
+  "guideText" : "Moved to Innovations",
+  "assets" : {
+    "name" : "Joined Innovations team ",
+    "title" : null,
+    "headline" : "1st Project I worked on was 'LiveLight' - a mobile app prototype for self serve advertisers.<br> This was the first time I really deep dive into backbone.js, node.js, and d3.js. <br><br>Leaned alot.",
+    "media" : "img/6.png"
+  }
+},
+{
+  "timestamp" : "2014-03-01",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "Newsletter Templates",
+  "assets" : {
+    "name" : "HTML templates for easy Weekly Newsletter production",
+    "title" : null,
+    "headline" : "I quickly became busy with dedicated, weekly newsletter production, and innovations project. <br>To balance, I created MailChimp email template and re-usable code blocks so Nick and Devan can create newsletter as well.",
+    "media" :"img/7.png"
+  }
+},
+{
+  "timestamp" : "2014-04-21",
+  "template" : "image",
+  "type" : "bottom",
+  "guideText" : "Morning report re-design",
+  "assets" : {
+    "name" : "Morning report re-design (email)",
+    "title" : null,
+    "headline" : "With Matt Shait, we stared re-organize/re-design of morning report. Showed prototype at senior staff meeting.",
+    "media" : "img/8.png"
+  }
+},
+{
+  "timestamp" : "2014-05-28",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "Morning report re-design Continued",
+  "assets" : {
+    "name" : "Morning report dashboard",
+    "title" : null,
+    "headline" : "We started making performance dashboard for morning report.<br><br> Also, around this time, Jake and I became dinner friends. (Jake was busy working on Reporting API)",
+    "media" : "img/9.png"
+  }
+},
+{
+  "timestamp" : "2014-07-14",
+  "template" : "noimage",
+  "type" : "bottom",
+  "guideText" : "Innovations API",
+  "assets" : {
+    "name" : "Made REST API for the first time !",
+    "title" : null,
+    "headline" : "After working on morning report, I realized getting data that we need for innovations project was hard as we needed to query different database and API. This I made aggregation API so we can quickly get to data."
+  }
+},
+{
+  "timestamp" : "2014-09-01",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "LiveIntent Lab",
+  "assets" : {
+    "name" : "LiveIntent Lab",
+    "title" : null,
+    "headline" : "LiveIntent Lab's Initial launch was first time I coded full express.js app. <br> Also tried to create BFF version as well.",
+    "media" : "img/11.png"
+  }
+},
+{
+  "timestamp" : "2014-10-01",
+  "template" : "image",
+  "type" : "bottom",
+  "guideText" : "Screen App",
+  "assets" : {
+    "name" : "Screen App",
+    "title" : null,
+    "headline" : "Probably had most fun making this announcement app. Discovered node-webkit, and gave presentations about it at BrooklynJS and EmpireNode",
+    "media" : "img/12.jpg"
+  }
+},
+{
+  "timestamp" : "2014-11-01",
+  "template" : "image",
+  "type" : "top",
+  "guideText" : "Timeline App",
+  "assets" : {
+    "name" : "Tmleline App",
+    "title" : null,
+    "headline" : "And finally, my last project was LiveIntent Timeline App.<br><br>I got much faster coding d3 chart compare to the first time I did on LiveLight.",
+    "media" : "img/13.png"
+  }
+},
+{
+  "timestamp" : "2014-12-03",
+  "template" : "noimage",
+  "type" : "bottom",
+  "guideText" : "Thank you!",
+  "assets" : {
+    "name" : "Thank you!",
+    "title" : null,
+    "headline" : "I had so much fun for 14 months I was at LiveIntent. Thank you everyone who shared fun and hard work. <br> Now on to the next adventure ! <br><br>Mariko ",
+    "media" : "img/13.png"
+  }
+}
+
+
+]

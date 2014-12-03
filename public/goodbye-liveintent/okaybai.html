@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/timeline.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+
+<body>
+<div id="timeline">
+  <div id="tl-slideshow">
+    <div class="tl-navigation left" ><i class="fa fa-angle-left arrow"></i></div>
+    <div class="tl-navigation right"><i class="fa fa-angle-right arrow"></i></div>
+    <div id="tl-slide-container"></div>
+  </div>
+  <div>
+  
+  <div id="tl-graph"></div>
+  <div id="tl-focus"></div>
+  <div id="tl-control"></div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/d3.min.js"></script>
+
+<!-- underscore.js Templates 
+Probably better re-worked along with timeline.css
+-->
+<script type="text/template" class="noimage">
+<div class="slide" id="slide<%= id %>">
+  <div class="slide-contents">
+        <h1><%= assets.name %></h1>
+        <h3><%= assets.title %></h3>
+        <p><%= assets.headline %></p>
+      </div>
+  </div>
+</div>
+</script>
+
+<script type="text/template" class="image">
+<div class="slide" id="slide<%= id %>">
+  <div class="slide-contents">
+      <div class="slide-person-image">
+        <img src="<%= assets.media %>" width="80%">
+      </div>
+      <div class="slide-person-text">
+        <h1><%= assets.name %></h1>
+        <h3><%= assets.title %></h3>
+        <p><%= assets.headline %></p>
+      </div>
+  </div>
+</div>
+</script>
+
+<script src="js/timeline.js"></script>
+<script>
+// It does not have to use d3.json. but why not (quick and dirty).
+d3.json('timelinedata.json', function(err, data) {
+  d3.json('performancedata.json',function(err,data2){
+    
+    //argument for Timeline.render() is documented in Confluence.
+    Timeline.render({
+      timelinedata:data,
+      performancedata:data2,
+      templates: {
+        noimage : _.template( $( 'script.noimage' ).html()),
+        image : _.template( $( 'script.image' ).html())
+      },
+      types:['bottom','top']
+    });
+
+  });
+});
+</script>
