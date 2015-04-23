@@ -56,12 +56,11 @@ Probably better re-worked along with timeline.css
 <script>
 // It does not have to use d3.json. but why not (quick and dirty).
 d3.json('timelinedata.json', function(err, data) {
-  d3.json('performancedata.json',function(err,data2){
-    
+
     //argument for Timeline.render() is documented in Confluence.
     Timeline.render({
       timelinedata:data,
-      performancedata:data2,
+      performancedata:[{"timestamp" : "2015-04-23"}],
       templates: {
         noimage : _.template( $( 'script.noimage' ).html()),
         image : _.template( $( 'script.image' ).html())
@@ -69,6 +68,5 @@ d3.json('timelinedata.json', function(err, data) {
       types:['bottom','top']
     });
 
-  });
 });
 </script>

@@ -2,7 +2,7 @@
 
 var $        = require('jquery'),
     Backbone = require('backbone'),
-    MainView       = require('./views/MainView');
+    MainView = require('./views/MainView');
 
 Backbone.$ = $;
 

@@ -1,0 +1,13 @@
+[
+{
+  "timestamp" : "2015-04-22",
+  "template" : "noimage",
+  "type" : "bottom",
+  "guideText" : "Hi I'm d3 chart",
+  "assets" : {
+    "name" : "This is the first page",
+    "title" : null,
+    "headline" : "I'm workin on it!"
+  }
+}
+]

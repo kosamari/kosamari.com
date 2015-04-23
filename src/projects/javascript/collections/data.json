@@ -1,5 +1,12 @@
 [
 {
+  "image":"/img/c_c.png",
+  "name":"Color Mixer",
+  "url" :"https://github.com/kosamari/color-mixer",
+  "cta" :"Github <i class='fa fa-external-link'></i>",
+  "desc":"Little Javascipt helpers to create color chips. Manipulate colors like you would in Sass, or see pre-set color chips in your browser console. This is made for quick prototyping to decide on color schemes. <ul><li>published as npm package</li></ul>"
+},
+{
   "image":"/img/d3-clock.png",
   "name":"D3 Clock",
   "url" :"http://bl.ocks.org/kosamari/2a2decddf88ddb2079a8",
