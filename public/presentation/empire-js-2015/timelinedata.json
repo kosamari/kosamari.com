@@ -1,13 +1,1944 @@
 [
 {
-  "timestamp" : "2015-04-22",
-  "template" : "noimage",
-  "type" : "bottom",
-  "guideText" : "Hi I'm d3 chart",
-  "assets" : {
-    "name" : "This is the first page",
-    "title" : null,
-    "headline" : "I'm workin on it!"
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Needle in a TechStack",
+    "subtitle" : "Knitting for JavaScripters"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Hi I'm Mariko</h1><h3>@kosamari</h3><h3>I like to make things !</h3><h3>Internal Tools Engineer at percolate</h3>",
+    "col2":""
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "I ❤ knitting"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting + Computer"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting + Computer ❤❤❤"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting >> Computer"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>Math<br>EVERYWHERE</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "<h1 class='text-gray'>(ﾟ⊿ﾟ)...</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1 class='text-gray'>(ﾟ⊿ﾟ)... ew...</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Needle in a TechStack</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": false
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3><strike>Needle in a TechStack</strike></h3><h1>How a crafter accidentally stumbled upon Math and Hardware</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": false
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3><strike>Needle in a TechStack<br>How a crafter accidentally stumbled upon Math and Hardware</strike><br></h3><h1>Sotry of 'This shouln’t be hard' failing massibly</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": false
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>!!! warning !!!</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>There will be Math</div><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>There will be Math</div><h3>(I'm no expert)</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>...also BLACK MAGIC</div><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='big-text'>...also BLACK MAGIC</div><h3> a.k.a Bitwise Operation</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>so prepare your self<br><br><i class='fa fa-hand-o-down'></i></h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Let's talk about knitting<br>shall we?"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "fourcolmuns",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" :"<img src='./img/CaryGrant1.gif' width='95%'>",
+    "col2" :"<img src='./img/CaryGrant2.gif' width='95%'>",
+    "col3" :"<img src='./img/CaryGrant3.gif' width='95%'>",
+    "col4" :"<img src='./img/CaryGrant4.gif' width='95%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twoimages",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "media" : ["./img/npm.gif","http://i.giphy.com/zjQrmdlR9ZCM.gif"]
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "I's all about <br> <span class='large'>Knit</span> & <span class='large'>Purl</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h3>knit stich</h3><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h3>purl stich</h3><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<img src='./img/rib.gif' width=80%>",
+    "col2":"<img src='./img/angle.gif' width=80%>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "let's knit something!",
+    "subtitle":"knitter's code is called pattern"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/amizu.png' width=80%>"
+  },
+  "layout" :{
+    "center": true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : <span class='emphasis'>k5</span><br>R1-3 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br><span class='emphasis'>Repeat R1-4 for 10 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='img/knit_js.png' style='max-width;98%;' height='98%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='img/render_pattern_black.png' width='98%''>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>Hyperbolic Geometry</h3><img src='http://upload.wikimedia.org/wikipedia/commons/7/73/Relation5models.png' width='30%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Ruffle</h3><img src='http://www.math.cornell.edu/~dtaimina/ZJ7.jpg' height='40%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geometry1.png' width='80%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geometry2.png' width='80%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geometry3.png' width='80%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 10,
+  "type":"math",
+  "content" : {
+    "custom" : "<iframe src='http://www.math.cornell.edu/~dwh/papers/crochet/crochet.html' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1 class='text-gray'>(ﾟ⊿ﾟ)...</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1 class='text-gray'>...(ﾟ-ﾟ)</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<h3>I want to do more of this !</h3><img src='http://i.giphy.com/GwGXoeb0gm7sc.gif' width='60%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting machine"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/patternknit.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Regular Knit Stiches</h3><h3>Jacquard(pattern) Knit</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Jacquard loom use punch cards</h3><img src='./img/jq1.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1 pixel = one stitch</h3><img src='./img/MachineKnittingPattern41.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>like a dot matix printer</h3><img src='./img/dotmatrix.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>one needle = one stitch</h3><img src='./img/needleselect.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twoimages",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "media" : ["./img/game1.jpg","./img/game2.jpg"]
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twoimages",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "media" : ["./img/nk1.jpg","./img/nk2.jpg"]
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twoimages",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "media" : ["./img/glitch1.jpg","./img/glitch2.png"]
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Steve Conklin",
+    "subtitle": "@sconklin"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1. Create an blank file</h3><h3>&nbsp;</h3><h3>&nbsp;</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1. Create an blank file</h3><h3>2. back up to computer</h3><h3>&nbsp;</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1. Create an blank file</h3><h3>2. back up to computer</h3><h3>3. do some magic</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1. Create an blank file</h3><h3>2. back up to computer</h3><h3>3. do some magic</h3><h3>4. put it back to the machine</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/binery.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>(rows >> 4) * 100<br><br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>>><br><br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>>><br>bitwise perator (right shift)<br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='http://i.giphy.com/6FXWbacS7ojQI.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/brotherbinery.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b0.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b1.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b2.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b3.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b4.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b5.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/b6.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='http://i.giphy.com/mzTKsByk8Xl6g.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Let's add some image!"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/cat.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catdither.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://aheckmann.github.io/gm/' frameborder='0' width='95%' height='90%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>0,0: (153,169,194) #99A9C2<br>1,0: (155,171,196) #9BABC4<br>2,0: (158,174,200) #9EAEC8<br>3,0: (160,176,202) #A0B0CA</div><br><div class='code javascript'>'each line'.match(/\\((...),(...),(...)\\)/)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.slice(1,4).map(Number)</div><br>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[160,172,184],[159,170,176],[155,164,163]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[155,157,144],[154,155,137],[154,153,132]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[151,156,134],[153,157,140],[158,161,150]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[164,170,168],[167,173,173],[168,174,174]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[163,171,160],[159,166,150],[153,161,140]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,154,136],[154,155,141],[156,154,142]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[157,162,165],[157,162,166],[158,163,167]]<br>]</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Grayscale"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<iframe src='http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale' frameborder='0' width='95%' height='90%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><img src='./img/rgb1.png' width='70%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><img src='./img/rgb2.png' width='70%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><img src='./img/rgb3.png' width='70%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],...<br>]</div><br><div class='code'>Math.max.apply(null, [153,169,194]) // 194</div><br><div class='code'><br><br><br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],...<br>]</div><br><div class='code'>Math.max.apply(null, [153,169,194]) // 194</div><br><div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='40%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'><br><br><img src='./img/bandw.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/cat50.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>How does Cosmic Osmo do that ?</h3><img src='./img/Osmo.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Dithering",
+    "subtitle":"intentionally applied form of noise"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/ditheredcat.png' height='50%'><br><br><div class='code'>gm('cat.jpg').colors(2).dither()</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Ordered dithering",
+    "subtitle" : "Halftone Screen"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<iframe src='http://en.wikipedia.org/wiki/Ordered_dithering' frameborder='0' width='95%' height='90%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/dither1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/dither2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/dither3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/dither4.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "threecolmuns",
+  "size": 6,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/halftonecat.png'width='80%'><br><img src='./img/halftonematrix.png' width='80%'><br><h3>Halftone</h3>",
+    "col2" : "<img src='./img/bayercat.png' width='80%'><br><img src='./img/bayermatrix.png' width='80%'><h3>Bayer</h3>",
+    "col3" : "<img src='./img/screwcat.png' width='80%'><br><img src='./img/screwmatrix.png' width='80%'><h3>Screw</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div><br><br><div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[1,1,1],<br>&nbsp;&nbsp;&nbsp;&nbsp;[0,1,0],<br>&nbsp;&nbsp;&nbsp;&nbsp;[1,0,1]...<br>]<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/binery_out.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Here comes<br>the Bitwise Operator !"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/bitmdn.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://www.rapidtables.com/math/number/Numeral_system.htm' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://www.aqua-calc.com/convert/number/octal-to-binary' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://ascii-table.com/conversions.php' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/leftshift1.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/leftshift2.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/leftshift3.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/leftshift4.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift0.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift1.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift2.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift3.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift4.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift5.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bitshift6.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or87.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or88.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or89.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or91.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or92.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or93.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or94.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or96.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or98.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or99.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/or100.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit1.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit2.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit3.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit4.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit5.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit6.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit7.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit8.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit9.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit10.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit11.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit12.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit13.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit14.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit15.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit16.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit17.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit18.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit19.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit20.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit21.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit22.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit23.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit24.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit25.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit26.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 10,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/knit27.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='http://i.giphy.com/12PMsg6XTG91Is.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "... and my time was up !",
+    "subtitle" : "((((；ﾟДﾟ))))"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "... and my time was up !",
+    "subtitle" : "..what a disappointment"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "... and my time was up !",
+    "subtitle" : "<strike>what a disappointment</strike> ...not really"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "thankyou",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title":"<h1>You folks are awesome</h1>",
+    "col1":"<ul><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li><li>Todd Kennedy</li></ul>",
+    "col2":"<ul><li>Tracy Hinds</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li><li>Steve Conklin</ul>",
+    "col3":"<ul><li>...many more!</li></ul>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Thank you</h1>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
   }
 }
 ]

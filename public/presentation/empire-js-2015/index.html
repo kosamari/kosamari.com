@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/timeline.css">
+<link rel="stylesheet" type="text/css" href="css/vislide.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Raleway:700,900' rel='stylesheet' type='text/css'>
 
 <body>
-<div id="timeline">
-  <div id="tl-slideshow">
-    <div class="tl-navigation left" ><i class="fa fa-angle-left arrow"></i></div>
-    <div class="tl-navigation right"><i class="fa fa-angle-right arrow"></i></div>
-    <div id="tl-slide-container"></div>
+<div id="vislide">
+  <div id="slides">
+    <div class="slide-navigation left fn-left-arrow" ><i class="fa fa-caret-left arrow"></i></div>
+    <div class="slide-navigation right fn-right-arrow"><i class="fa fa-caret-right arrow"></i></div>
+    <div id="slide-container"></div>
   </div>
   <div>
-  
-  <div id="tl-graph"></div>
-  <div id="tl-focus"></div>
-  <div id="tl-control"></div>
+  <div id="chart-container"></div>
   </div>
 </div>
 
@@ -23,50 +21,141 @@
 <script src="js/underscore-min.js"></script>
 <script src="js/d3.min.js"></script>
 
-<!-- underscore.js Templates 
-Probably better re-worked along with timeline.css
--->
-<script type="text/template" class="noimage">
-<div class="slide" id="slide<%= id %>">
-  <div class="slide-contents">
-        <h1><%= assets.name %></h1>
-        <h3><%= assets.title %></h3>
-        <p><%= assets.headline %></p>
+<!-- underscore.js Templates -->
+<script type="text/template" class="title">
+<div class="slide fn-slide" id="slide<%= id %>">
+    <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.middle) { %>align-center<% } %>">
+        <h1><%= content.title %></h1>
+        <% if (content.subtitle) { %><h3><%= content.subtitle %></h3>
+        <% } %>
+    </div>
+</div>
+</script>
+
+<script type="text/template" class="twoimages">
+<div class="slide fn-slide" id="slide<%= id %>">
+    <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.middle) { %>align-center<% } %>">
+        <img src="<%= content.media[0] %>" width="48%" />
+        <img src="<%= content.media[1] %>" width="48%" />
+    </div>
+</div>
+</script>
+
+<script type="text/template" class="custom">
+<div class="slide fn-slide" id="slide<%= id %>">
+    <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.center) { %>align-center<% } %>">
+        <%= content.custom %>
+    </div>
+</div>
+</script>
+
+<script type="text/template" class="one-col">
+<div class="slide fn-slide" id="slide<%= id %>">
+  <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.center) { %>align-center<% } %>">
+      <div class="one-col">
+            <%= content.col1 %>
       </div>
   </div>
 </div>
 </script>
 
-<script type="text/template" class="image">
-<div class="slide" id="slide<%= id %>">
-  <div class="slide-contents">
-      <div class="slide-person-image">
-        <img src="<%= assets.media %>" width="80%">
+<script type="text/template" class="two-col">
+<div class="slide fn-slide" id="slide<%= id %>">
+  <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %>">
+      <div class="half-left <% if (layout.center) { %>align-center<% } %>">
+            <%= content.col1 %>
       </div>
-      <div class="slide-person-text">
-        <h1><%= assets.name %></h1>
-        <h3><%= assets.title %></h3>
-        <p><%= assets.headline %></p>
+      <div class="half-right <% if (layout.center) { %>align-center<% } %>">
+            <%= content.col2 %>
       </div>
   </div>
 </div>
 </script>
 
-<script src="js/timeline.js"></script>
+<script type="text/template" class="three-col">
+<div class="slide fn-slide" id="slide<%= id %>">
+  <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.center) { %>align-center<% } %>">
+      <div class="three-item left-float">
+            <%= content.col1 %>
+      </div>
+      <div class="three-item left-float">
+            <%= content.col2 %>
+      </div>
+      <div class="three-item left-float">
+            <%= content.col3 %>
+      </div>
+  </div>
+</div>
+</script>
+
+<script type="text/template" class="thank-you">
+<div class="slide fn-slide" id="slide<%= id %>">
+  <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.center) { %>align-center<% } %>">
+      <h1><%= content.title %></h1>
+      <div>
+          <div class="three-item left-float">
+            <%= content.col1 %>
+          </div>
+          <div class="three-item left-float">
+                <%= content.col2 %>
+          </div>
+          <div class="three-item left-float">
+                <%= content.col3 %>
+          </div>
+      </div>
+  </div>
+</div>
+</script>
+
+
+<script type="text/template" class="four-col">
+<div class="slide fn-slide" id="slide<%= id %>">
+  <div class="slide-contents <% if (layout.middle) { %>align-middle<% } %> <% if (layout.center) { %>align-center<% } %>">
+      <div class="forth-item">
+            <%= content.col1 %>
+      </div>
+      <div class="forth-item">
+            <%= content.col2 %>
+      </div>
+      <div class="forth-item">
+            <%= content.col3 %>
+      </div>
+      <div class="forth-item">
+            <%= content.col4 %>
+      </div>
+  </div>
+</div>
+</script>
+
+<script src="js/vislide.js"></script>
+<link rel="stylesheet" href="css/monokai_sublime.css">
+<script src="js/highlight.pack.js"></script>
+
 <script>
-// It does not have to use d3.json. but why not (quick and dirty).
+
 d3.json('timelinedata.json', function(err, data) {
-
-    //argument for Timeline.render() is documented in Confluence.
-    Timeline.render({
-      timelinedata:data,
-      performancedata:[{"timestamp" : "2015-04-23"}],
+    vislide.render({
+      data:data,
+      rendering:false,
+      slideRatio:0.9,
       templates: {
-        noimage : _.template( $( 'script.noimage' ).html()),
-        image : _.template( $( 'script.image' ).html())
+        title:_.template( $( 'script.title' ).html()),
+        twoimages:_.template( $( 'script.twoimages' ).html()),
+        custom:_.template( $( 'script.custom' ).html()),
+        onecolmun : _.template( $( 'script.one-col' ).html()),
+        twocolmuns : _.template( $( 'script.two-col' ).html()),
+        threecolmuns : _.template( $( 'script.three-col' ).html()),
+        fourcolmuns : _.template( $( 'script.four-col' ).html()),
+        thankyou : _.template( $( 'script.thank-you' ).html())
       },
-      types:['bottom','top']
-    });
+      callback: function(){
+        hljs.configure({useBR: true});
+        $('div.code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
 
+      },
+    });
 });
+
 </script>

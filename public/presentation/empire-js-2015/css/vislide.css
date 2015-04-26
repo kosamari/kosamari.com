@@ -1,0 +1,198 @@
+html,body{
+  height:100%; /*height set so #vislidecan be window height*/
+  margin: 0px;
+  background-color: #DDDDDD;
+  min-width: 1200px;
+}
+
+#vislide{
+  height:100%;
+  position: relative;
+  font-family: 'Open Sans';
+  color:#666;
+  fill:#666;
+}
+#vislide #slides {
+  position:relative;
+  overflow:hidden;
+}
+#tl-focus, #tl-control{
+  background-color:#f5f5f5;
+  padding:none;
+  margin:none;
+}
+#tl-control{
+  position: absolute;
+}
+
+/* Arrows */
+#vislide .slide-navigation {
+  z-index: 1;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#vislide .right{
+  right:0;
+  padding-right:10px;
+  text-align: right;
+}
+#vislide .left{
+  left:0;
+  padding-left:10px;
+  text-align: left;
+}
+#vislide .arrow{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fn-guideline{
+    stroke:#F8555B;
+    stroke-width:5px;
+}
+/* Slideshow */
+#vislide #slide-container {
+  position: relative;
+  top:0;
+  left:0;
+  /*transition: left;*/
+  /*transition-duration: 0.5s;*/
+}
+
+#vislide .notransition {
+  transition: none !important;
+}
+
+#vislide .slide {
+  float:left;
+  height:100%;
+  display: table;
+}
+
+#vislide .slide-contents {
+  padding-left:80px;
+  padding-right:80px;
+  display: table-cell;
+  height:100%;
+}
+
+#vislide .align-middle {
+  vertical-align: middle;
+}
+#vislide .align-center {
+  text-align: center;
+}
+
+
+/*Chart area*/
+#chart-container{
+    /*background-color: #3A3C43*/
+}
+h1{
+    color:#07aaa4;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 5em;
+    text-shadow: 1px 1px #666666;
+}
+h3{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 3em
+}
+h4{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 3em
+}
+li{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 2.5em;
+    list-style-type: none;
+}
+.code{
+    font-size: 2.5em;
+    font-family: monospace;
+    overflow: hidden;
+}
+.big-text{
+    color:#F8555B;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 7em;
+    text-shadow: 1px 1px #666666;
+}
+.text-gray{
+    color:#666;
+}
+.pink{
+    color:#F8555B;
+}
+.extra-large{
+    font-size: 3em
+}
+.large{
+    font-size: 1.3em
+}
+.emphasis{
+    color: #F8555B;
+    font-weight: bold;
+}
+.left-float{
+    float:left;
+    display: block;
+}
+.four-col{
+    width:24%;
+}
+.three-item{
+    width:33%;
+}
+.one-col{
+    width:100%;
+}
+/*
+CSS for each slide template.
+Put together rather quick, better re-factored & re-orgnized.
+*/
+.half-right{ width:50%; float: right;}
+.half-left{ width:50%; float: left;}
+.forth-item{text-align: center; width:25%; float: left;}
+
+.slide-split-image{text-align: center; width:50%; float: right;}
+.slide-split-text{width:50%; float:left;}
+
+/*.slide-contents h1{margin-bottom: 0px;}
+.slide-person-text h1{margin-bottom: 0px;}
+.slide-person-text h3{margin-top: 0px;}
+.slide-2people h1{font-weight: 300; margin-bottom: 0px;}
+.slide-2people h3{ margin-top: 0px;}
+.slide-paragraph-title{}
+.slide-paragraph-text{}
+.slide-paragraph-title h1{ font-size:100px; margin:0px;}
+.slide-list-title{}
+.slide-list-title h1{font-size:100px; margin:0px;}
+.slide-quote-image{text-align: center; width:50%; float: left;}
+.slide-quote-image img{ width:80%;}
+.slide-quote-text{width:50%; float:right;}
+.slide-quote-text h1{ font-weight: 300;margin-bottom: 0px;}
+.slide-quote-text h3{font-weight: 300;margin-top: 0px;}
+
+*/
+
+
+
+
+
+
+/* D3 Chart settings */
+/* Graph */
+/*.line {
+  fill: #29ABE2;
+}
+.circle{
+  stroke : #ddd;
+}*/
