@@ -17,7 +17,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1":"<h1>Hi I'm Mariko</h1><h3>@kosamari</h3><h3>I like to make things !</h3><h3>Internal Tools Engineer at percolate</h3>",
+    "col1":"<h1>Hi I'm Mariko</h1><h3>@kosamari</h3><h3>Engineer at Percolate</h3><h3>I like to make things !</h3>",
     "col2":""
   },
   "layout" :{
@@ -126,7 +126,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<h3><strike>Needle in a TechStack</strike></h3><h1>How a crafter accidentally stumbled upon Math and Hardware</h1>"
+    "custom" : "<h3><strike>Needle in a TechStack</strike></h3><h1>How a crafter accidentally stumbled upon Math</h1>"
   },
   "layout" :{
     "center":true,
@@ -138,7 +138,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<h3><strike>Needle in a TechStack<br>How a crafter accidentally stumbled upon Math and Hardware</strike><br></h3><h1>Sotry of 'This shouln’t be hard' failing massibly</h1>"
+    "custom" : "<h3><strike>Needle in a TechStack<br>How a crafter accidentally stumbled upon Math</strike><br></h3><h1>\"This shouldn't be THAT hard\"<br>is always hard</h1>"
   },
   "layout" :{
     "center":true,
@@ -257,18 +257,6 @@
   }
 },
 {
-  "template" : "title",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "title" : "I's all about <br> <span class='large'>Knit</span> & <span class='large'>Purl</span>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "twocolmuns",
   "size": 1,
   "type":"slide",
@@ -295,48 +283,11 @@
   }
 },
 {
-  "template" : "title",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "title" : "let's knit something!",
-    "subtitle":"knitter's code is called pattern"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "custom",
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
-{
-  "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "col1" : "<img src='./img/amizu.png' width=80%>"
-  },
-  "layout" :{
-    "center": true,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : <span class='emphasis'>k5</span><br>R1-3 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
   },
   "layout" :{
     "center":false,
@@ -348,7 +299,19 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<h1>Knit Patterns</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br><span class='emphasis'>Repeat R1-4 for 10 times</span></div>"
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : <span class='emphasis'>k5</span><br>R1-3 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br><span class='emphasis'>Repeat R1-4 for 10 times</span></div>"
   },
   "layout" :{
     "center":false,
@@ -452,35 +415,11 @@
   }
 },
 {
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<h1 class='text-gray'>(ﾟ⊿ﾟ)...</h1>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<h1 class='text-gray'>...(ﾟ-ﾟ)</h1>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "onecolmun",
   "size": 1,
   "type":"gif",
   "content" : {
-    "col1" : "<h3>I want to do more of this !</h3><img src='http://i.giphy.com/GwGXoeb0gm7sc.gif' width='60%'>"
+    "col1" : "<img src='http://i.giphy.com/GwGXoeb0gm7sc.gif' width='60%'>"
     },
   "layout" :{
     "center":true,
@@ -492,7 +431,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "title" : "Knitting machine"
+    "title" : "Knitting Machine"
   },
   "layout" :{
     "center":true,
@@ -516,7 +455,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1" : "<h3>Regular Knit Stiches</h3><h3>Jacquard(pattern) Knit</h3>"
+    "col1" : "<h3>Jacquard (pattern) Knit</h3>"
   },
   "layout" :{
     "center":true,
@@ -528,7 +467,19 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1" : "<h3>Jacquard loom use punch cards</h3><img src='./img/jq1.jpg' width='50%'>"
+    "col1" : "<h3>Jacquard Loom</h3><img src='./img/jq1.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Dot matrix printing</h3><img src='./img/dotmatrix.png' width='50%'>"
   },
   "layout" :{
     "center":true,
@@ -541,18 +492,6 @@
   "type":"slide",
   "content" : {
     "col1" : "<h3>1 pixel = one stitch</h3><img src='./img/MachineKnittingPattern41.gif' width='50%'>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
-  "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "col1" : "<h3>like a dot matix printer</h3><img src='./img/dotmatrix.png' width='50%'>"
   },
   "layout" :{
     "center":true,
@@ -901,19 +840,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<div class='code'>0,0: (153,169,194) #99A9C2<br>1,0: (155,171,196) #9BABC4<br>2,0: (158,174,200) #9EAEC8<br>3,0: (160,176,202) #A0B0CA</div><br><div class='code javascript'>'each line'.match(/\\((...),(...),(...)\\)/)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.slice(1,4).map(Number)</div><br>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[160,172,184],[159,170,176],[155,164,163]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[155,157,144],[154,155,137],[154,153,132]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[151,156,134],[153,157,140],[158,161,150]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[164,170,168],[167,173,173],[168,174,174]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[163,171,160],[159,166,150],[153,161,140]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,154,136],[154,155,141],[156,154,142]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[157,162,165],[157,162,166],[158,163,167]]<br>]</div>"
+    "custom" : "<div class='code'>0,0: (153,169,194) #99A9C2<br>1,0: (155,171,196) #9BABC4<br>2,0: (158,174,200) #9EAEC8<br>3,0: (160,176,202) #A0B0CA<br>4,0: (153,169,194) #99A9C2<br>5,0: (155,171,196) #9BABC4<br>6,0: (158,174,200) #9EAEC8<br>7,0: (160,176,202) #A0B0CA</div><br><br>"
   },
   "layout" :{
     "center":false,
@@ -980,38 +907,12 @@
     "middle": true
   }
 },
-
-
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],...<br>]</div><br><div class='code'>Math.max.apply(null, [153,169,194]) // 194</div><br><div class='code'><br><br><br><br><br></div>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[[153,169,194],[155,171,196],[158,174,200]],<br>&nbsp;&nbsp;&nbsp;&nbsp;[[161,177,202],[160,176,201],[160,175,196]],...<br>]</div><br><div class='code'>Math.max.apply(null, [153,169,194]) // 194</div><br><div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
 {
   "template" : "onecolmun",
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1" : "<img src='./img/catgray.jpg' width='40%'>"
+    "col1" : "<img src='./img/catgray.jpg' width='50%'>"
   },
   "layout" :{
     "center":true,
@@ -1060,7 +961,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1" : "<h3>How does Cosmic Osmo do that ?</h3><img src='./img/Osmo.png' width='50%'>"
+    "col1" : "<h3>How did Cosmic Osmo do that ?</h3><img src='./img/Osmo.png' width='50%'>"
   },
   "layout" :{
     "center":true,
@@ -1180,30 +1081,6 @@
   }
 },
 {
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[194,196,200],<br>&nbsp;&nbsp;&nbsp;&nbsp;[202,201,196],<br>&nbsp;&nbsp;&nbsp;&nbsp;[184,176,164]...<br>]<br></div><br><br><div class='code'>[<br>&nbsp;&nbsp;&nbsp;&nbsp;[1,1,1],<br>&nbsp;&nbsp;&nbsp;&nbsp;[0,1,0],<br>&nbsp;&nbsp;&nbsp;&nbsp;[1,0,1]...<br>]<br></div>"
-  },
-  "layout" :{
-    "center":false,
-    "middle": true
-  }
-},
-{
   "template" : "onecolmun",
   "size": 1,
   "type":"slide",
@@ -1228,23 +1105,11 @@
   }
 },
 {
-  "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "col1" : "<img src='./img/bitmdn.gif' width='80%'>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "custom",
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<iframe src='http://www.rapidtables.com/math/number/Numeral_system.htm' frameborder='0' width='95%' height='95%'></iframe>"
+    "custom" : "<iframe src='http://en.wikipedia.org/wiki/Bitwise_operation' frameborder='0' width='95%' height='95%'></iframe>"
   },
   "layout" :{
     "center":true,
@@ -1257,18 +1122,6 @@
   "type":"slide",
   "content" : {
     "custom" : "<iframe src='http://www.aqua-calc.com/convert/number/octal-to-binary' frameborder='0' width='95%' height='95%'></iframe>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom" : "<iframe src='http://ascii-table.com/conversions.php' frameborder='0' width='95%' height='95%'></iframe>"
   },
   "layout" :{
     "center":true,
