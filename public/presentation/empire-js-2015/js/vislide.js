@@ -64,7 +64,7 @@ var vislide =  (function(){
                .append("circle")
                .attr("cx", function(d) {return xScale(d.id);})
                .attr("cy", function(d) {return h/2;})
-               .attr("r", function(d) {if(d.type=='math'){return rScale(d.size);}else{return 2}})
+               .attr("r", function(d) {if(d.type=='math'){return rScale(d.size);}else if(d.type=='gif'){return 5}else{return 2}})
                .style("stroke-width", function(d){return rScale(d.size/5)})
                .style("stroke-opacity", function(d){if(d.type!=='slide'){return 0.5}else{return 0}}) // set the fill opacity
                .style("stroke", function(d){return chartColor[d.type]})
