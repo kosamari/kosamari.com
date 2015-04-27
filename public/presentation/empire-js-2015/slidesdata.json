@@ -467,7 +467,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1" : "<h3>Jacquard Loom</h3><img src='./img/jq1.jpg' width='50%'>"
+    "col1" : "<h3>Jacquard Loom</h3><img src='./img/jq1-1.jpg' width='50%'>"
   },
   "layout" :{
     "center":true,
@@ -1785,8 +1785,8 @@
   "type":"slide",
   "content" : {
     "title":"<h1>You folks are awesome</h1>",
-    "col1":"<ul><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li><li>Todd Kennedy</li></ul>",
-    "col2":"<ul><li>Tracy Hinds</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li></ul>",
+    "col1":"<ul><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li></ul>",
+    "col2":"<ul><li>Tracy Hinds</li><li>Todd Kennedy</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li></ul>",
     "col3":"<ul><li>...many more!</li></ul>"
   },
   "layout" :{
@@ -1799,7 +1799,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "col1":"<h1>Thank you</h1>"
+    "col1":"<h1>Thank you</h1><h3>@kosamari</h3>"
   },
   "layout" :{
     "center":false,
