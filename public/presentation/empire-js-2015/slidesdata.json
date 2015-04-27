@@ -1081,18 +1081,6 @@
   }
 },
 {
-  "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "col1" : "<img src='./img/binery_out.png' width='90%'>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "title",
   "size": 1,
   "type":"slide",
@@ -1105,11 +1093,11 @@
   }
 },
 {
-  "template" : "custom",
+  "template" : "onecolmun",
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<iframe src='http://en.wikipedia.org/wiki/Bitwise_operation' frameborder='0' width='95%' height='95%'></iframe>"
+    "col1" : "<img src='./img/binery_out.png' width='90%'>"
   },
   "layout" :{
     "center":true,
@@ -1117,11 +1105,35 @@
   }
 },
 {
-  "template" : "custom",
+  "template" : "onecolmun",
   "size": 1,
-  "type":"slide",
+  "type":"math",
   "content" : {
-    "custom" : "<iframe src='http://www.aqua-calc.com/convert/number/octal-to-binary' frameborder='0' width='95%' height='95%'></iframe>"
+    "col1" : "<img src='./img/bit1.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bit2.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/bit3.png' width='80%'>"
   },
   "layout" :{
     "center":true,
@@ -1774,7 +1786,7 @@
   "content" : {
     "title":"<h1>You folks are awesome</h1>",
     "col1":"<ul><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li><li>Todd Kennedy</li></ul>",
-    "col2":"<ul><li>Tracy Hinds</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li><li>Steve Conklin</ul>",
+    "col2":"<ul><li>Tracy Hinds</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li></ul>",
     "col3":"<ul><li>...many more!</li></ul>"
   },
   "layout" :{
