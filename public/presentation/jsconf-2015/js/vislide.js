@@ -26,7 +26,7 @@ var vislide =  (function(){
         var margin = {top:10,bottom:10,left:10,rifht:10};
         var chartColor = {
             'slide':'#999999',
-            'gif':'#F8555B',
+            'gif':'#F0DB4F',
             'math':'#07aaa4'
         };
 
@@ -55,7 +55,7 @@ var vislide =  (function(){
                        .attr("y1", 5)
                        .attr("y2", h)
                        .style("stroke-width", 5)
-                       .style("stroke", "#F8555B")
+                       .style("stroke", "#F0DB4F")
                        .attr("opacity", 1);
 
             svg.selectAll("circle")
