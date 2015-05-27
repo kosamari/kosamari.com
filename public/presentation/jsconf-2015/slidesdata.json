@@ -1219,7 +1219,7 @@
 },
 {
   "template" : "onecolmun",
-  "size": 4,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'>&nbsp;</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp; <h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
@@ -1232,7 +1232,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 4,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp; <h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
@@ -1245,7 +1245,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 4,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 1</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>b = 5</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
@@ -1259,7 +1259,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 5,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
@@ -1274,7 +1274,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 5,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 <span class='emphasis'>1</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 <span class='emphasis'>1</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1286,7 +1286,7 @@
 },
 {
   "template" : "onecolmun",
-  "size": 5,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1299,7 +1299,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 6,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 <span class='emphasis'>0</span> 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 <span class='emphasis'>0</span> 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1312,7 +1312,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 6,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1327,7 +1327,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 6,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 <span class='emphasis'>0</span> 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 <span class='emphasis'>1</span> 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1339,7 +1339,7 @@
 },
 {
   "template" : "onecolmun",
-  "size": 7,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
@@ -1351,7 +1351,7 @@
 },
 {
   "template" : "onecolmun",
-  "size": 7,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5><img src='./img/bitorhat.png' height='80px'></h5></td></tr></table></div>"
@@ -1363,7 +1363,7 @@
 },
 {
   "template" : "onecolmun",
-  "size": 7,
+  "size": 3,
   "type":"math",
   "content" : {
     "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5>5</h5></td></tr></table></div>"
@@ -1383,7 +1383,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 8,
+  "size": 5,
   "type":"math",
   "content" : {
     "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br><br><br><br><br><br></div>"
@@ -1396,7 +1396,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 9,
+  "size": 5,
   "type":"math",
   "content" : {
     "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br><br><br><br></div>"
@@ -1409,7 +1409,7 @@
 
 {
   "template" : "onecolmun",
-  "size": 10,
+  "size": 5,
   "type":"math",
   "content" : {
     "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br>220<br><br><br></div>"
@@ -1422,8 +1422,8 @@
 
 {
   "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
+  "size": 10,
+  "type":"math",
   "content" : {
     "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br>220<br><br>HEX: dc</div>"
   },
@@ -1451,18 +1451,6 @@
   }
 },
 
-{
-  "template" : "onecolmun",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "col1" : "<h1>lessons learned</h1>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
 
 
 
@@ -1475,6 +1463,19 @@
     "col1":"<ul class='credit'><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li><li>Todd Kennedy</li><li>Tracy Hinds</li></ul>",
     "col2":"<ul class='credit'><li>Nick Hehr</li><li>Suz Hinton</li><li>Rick Waldron</li><li>    </li><li>    </li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li><li>...many more!</li></ul>",
     "col3":"<ul class='credit'><img src='http://i.giphy.com/PjRo6vL5m9212.gif' width='80%''></ul>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>&nbsp;</h1><h3>@kosamari</h3><h5>github.com/kosamari/electroknit</h5><h5>github.com/kosamari/color-mixer</h5>"
   },
   "layout" :{
     "center":false,
