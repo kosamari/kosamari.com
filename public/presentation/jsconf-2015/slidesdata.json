@@ -1,0 +1,1496 @@
+[
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Hi !</h1><h3>&nbsp;</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>&nbsp;</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>@kosamari</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>@kosamari</h3><h4><code><b><span class='pink'>new</span> Scripto({role:'Javascript Engineer'})</b></code></h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting for <br>Javascripters",
+    "subtitle" : "&nbsp;"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting for <br>Javascripters",
+    "subtitle" : "rise of the math"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "I ❤ knitting"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/knitwork.jpg' width='60%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "fourcolmuns",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" :"<img src='./img/CaryGrant1.gif' width='95%'>",
+    "col2" :"<img src='./img/CaryGrant2.gif' width='95%'>",
+    "col3" :"<img src='./img/CaryGrant3.gif' width='95%'>",
+    "col4" :"<img src='./img/CaryGrant4.gif' width='95%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twoimages",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "media" : ["./img/npm.gif","http://i.giphy.com/zjQrmdlR9ZCM.gif"]
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h3>knit stitch</h3><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h3>purl stitch</h3><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<img src='./img/rib.gif' width=80%>",
+    "col2":"<img src='./img/angle.gif' width=80%>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>Github for knitters</h3><iframe src='http://www.ravelry.com/patterns' frameborder='0' width='95%' height='80%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : <span class='emphasis'>k5</span><br>R1-3 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br><span class='emphasis'>Repeat R1-4 for 10 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Pseudo Knit",
+    "subtitle":"in Javascript"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/knit_js.png' width='80%''>"  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/render_pattern_black.png' width='98%''>"  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/hyperscarf.jpg' width='60%''>"  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>Hyperbolic Geometry</h3><img src='http://upload.wikimedia.org/wikipedia/commons/7/73/Relation5models.png' width='30%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Ruffle</h3><img src='http://www.math.cornell.edu/~dtaimina/ZJ7.jpg' width='50%'><p><a href='http://www.math.cornell.edu/~dtaimina/Artexhibits.htm'>The Land and The Sea by Daina Taimina</a></p>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "threecolmuns",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geo1.png'><h3 class='green'>Euclidean</h3>",
+    "col2" : "",
+    "col3" : ""
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "threecolmuns",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geo1.png'><h3 class='green'>Euclidean</h3>",
+    "col2" : "<img src='./img/geo2.png'><h3 class='green'>Spherical</h3>",
+    "col3" : ""
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "threecolmuns",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/geo1.png'><h3 class='green'>Euclidean</h3>",
+    "col2" : "<img src='./img/geo2.png'><h3 class='green'>Spherical</h3>",
+    "col3" : "<img src='./img/geo3.png'><h3>Hyperbolic</h3>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 10,
+  "type":"math",
+  "content" : {
+    "custom" : "<iframe src='http://www.math.cornell.edu/~dwh/papers/crochet/crochet.html' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='./img/tron.gif' width='60%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Knitting Machine"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='http://www.german-hosiery-museum.de/technik/06flachstrickmaschinen/images/06a_LambHeimarbeit.jpg' width='30%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe width=900' height='500' src='https://www.youtube.com/embed/ngnogsMbEcY' frameborder='0' allowfullscreen></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/machine1.jpg' width='50%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='./img/delset.gif' width='70%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='./img/de.gif' width='70%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://knitlabo.cute.bz/?page_id=5660' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/youtube.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/googlebook.png' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/carrige.jpg' width='50%'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/needleselect.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>Jacquard Knit</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Jacquard Loom</h3><img src='./img/jq1-1.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>\"Electro Knit\"</h3><img src='./img/machine2.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Dot matrix printing</h3><img src='./img/dotmatrix.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1 pixel = one stitch</h3><img src='./img/MachineKnittingPattern41.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/jsconfbefore.jpg' >",
+    "col2" : ""
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/jsconfbefore.jpg'>",
+    "col2" : "<img src='./img/jsconfafter.jpg'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1 class='pink'>! not so easy !</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>How do I even<br>bit map ?</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catphotoshop.gif' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "load an image"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://aheckmann.github.io/gm/' frameborder='0' width='95%' height='90%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<div class='code'>0,0: (153,169,194) #99A9C2<br>1,0: (155,171,196) #9BABC4<br>2,0: (158,174,200) #9EAEC8<br>3,0: (160,176,202) #A0B0CA<br>4,0: (153,169,194) #99A9C2<br>5,0: (155,171,196) #9BABC4<br>6,0: (158,174,200) #9EAEC8<br>7,0: (160,176,202) #A0B0CA</div><br><br><div class='code javascript'>line.match(/\\((...),(...),(...)\\)/).slice(1,4).map(Number);</div><br>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "title" : "Grayscale"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><table width='100%'><tr><td align='right'><div class='box-pink'></div></td><td  align='left'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><table width='100%'><tr><td align='right'><div class='box-pink'></div></td><td  align='left'><ul><li class='emphasis'>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:7</li><li class='emphasis'>G:170</li><li>B:164</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-pink'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:170</li><li>G:170</li><li>B:170</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "col1" : "<h3>How to gray scale an image<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-pink'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right' width='25%'><div class='box-pink-gray'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right' width='25%'><div class='box-blue-gray'></div></td><td  align='left' width='25%'><ul><li>R:170</li><li>G:170</li><li>B:170</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/cat.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<div class='code'>var colorImage = [[240, 219, 79],[0, 157, 220],[28, 29, 57]];<br><br>colorImage.map(function(rgb){<br>&nbsp;&nbsp;return Math.max.apply(null, rgb);<br>});<br><br>//[ 240, 220, 57 ]</div>"
+  },
+  "layout" :{
+    "center":false  ,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'><br><br><img src='./img/bandw.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/cat50.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>How did Cosmic Osmo do that ?</h3><img src='./img/Osmo.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Dithering",
+    "subtitle":"intentionally applied form of noise"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/ditheredcat.png' height='50%'><br><br><div class='code'>gm('cat.jpg').colors(2).dither()</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "title",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "title" : "Ordered dithering",
+    "subtitle" : "Halftone Screen"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/diz1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/diz2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/diz3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/diz4.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/diz5.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "threecolmuns",
+  "size": 10,
+  "type":"math",
+  "content" : {
+    "col1" : "<img src='./img/halftonecat.png'width='80%'><br><br><table width='80%' align='center' class='matrix' border='1' bordercolor='#F0DB4F'><tr><td width='25%'>10</td><td width='25%'>4</td><td width='25%'>6</td><td width='25%'>9</td></tr><tr><td width='25%'>12</td><td width='25%'>0</td><td width='25%'>2</td><td width='25%'>14</td></tr><tr><td width='25%'>7</td><td width='25%'>9</td><td width='25%'>11</td><td width='25%'>5</td></tr><tr><td width='25%'>3</td><td width='25%'>15</td><td width='25%'>13</td><td width='25%'>1</td></tr></table><h3>Halftone</h3>",
+    "col2" : "<img src='./img/bayercat.png' width='80%'><br><br><table width='80%' align='center' class='matrix' border='1' bordercolor='#F0DB4F'><tr><td width='25%'>0</td><td width='25%'>8</td><td width='25%'>2</td><td width='25%'>10</td></tr><tr><td width='25%'>12</td><td width='25%'>4</td><td width='25%'>14</td><td width='25%'>6</td></tr><tr><td width='25%'>3</td><td width='25%'>11</td><td width='25%'>1</td><td width='25%'>9</td></tr><tr><td width='25%'>15</td><td width='25%'>7</td><td width='25%'>13</td><td width='25%'>5</td></tr></table><h3>Bayer</h3>",
+    "col3" : "<img src='./img/screwcat.png' width='80%'><br><br><table width='80%' align='center' class='matrix' border='1' bordercolor='#F0DB4F'><tr><td width='25%'>13</td><td width='25%'>7</td><td width='25%'>6</td><td width='25%'>12</td></tr><tr><td width='25%'>8</td><td width='25%'>1</td><td width='25%'>0</td><td width='25%'>5</td></tr><tr><td width='25%'>9</td><td width='25%'>2</td><td width='25%'>3</td><td width='25%'>4</td></tr><tr><td width='25%'>14</td><td width='25%'>10</td><td width='25%'>11</td><td width='25%'>15</td></tr></table><h3>Screw</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<div class='code javascript tiny'>100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>100000000000000000000000101010000000000010001000100010001000100010001000000010001000000000000000100000000000000010000000100000000000000000000000000000<br>000000000000000000000000010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>000000000000000000000001011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>100000000000000010000000111010001000100010001000000010001000100010001000100000101000000010001000000010001000100010000000000000001000100010000000000000<br>000000000000000000000001111100000100010001010100000001010100000001000100010000010100000001000000010001000101010000000100000001010100010001000000000000<br>000000000000000000000010111000001111111111111010101111111111101010111111111000111110000011111010111111111111111000111111100011111111111111111010000000<br>000000000000000000000001011100010111011101110100011101111101000001110111110000010111000001110001011101110111010100010111000001110111011101110000000000<br>100000000000000000001000111010101111111111111000111111111110101011111111111010101111100011111010111111111111111010111110101011111111111111111000000000<br>000000000000000000000001110100011111010101010000110101010100000111010101110100000111110001110000110101010101000001111100000111110101010101000000000000<br>000000000000000000000010111000111111101000000011111110100010001111100010111110101011111011111010111110100010000011111010001111100000000000000000000000<br>000000000000000000000001011100010111000000000001111100000000011101000000011101000001010001110001111100000000000101110000011101000000000000000000000000<br>100000001000000000000000111010001111111010001111111000001000111110001000101111101011111111111010111111101000101111111000111111111111111010001000000000<br>000000000000000000000000110100000101110000000111110000000001111100000000000111010001110111010001110111010000010111000001111111111111111100000000000000<br>000000000000000000000010111000000011111000001111101000000011111110000000001111111000111111111010111111100000111111100011111111111111111000000000000000<br>000000000000000000000001011100000001011100010111000000000001011100000000000111110000011101110001110100000000011111000001010101010111010000000000000000<br>100000001000100010001010111010001000111110001111111000001010111110000000101111101000101111111010111010001010111110001000100010101111110010000000000000<br>000000000000010000000001110100000000011111000101110000000000011111000000010111000000000111110000110000000001111100000000000000011111000000000000000000<br>000000000000101000000011111000000000101111100011111010000000101111100000111110100010001011111010111000000011111000000000001000111111100000000000000000<br>000000000001010000000001010100000000010101010001011100000000000101010001011100000100000001110000010000000111010000000000000000010101000000000000000000<br>100000001011111111101111111000111111111111101000111111111110101111111111111110001110100011111000111010001111100000111111111111111110100000000000000000<br>000000000101111111011111110001011101110111000000011111011101000111111101110100011100000001010000110000011111000001011111111111111100000000000000000000<br>000000001011111111111111101010111111111111100000101111111111101011111111111000111010000000111010101000111111100011111111111111111000000000000000000000<br>000000000101010101010101000001010101010101000000000101010101000001010101010000010100000000010001010000010101000001010111010101110000000000000000000000<br>100000001010101010101010100010101010101010001000001010101010100010101010100010101000000000001010100000101010100010101010101010101000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010100000000000000000000000000000000000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000100000000000000000000000000000000000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000<br>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000<br>100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<div class='code javascript tiny'>*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************&nbsp;*&nbsp;*&nbsp;***********&nbsp;*&nbsp;*&nbsp;*********&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;***************&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;*****************&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;***&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;***&nbsp;***&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;***&nbsp;***&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;*&nbsp;*************&nbsp;&nbsp;&nbsp;***********&nbsp;*&nbsp;*&nbsp;***********&nbsp;*&nbsp;*&nbsp;*****&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;***************&nbsp;*&nbsp;*****&nbsp;*&nbsp;*&nbsp;*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;*&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;*******&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;*&nbsp;*&nbsp;*****&nbsp;*****&nbsp;*&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*******&nbsp;*&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;*&nbsp;***********&nbsp;*&nbsp;*******&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*******&nbsp;&nbsp;&nbsp;***************&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;*********&nbsp;*&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;***&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*******&nbsp;*&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*****&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;******&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*****&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*********&nbsp;*******&nbsp;&nbsp;&nbsp;*************&nbsp;*&nbsp;&nbsp;&nbsp;***********&nbsp;*&nbsp;***************&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****************&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*******&nbsp;*******&nbsp;&nbsp;&nbsp;*&nbsp;***&nbsp;***&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;*******&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***************&nbsp;*&nbsp;*&nbsp;*************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;***********&nbsp;*&nbsp;***********&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*******&nbsp;&nbsp;&nbsp;*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;***&nbsp;*&nbsp;*&nbsp;***&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;*&nbsp;<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "Let's make <br>knit pattern files",
+    "subtitle" : ""
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/binery.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/binery_out.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>How do I even...</h1><h3>fit 0 & 1 ???</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>(rows >> 4) * 100<br><br><br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>>><br><br><br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<div class='code python'><br>>><br>bitwise perator<br><br></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "col1" : "<img src='./img/bitwiseshark.gif' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "It's like a magic"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5><h5></td></tr><tr><td align='left'><h5>&nbsp;<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'>&nbsp;</td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5><h5></td></tr><tr><td align='left'><h5>&nbsp;<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'>&nbsp;</td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 1</h5></td><td align='left'><h5><h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'>&nbsp;</td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'>&nbsp;</td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><img src='./img/bitleft.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 1 0</h5></td><td align='left'><img src='./img/bitleft.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 0</h5></td><td align='left'><img src='./img/bitleft.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 1 0 0 0</h5></td><td align='left'><img src='./img/bitleft.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 1 0 0 0 0</h5></td><td align='left'><img src='./img/bitleft.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 1 0 0 0 0</h5></td><td align='left'><img src='./img/bitlefthat.png' height='80px'></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4><< (Left shift)</h4></td><td align='left'><img src='./img/bitlefthat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>a << 4<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 1 0 0 0 0</h5></td><td align='left'><h5>16</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 4,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'>&nbsp;</td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp; <h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 4,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>&nbsp; <h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 4,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 1</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>b = 5</h5></td><td align='left'><h5>&nbsp;<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5>&nbsp;</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 <span class='emphasis'>1</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 <span class='emphasis'>1</span></h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 6,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 <span class='emphasis'>0</span> 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 <span class='emphasis'>0</span> 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 6,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 6,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 <span class='emphasis'>0</span> 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 <span class='emphasis'>1</span> 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 7,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 0 1</h5></td><td align='left'><h5><img src='./img/bitor.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 7,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5><img src='./img/bitorhat.png' height='80px'></h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 7,
+  "type":"math",
+  "content" : {
+    "col1" : "<div><table width='50%' align='center'><tr><td> <h4>| (Bitwise OR)</h4></td><td align='left'><img src='./img/bitorhat.png' height='100px'></td></tr><tr><td>&nbsp;</td><td></td></tr><tr><td align='left'><h5>a = 00000001</h5></td><td align='left'><h5>1<h5></td></tr><tr><td align='left'><h5>b = 00000101</h5></td><td align='left'><h5>5<h5></td></tr><tr><td align='left'><h5>a | b<h5></td><td></td></tr><tr><td align='left'><h5>&nbsp;</h5></td><td></td></tr><tr><td align='left'><h5>0 0 0 0 0 0 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5></h5></td></tr><tr><td align='left'><h5>0 0 0 0 0 1 0 1</h5></td><td align='left'><h5>5</h5></td></tr></table></div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 8,
+  "type":"math",
+  "content" : {
+    "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br><br><br><br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 9,
+  "type":"math",
+  "content" : {
+    "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br><br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 10,
+  "type":"math",
+  "content" : {
+    "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br>220<br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<div class='code javascript'>[1, 0, 1, 1], [1, 1, 1, 1], [1, 1]<br><br>[13, 13, 3, 0]<br><br>220<br><br>HEX: dc</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>DEMO</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>lessons learned</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "thankyou",
+  "size": 1,
+  "type":"gif",
+  "content" : {
+    "title":"<h1>You folks are awesome</h1>",
+    "col1":"<ul class='credit'><li>Aria Stewart</li><li>Jeremiah Senkpiel</li><li>Jed Schmidt</li><li>Brian J Brennan</li><li>Jenn Shiffer</li><li>Willman Duffy</li><li>Todd Kennedy</li></ul>",
+    "col2":"<ul class='credit'><li>Tracy Hinds</li><li>Nick Hehr</li><li>Garland Davis</li><li>Behcet Uyar</li><li>Jake McCloskey</li><li>Luke Schantz</li><li>...many more!</li></ul>",
+    "col3":"<ul class='credit'><img src='http://i.giphy.com/PjRo6vL5m9212.gif' width='80%''></ul>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Thank you</h1><h3>@kosamari</h3><h5>github.com/kosamari/electroknit</h5><h5>github.com/kosamari/color-mixer</h5>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+}
+]

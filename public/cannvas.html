@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D</title>
+</head>
+<body>
+<input type="file" id="input" onchange="handleFiles(this.files)">
+<div id="drop-target">drop meheeeeeeer</div>
+<canvas id="myCanvas"></canvas>
+<canvas id="myCanvas2"></canvas>
+<script >
+function handleFiles(tt){
+    loadImage(tt[0]);
+}
+var target = document.getElementById("drop-target");
+    target.addEventListener("dragover", function(e){e.preventDefault();}, true);
+    target.addEventListener("drop", function(e){
+        e.preventDefault();
+        console.log(e.dataTransfer.files[0])
+        loadImage(e.dataTransfer.files[0]);
+    }, true);
+
+function loadImage(src){
+    console.log(src)
+    if(!src.type.match(/image.*/)){
+        alert("The dropped file is not an image: ", src.type);
+        return;
+    }
+
+    var reader = new FileReader();
+    reader.onload = function(e){
+        render(e.target.result);
+    };
+    reader.readAsDataURL(src);
+}
+
+
+    var MAX_HEIGHT = 300;
+
+function render(src){
+    var image = new Image();
+    image.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        if(image.height > MAX_HEIGHT) {
+            image.width *= MAX_HEIGHT / image.height;
+            image.height = MAX_HEIGHT;
+        }
+
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        canvas.width = image.width;
+        canvas.height = image.height;
+        ctx.drawImage(image, 0, 0, image.width, image.height);
+        console.log(image.width)
+        console.log(image.height)
+        var rgb = ctx.getImageData( 0, 0, image.width, image.height );
+        var base64_resized = canvas.toDataURL( "image/png" );
+        var matrix = []
+        console.log(rgb)
+        // rgb.length/4
+    };
+    image.src = src;
+}
+</script>
+
+</body>
+</html>
