@@ -155,7 +155,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom" : "<h3>Github for knitters</h3><iframe src='http://www.ravelry.com/patterns' frameborder='0' width='95%' height='80%'></iframe>"
+    "custom" : "<h3>Github for knitters</h3><a href='http://www.ravelry.com/patterns'><img src='./img/rav.png' width='60%'/></a>"
   },
   "layout" :{
     "center":true,
