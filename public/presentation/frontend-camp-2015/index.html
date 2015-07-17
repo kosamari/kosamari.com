@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Desktopify Your Web Chops with Node Webkit</title>
+    <meta name="description" content="Presentation for EmpireNode">
+    <meta name="author" content="Mariko Kosaka">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/custom.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="css/monokai_sublime.css">
+    <style type="text/css">
+    .left{
+      text-align: left;
+    }
+    .right{
+      text-align: right;
+    }
+    ul.list{
+      margin-left: 0;
+    }
+    .list li{
+      /*list-style: none;*/
+      font-size: 1.4em;
+      line-height: 1.5em;
+    }
+
+    .reveal pre code.expand {
+      max-height: 600px;
+    }
+    .pointer{
+      cursor: pointer;
+    }
+    .textfocus{
+      color:#FFA500
+    }
+
+    </style>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body style="-webkit-app-region: drag">
+   <div class="reveal">
+      <div class="slides">
+
+<!-- Introduction -->
+        <!-- Page2 -->
+        <section>
+          <h1>
+            DESKTOPIFY 
+            <br>YOUR
+            <br>WEB CHOPS</h1>
+          <h2>with nw.js</h2>
+        </section>
+
+        <!-- Page3 -->
+        <section class="left">
+          <h2>@kosamari</h2>
+          <br>
+          <h2 class="fragment">Javascript Engineer at Scripto</h2>
+          <br>
+          <h2 class="fragment">Co-orgnizer of BrooklynJS</h2>
+        </section>
+
+<!-- Segment 1, why tools, big screens, how I found node-webkit -->
+        <section>
+          <h2>Past Life...</h2>
+          <img src="img/spreadsheet.png" class="fragment">
+        </section>
+        <section>
+          <h2>Current Obsession...</h2>
+          <video width='800' height='400' controls><source src='img/video.mp4' type='video/mp4'></video>
+        </section>
+        <section>
+          <img src="img/scarf.png">
+        </section>
+
+        <section>
+          <section>
+            <h1>Why Desktop Application?</h1>
+          </section>
+
+          <section data-background="img/li.jpg">
+          </section>
+
+          <section data-background="img/fb.png">
+          </section>
+
+          <section>
+            <h2>But how ?</h2>
+          </section>
+
+          <section>
+            <h2>Darkside...</h2>
+            <img src="img/air.png">
+          </section>
+
+          <section>
+            <h2>I know...</h2>
+            <ul class="list">
+              <li class="fragment">HTML</li>
+              <li class="fragment">CSS</li>
+              <li class="fragment">Javascript</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>OK google?</h2>
+            <a href="https://www.youtube.com/watch?v=d2tYH7vXMUM"><img src="img/devconf.png" class="fragment"></a>
+          </section>
+        </section>
+<!-- Segment 2, what is node-webkit -->
+        <section>
+          <section>
+            <h1>WHAT IS NW.JS<br>(NODE-WEBKIT) ?</h1>
+          </section>
+          <section>
+            <h2>nw.js (node-webkit)</h2>
+            <ul class="list">
+              <li class="fragment">Web application runtime</li>
+               <ul>
+                  <li class="fragment">Node.js (system API)</li>
+                  <li class="fragment">chromium browser (rendering)</li>
+                </ul>
+              <li class="fragment">Runs on OS X, Windows and Linux</li>
+            </ul>
+          </section>
+          <section>
+            <img src="img/node-webkit-graph.png" height="314" width="444">
+
+            <ul class="list">
+              <li class="fragment">Shared event loop</li>
+              <li class="fragment">Roger Wang @wwr</li>
+              <li class="fragment"><a href="https://github.com/nwjs/nw.js">https://github.com/nwjs/nw.js</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+        <section data-transition="none">
+          <h2>Quick Start</h2>
+          <table width="100%">
+            <tr>
+              <td width="50%"></td>
+              <td width="50%">
+<code>
+slideshow/<br>
+├── index.html<br>
+│<br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+&nbsp;<br>
+</code>
+
+              </td>
+            </tr>
+          </table>
+          
+        </section>
+        <section data-transition="none">
+          <h2>Quick Start</h2>
+          <table width="100%">
+            <tr>
+              <td width="50%">
+
+          <pre><code data-trim class="nohighlight">
+$ npm install nw
+          </code></pre>
+              </td>
+              <td width="50%">
+<code>
+slideshow/<br>
+├── index.html<br>
+│<br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+<b class="textfocus">node_modules/nw/</b><br>
+</code>
+
+              </td>
+            </tr>
+          </table>
+          
+        </section>
+<section data-transition="none">
+          <h2>Quick Start</h2>
+          <table width="100%">
+            <tr>
+              <td width="50%">
+          <pre><code data-trim class="nohighlight">
+{
+  "name": "MyApp",
+  "version": "0.0.1",
+  "main": "index.html",
+  "scripts": {
+    "start": "nw"
+  }
+}
+          </code></pre>
+          <pre class="fragment"><code data-trim >
+$ npm start
+          </code></pre>
+              </td>
+              <td width="50%">
+<code>
+slideshow/<br>
+├── index.html<br>
+├── <b class="textfocus">package.json</b><br>
+├── javascript/<br>
+│ &nbsp;&nbsp;└── reveal.js<br>
+└── css/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── reveal.css<br>
+node_modules/nw/<br>
+</code>
+
+              </td>
+            </tr>
+          </table>
+          
+        </section>
+        <section>
+            <h2>PACKAGE</h2>
+            <img src="img/webkit-package.png" height="413" width="753">
+            <p><a href="https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps" target="blank">https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps</a></p>
+          </section>
+
+          <section>
+            <h1>Recap</h1>
+            <ul class="list">
+              <li class="fragment">You only need HTML/CSS/Javascript</li>
+              <li class="fragment">VERY easy to start</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Let's make more app</h1>
+          </section>
+          <section>
+            <h2>Customize appearance in package.json</h2>
+            <pre><code data-trim class="nohighlight">
+{
+  "name": "MyApp",
+  "main": "app.html",
+
+  "window": {
+      "frame": false,
+      "width": 600,
+      "height": 400
+    },
+
+  "scripts": {
+    "start": "nw"
+  }
+}
+            </code></pre>
+            <a href="https://github.com/nwjs/nw.js/wiki/Manifest-format">https://github.com/nwjs/nw.js/wiki/Manifest-format</a>
+          </section>
+          <section>
+          <h2>ATTN : Node frames</h2>
+          <pre><code data-trim class="javascript">
+//app.html
+&lt;script src="./js/client.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var app = require('./js/nodeapp.js');
+  app.run();
+...
+          </code></pre>
+          <pre><code data-trim>
+//nodeapp.js
+exports.run = function(arg){…}
+
+window.document.getElementById('id') 
+//err  document.getElementById('id')
+
+
+          </code></pre>
+          <p>Access to require, global, process, Buffer and root from Node</p>
+          
+          </section>
+          <section>
+          <h2>More : GUI</h2>
+          <pre><code data-trim class="expand">
+var gui = require('nw.gui');
+var menubar = new gui.Menu({ type: 'menubar' });
+var mainMenu = new gui.Menu();
+
+
+mainMenu.append(new gui.MenuItem({
+  label: 'version',
+  click: function(){ alert('Version : 0.0.1');}
+}));
+
+
+menubar.append(new gui.MenuItem({
+  label: 'MainMenu',
+  submenu: mainMenu
+}));
+
+
+gui.Window.get().menu = menubar;
+          </code></pre>
+          </section>
+          <section>
+          <h2>More : Transparency</h2>
+          <pre><code data-trim class="expand">
+ &lt;body style="background-color:rgba(0,0,0,0.5);"&gt;
+          </code></pre>
+          <pre><code data-trim class="nohighlight">
+{
+  ...
+  "window": {
+    "transparent": true,
+    "frame": false,
+    "always-on-top": true
+  }
+}
+          </code></pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Execute command with child process!</h2>
+            <pre><code data-trim class="expand javascript">
+  var exec = require('child_process').exec;
+    exec('npm start', {cwd:'/path/to/'});
+  }
+            </code></pre>
+            <!-- <h4 onclick="runSlide()" class="pointer">Run</h4> -->
+          </section>
+        </section>
+
+        <section>
+          <section data-background="img/li-low.jpg">
+            <h1>BACK TO THE SCREEN</h1>
+          </section>
+          <section data-transition="none">
+            <img src="img/plan1.png" >
+          </section>
+          <section data-transition="none">
+            <img src="img/plan2.png">
+          </section>
+          <section data-transition="none">
+            <img src="img/plan3.png">
+          </section>
+        </section>
+
+        <section>
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>nw.js app</h2>
+                  <img src="img/desktopapp.png" height="85%">
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── <b class="textfocus">app.html</b><br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── admin.html<br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── <b class="textfocus">server.js</b><br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.js</b><br>
+├──css/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.css</b><br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── admin.js<br>
+&nbsp;&nbsp;&nbsp;└── admin.css<br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>nw.js app</h2>
+                  <br>
+                  <ul class="list">
+                    <li class="fragment">start local server</li>
+                    <li class="fragment">scoket.io</li>
+                      <ul>
+                        <li class="fragment">receive message</li>
+                        <li class="fragment">WebRTC handshake</li>
+                      </ul>
+                    <li class="fragment">edit DOM from server.js</li>
+                  </ul>
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── <b class="textfocus">app.html</b><br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── admin.html<br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── <b class="textfocus">server.js</b><br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.js</b><br>
+├──css/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">app.css</b><br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── admin.js<br>
+&nbsp;&nbsp;&nbsp;└── admin.css<br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+           <section>
+          <h2>server.js</h2>
+            <pre><code data-trim class="expand">
+var express = require('express');
+
+exports.run = function(callback){
+  var app = express();
+  var ip;
+
+  /* look up ip address*/
+  require('dns').lookup(require('os').hostname(), 
+    function (err, add, fam) {
+      ip = add;
+  });
+
+
+  /*
+  express server
+  */
+  app.set('view engine', 'html');
+  app.engine('html', require('hbs').__express);
+
+  app.get('/', function (req, res) {
+    res.render('admin',{ ip:ip , port:9001 });
+  });
+
+  app.use(express.static(__dirname + '/../public'));
+
+  app.listen(5000);
+
+
+
+  /*
+  socket.io
+  */
+  var io = require('socket.io').listen(9001);
+
+  io.on('connection', function (socket) {
+
+    socket.on('message', function(message) {
+      socket.broadcast.emit('message', message);
+    });
+
+    socket.on('msg', function (data) {
+      $('#message-data').text(data.message);
+    });
+    
+    ...
+
+  });
+
+  callback();
+};
+            </code></pre>
+          </section>
+
+          <section>
+          <h2>app.html</h2>
+            <pre><code data-trim class="expand">
+&lt;body&gt;
+  &lt;div id=&quot;graph&quot;&gt;graph(map)&lt;/div&gt;
+  &lt;div id=&quot;video&quot; hidden&gt;video stream&lt;/div&gt;
+  &lt;div id=&quot;message-data&quot;&gt;message&lt;/div&gt;
+
+  &lt;script src="jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+  &lt;script src="js/map.js"&gt;&lt;/script&gt;
+
+  &lt;script&gt;
+//require('./js/server.js')
+var server = require('./js/server.js');
+
+server.run(function(){
+
+  $.getScript('http://ip:port/socket.io/socket.io.js',
+
+    function(){
+      socket = io.connect('http://ip:port');
+      $.getScript('./js/webrtc.js');
+    })
+
+});
+...
+  &lt;/script&gt;
+&lt;/body&gt;
+            </code></pre>
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>Admin page</h2>
+                  <img src="img/clientapp.png">
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
+&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section data-transition="none">
+            <table width="100%">
+              <tr>
+                <td width="60%">
+                  <h2>Admin page</h2>
+                  <br>
+                  <ul class="list">
+                    <li class="fragment">access from local network</li>
+                    <li class="fragment">socket.io to send message</li>
+                    <li class="fragment">connect to web-cam for video stream</li>
+                  </ul>
+                </td>
+                <td width="40%">
+<code>
+app/<br>
+├── node_modules/<br>
+├── app.html<br>
+├── package.json<br>
+├── views/<br>
+│&nbsp;&nbsp;└── <b class="textfocus">admin.html</b><br>
+├── javascript/<br>
+│&nbsp;&nbsp;├── server.js<br>
+│&nbsp;&nbsp;└── app.js<br>
+├──css/<br>
+│&nbsp;&nbsp;└── app.css<br>
+└── public/<br>
+&nbsp;&nbsp;&nbsp;├── <b class="textfocus">admin.js</b><br>
+&nbsp;&nbsp;&nbsp;└── <b class="textfocus">admin.css</b><br>
+
+</code>
+                </td>
+              </tr>
+            </table>
+          </section>
+          <section>
+          <h2>admin.html</h2>
+            <pre><code data-trim class="expand">
+&lt;body&gt;
+
+&lt;textarea id=&quot;message&quot;&gt;&lt;/textarea&gt;
+&lt;button class=&quot;btn&quot; onclick=&quot;send()&quot;/&gt;send&lt;/button&gt;
+
+&lt;video id=&quot;videopreview&quot; autoplay&gt;&lt;/video&gt;
+&lt;button class=&quot;btn&quot; onclick=&quot;connect()&quot;&gt;Broadcast&lt;/button&gt;
+
+&lt;script src=&quot;http://ip:port/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+
+var socket = io.connect('http://ip:port');
+
+// socket.io connection check
+socket.on('connect', function () {
+  $('.btn').prop('disabled', false);
+});
+
+socket.on('disconnect', function (client) {
+  $('.btn').prop('disabled', true);
+});
+
+
+function sendMessage() {
+  socket.emit('msg', {message:message});
+}
+
+.
+.
+//webRTC handling
+.
+.
+&lt;/script&gt;
+&lt;/body&gt;
+            </code></pre>
+          </section>
+        </section>
+
+        <section >
+          <h1>DEMO</h1>
+          <!-- <h4 onclick="runDemo()" class="pointer">Run</h4> -->
+        </section>
+
+        <section>
+          <section>
+            <h2>Why not make web apps?</h2>
+          </section>
+          <section>
+          <p  class="fragment left">Hey I made this app</p>
+          <p  class="fragment right">oh cool!</p>
+          <p  class="fragment left">I'm gonna put it up on our server</p>
+          <p  class="fragment right">Oh...wait.</p>
+          <p  class="fragment right">Did you pass security audit?</p>
+          <p  class="fragment right">We need to place IP restriction...</p>
+          <p  class="fragment right">What about VPN?</p>
+          <p  class="fragment right">Who will be the Sys Admin?</p>
+          <p  class="fragment right">What about CI?</p>
+          </section>
+          <section>
+            <h3>I can not ship my app !</h3>
+          </section>
+        </section>
+
+        <section>
+          <h1>Other Options</h1>
+          <br>
+          <h3 class="left fragment">electron by GitHub</h3>
+          <p class="left fragment"><a href="https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md">https://github.com/atom/electron/blob/master/docs/development/atom-shell-vs-node-webkit.md</a></p>
+          <br>
+          <h3 class="left fragment">Brackets Shell by Adobe</h3>
+          <h3 class="left fragment">Chromium Embedded Framework</h3>
+        </section>
+
+        <section>
+          <h1>Summary</h1>
+          <ul class="list">
+            <li class="fragment">Package your front-end project</li>
+            <li class="fragment">Server side app ? no problem !</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1 class="left fragment">Thank you</h1>
+          <br>
+          <h3 class="left">@kosamari</h3>
+          <h4 class="left">Slides : <a href="http://kosamari.com/presentation/empire-node">http://kosamari.com/presentation/frontend-camp-2015</a></h4>
+          <h4 class="left">Demo Apps : <a href="https://github.com/kosamari/nwjs-demo">https://github.com/kosamari/nwjs-demo</a></h4>
+        </section>
+      </div>
+
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+    //menu bar (this is for app version)
+      // var gui = require('nw.gui');
+      // var win = gui.Window.get();
+
+      // var menubar = new gui.Menu({ type: 'menubar' });
+      // var mainMenu = new gui.Menu();
+
+      // mainMenu.append(new gui.MenuItem({
+      //   label: 'version',
+      //   click: function(){
+      //       alert('Version : 0.0.1');
+      //   }
+      // }));
+
+      // menubar.append(new gui.MenuItem({
+      //   label: 'MainMenu',
+      //   submenu: mainMenu
+      // }));
+
+
+      // var slideMenu = new gui.Menu();
+
+      // menubar.append(new gui.MenuItem({
+      //   label: 'Slide Control',
+      //   submenu: slideMenu
+      // }));
+
+      // slideMenu.append(new gui.MenuItem({
+      //   label: 'Debug',
+      //   click: function (){
+      //     win.showDevTools();
+      //   } 
+      // }));
+
+      // slideMenu.append(new gui.MenuItem({
+      //   label: 'Fullscreen',
+      //   click: function (){
+      //     win.enterFullscreen();
+      //   } 
+      // }));
+
+      // slideMenu.append(new gui.MenuItem({
+      //   label: 'Reload',
+      //   click: function (){
+      //     win.reload();
+      //   } 
+      // }));
+
+      // win.menu = menubar;
+    
+    //child process for "Run" button (this is for app version)
+      var exec = require('child_process').exec;
+      function runSlide(){
+        // exec('npm start', {cwd:'/'});
+        alert('sorry this function is only for weblkit-app')
+      }
+       function runDemo(){
+        // exec('npm start', {cwd:'./app'});
+        alert('sorry this  function is only for weblkit-app')
+      }
+
+      // Full list of configuration options available here:
+      // https: //github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        keyboard: true,
+        overview: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        ]
+      });
+
+      //Syntax hilighter
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
