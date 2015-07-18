@@ -1,0 +1,788 @@
+[
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Hi !</h1><h3>&nbsp;</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>&nbsp;</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>@kosamari</h3><h4>&nbsp;</h4>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>I'm &nbsp;Mariko</h1><h3>@kosamari</h3><h3>scripto</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/vp.png' width='60%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/todd.jpg' width='80%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/rusty.jpg' width='80%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "title",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "title" : "I'm knitter first, <br>engineer second",
+    "subtitle" : "&nbsp;"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/knitwork.jpg' width='60%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h3>knit stitch</h3><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h3>purl stitch</h3><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<img src='./img/rib.gif' width=80%>",
+    "col2":"<img src='./img/angle.gif' width=80%>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : <span class='emphasis'>k5</span><br>R1-3 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br>Repeat R1-4 for 10 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Knitting Pattern</h1><div class='code nohighlight'>R0 : k5<br>R1-3 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R4 : k2, m1, k1, m1, k until 3 sts remain,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m1, k1, m1, k2<br><br><span class='emphasis'>Repeat R1-4 for 10 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/knit_js.png' width='80%''>"  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/render_pattern_black.png' width='98%''>"  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<video width='800' height='400' controls><source src='img/video.mp4' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='img/scarf.png' width='50%''>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>for more math, geometry, bitwise operator</h3><iframe width='560' height='315' src='https://www.youtube.com/embed/X1Cc1vrvjdY' frameborder='0' allowfullscreen></iframe>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/rick.jpg' width='80%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/rick2.jpg' width='80%'/>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Jacquard Loom</h3><img src='./img/jq1-1.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/tabs.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1745 <br>Jacques de Vaucanson</h3><img src='./img/Vaucanson.jpg' width='25%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1801 <br>Joseph Marie Jacquard</h3><img src='./img/Jacquard.jpg' width='20%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<img src='./img/card-j.JPG' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1832 <br>Semen Nikolaevich Korsakov</h3><img src='./img/Korsakov.jpg' width='30%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>public domain</h3><img src='./img/Korsakovimg.png' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1837<br>Charles Babbage</h3><img src='./img/Babbage.jpg' width='25%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Analytical Engine</h3><img src='./img/AnalyticalMachine.jpg' width='35%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Analytical Engine</h3><img src='./img/PunchedCardsAnalyticalEngine.jpg' width='20%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1880 US Census</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1880 US Census</h3><h3>...took 9 years to compile</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1888<br>Herman Hollerith</h3><img src='./img/Hollerith.jpg' width='20%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Mechanical Tabulator</h3><img src='./img/HollerithMachine.CHM.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Control Panel</h3><img src='./img/IBM402plugboard.Shrigley.wireside.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<iframe width='849' height='600' src='https://www.youtube.com/embed/BlUWg2nxCz0' frameborder='0' allowfullscreen></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<object width='434' height='370'><param name='movie' value='http://www.livingroomcandidate.org/flash/player.swf?id=4362'></param><param name='allowFullScreen' value='true'></param><embed src='http://www.livingroomcandidate.org/flash/player.swf?id=4362' type='application/x-shockwave-flash' allowfullscreen='true' width='434' height='370'></embed></object>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1846<br>Teleprinters</h3><img src='./img/telegraph.jpg' width='30%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1874<br>Emile Baudot</h3><img src='./img/Emile_Baudot.jpg' width='30%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>5 unit code system</h3><img src='./img/baudot.jpg' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1901<br>Donald Murray</h3><img src='./img/Baudot_Tape.JPG' width='40%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='https://en.wikipedia.org/wiki/Baudot_code#ITA2' frameborder='0' width='95%' height='95%'></iframe>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1963<br>ASCII</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>1963<br> American standard code for information interchange</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>7bit = 128 characters</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<div class='code'>A = 65 : 1000001<br>B = 66 : 1000010<br>C = 67 : 1000011<br><br>a = 97 : 1100001<br>B = 98 : 1100010<br>C = 99 : 1100011</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Here comes computers !</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Here comes computers !</h3><h3>8 bit (WTF)</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>what do we do with extra bits ?</h3><h3>&nbsp;</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>what do we do with extra bits ?</h3><h3>Multiple standards !</h3><h3>&nbsp;</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>what do we do with extra bits ?</h3><h3>Multiple standards !</h3><h3>Multi-byte encoding! (wtf)</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Word of the day : </h3><h1>Mojibake</h1><h3>文字化け</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>Then the Internet Happened</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>Unicode !</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h1>Unicode !</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>UTF-8 challenge</h3><div class='code'>// 32bit <br>A = 65 => 00000000000000000000000001000001<br><br>// unused 0s<br>// 00000000 in old computer = end<br>// make it backwards (ASCII) compatible</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>UTF-8</h3><div class='code'>A = 65 => 01000001<br><br><br><br><br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>UTF-8</h3><div class='code'>A = 65 => 01000001<br><br>[110 xxxxx] [10 xxxxxx] <br><br> <br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>UTF-8</h3><div class='code'>A = 65 => 01000001<br><br>[110 xxxxx] [10 xxxxxx] <br> [110 00110] [10 110010] => 00110110010 (434) <br><br><br><br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1" : "<h3>UTF-8</h3><div class='code'>A = 65 => 01000001<br><br>[110 xxxxx] [10 xxxxxx] <br> [110 00110] [10 110010] => 00110110010 (434) <br><br>[1110 xxxx] [10 xxxxxx] [10 xxxxxx] <br>[1111110 x] [10 ..] [10 ..] [10 ..] [10 ..] [10 ..] [10 ..]</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "onecolmun",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h1>Thank you</h1><h3>@kosamari</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+}
+]
