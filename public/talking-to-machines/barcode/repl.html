@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barcode - program in visually binary letters</title>
+<script src="js/jquery.js"></script>
+<script src="js/jqconsole.js"></script>
+<script src="js/sugar.js"></script>
+<script src="js/peg.js"></script>
+<script src="js/plt.js"></script>
+<script src="barcode.js"></script>
+<style type="text/css" media="screen">
+  body, code {
+    font-family: "Consolas"
+  }
+</style>
+</head>
+
+<body>
+
+<h2>Barcode - REPL</h2>
+<h3>Examples</h3>
+<h4>PRINT "Good day!"</h4>
+<code>▏▐ ▐█▐▌██▐▌██▐▌▐  ▌  ▐▌▐ ▐▌ ▐▐█▌▐ ▌ ▐▏</code>
+
+<h4>EVAL "2+3"<h4>
+<code>▕ █ ▌ ▌▌█ █ █▕</code>
+
+<div id="repl"><div>
+
+</div>
+
+<grammar>
+  start   = result:(string/eval)* {return result.join(' ')}
+
+  string =  padding* '▏' b:byte* '▏' padding* { return exec(b, false) }
+  eval =    padding* '▕' e:byte* '▕' padding* { return exec(e, true) }
+
+  byte = letters:('\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*){ return lettersToBinary(letters);}
+  padding = newline / space
+
+  newline = '\n'
+  space = ' '
+
+</grammar>
+
+</body>
+</html>

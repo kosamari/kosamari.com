@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barcode - program in visually binary letters</title>
+<script src="js/jquery.js"></script>
+<script src="js/jqconsole.js"></script>
+<script src="js/sugar.js"></script>
+<script src="js/peg.js"></script>
+<script src="barcode.js"></script>
+<style type="text/css" media="screen">
+  body, code {
+    font-family: "Consolas"
+  }
+  code {
+    display: block;
+    white-space: pre;
+    margin-bottom: 1em;
+  }
+  .message{
+    display: block;
+    white-space: normal;
+  }
+  a{
+    font-size: 0.8em;
+    color:black;
+  }
+</style>
+</head>
+
+<body>
+<code>
+▏
+
+▐ ▌ ▐▌▌▐ ▌  ▐█▐ ▐▌▌ ▐▌▐▐▐█ ▌▐▌▐▐ ▌ ▐ ▌  ▐▐▐█▐▌▐▐▐▌█ ▐▌ █▐▌██▐▌█▐▐▌▐▐
+                                                               
+     ▌█▐▐▐     █     ▐▐▐▐▐▐     █▐▐█▐  ▐▐█▐▐█  █▌█▌█   █▐▐▐▐▐
+    █▐   ▐▐   ▌  ▌   ▌█    █   █     ▌ █     █ █    █  █▐    
+    █▐▐▐▌█   ▌    ▌  ▌█▐▐▐▐    █       █     █ █     █ █▐ ▌▐█
+    █▐   ▐▐ ▐▐▐█▐▐▐  ▌█    ▌   █     █ █     █ █    █  █▐    
+     █▐▐█▐  ▌      ▌ ▌█    ▌▌   ▐▐█▐▌   ▌█▐▐▐  █▌█▌█   █▐▐▐█▐
+
+▐ ▌ ▐▌▌▐ ▌  ▐█▐ ▐▌▌ ▐▌▐▐▐█ ▌▐▌▐▐ ▌ ▐ ▌  ▐▐▐█▐▌▐▐▐▌█ ▐▌ █▐▌██▐▌█▐▐▌▐▐        
+▐ ▌ ▐▌▌▐ ▌  ▐█▐ ▐▌▌ ▐▌▐▐▐█ ▌▐▌▐▐ ▌ ▐ ▌  ▐▐▐█▐▌▐▐▐▌█ ▐▌ █▐▌██▐▌█▐▐▌▐▐
+▏
+</code>
+
+<h2>How to Barcode <a href='./repl.html'>Try it on REPL</a></h2>
+  <h3>Block</h2>
+  <ul>
+    <li>PRINT : insde of two `▏` (U+258F)</li>
+    <ul>
+      <li>Anything inside of this will be output as string</li>
+    </ul>
+    <br>
+    <li>EVAL&nbsp;&nbsp;:  insde of two `▕` (U+2595)</li>
+    <ul>
+      <li>Anything inside of this will be passed to eval() in Javascript</li>
+      <li>Returned value will be printed as string</li>
+    </ul>
+  </ul>
+  <h3>Elements</h3>
+    Barcode use 4 characters as representation of binary (ASCII).
+    <ul>
+      <li>`█` (U+2588) : '11'</li>
+      <li>`▌` (U+258C) : '10'</li>
+      <li>`▐` (U+2590) : '01'</li>
+      <li>` ` (U+0020) : '00'</li>
+    </ul>
+    i.e:  `<span class='code'>▐▐▐█</span>` represents `01010111` which is `W` in ASCII.<br>
+    <br>
+    You can combine these 4 characters to create binary representation of ASCII printable
+characters (32-126 in decimal - anything outside of the range will be replaced with single space). <br>
+  <br>
+  The code will not run unless number of characters inside of a block is multiple of 4.
+  <h3>Line break</h3>
+  You can add any number of line breaks to format your code. Spaces can also be used outside of block. (if used inside of a block, it will be interpreted as '00' to use wisely ;)
+
+<h3>Examples</h3>
+<h4>PRINT "Good day!"</h4>
+<code>▏▐ ▐█▐▌██▐▌██▐▌▐  ▌  ▐▌▐ ▐▌ ▐▐█▌▐ ▌ ▐▏</code>
+
+<h4>EVAL "2+3"<h4>
+<code>▕ █ ▌ ▌▌█ █ █▕</code>
+
+<h4>PRINT "C"(repeat)</h4>
+<code>▏
+▐  █▐  █▐  █▐ 
+ █▐  █▐  █▐  
+█▐  █▐  █▐  █
+▐  █▐  █▐  █▐
+  █▐  █▐  █▐ 
+ █▐  █▐  █▐  █
+▏</code>
+
+<h4>(function(){console.log("HI! PRINTED FROM BARCODE"); return "see console"})()</h4>
+<code>▕
+ ▌▌ ▐▌▐▌▐█▐▐▐▌█▌▐▌ █▐█▐ ▐▌▌▐▐▌██▐▌█▌ ▌▌  ▌▌▐▐█▌█▐▌ █
+▐▌██▐▌█▌▐█ █▐▌██▐▌█ ▐▌▐▐ ▌█▌▐▌█ ▐▌██▐▌▐█ ▌▌  ▌ ▌▐ ▌
+ ▐ ▌▐ ▌ ▐ ▌  ▐▐  ▐▐ ▌▐ ▌▐▐ █▌▐▐▐ ▐ ▐▐▐ ▐  ▌  ▐ ▐▌▐▐
+ ▌▐ ██▐ █▐ ▌  ▐  ▌▐  ▐▐▐ ▌▐  █▐ ██▐ ▐ ▐ ▐▐ ▌ ▌ ▌▌▐ 
+█▌█ ▌  ▐█ ▌▐▌▐▐▐█▐ ▐█▐▐▐█ ▌▐▌█▌ ▌   ▌ ▌▐█ █▐▌▐▐▐▌▐▐
+ ▌  ▐▌ █▐▌██▐▌█▌▐█ █▐▌██▐▌█ ▐▌▐▐ ▌ ▌▐██▐ ▌▌▐ ▌▌  ▌▌▐
+▕</code>
+<grammar>
+  start   = result:(string/eval)* {return result.join(' ')}
+
+  string =  padding* '▏' b:byte* '▏' padding* { return exec(b, false) }
+  eval =    padding* '▕' e:byte* '▕' padding* { return exec(e, true) }
+
+  byte = letters:('\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*[▌█▐ ]'\n'*){ return lettersToBinary(letters);}
+  padding = newline / space
+
+  newline = '\n'
+  space = ' '
+
+</grammar>
+
+
+<script>
+
+/*
+* Modified from plt.js
+*/
+
+var PLT = {
+  refresh: false,
+  refreshTime: 1000,
+  parser: null
+};
+// extract PEG grammar from <grammar> element and build parser
+var grammarElement = $("grammar");
+PLT.parser = PEG.buildParser(grammarElement.text())
+grammarElement.remove();
+
+var stringifiedParse = function(source) {
+    return JSON.stringify(PLT.parser.parse(source));
+  }
+var goods = document.querySelectorAll("code:not([bad])")
+for (var i = 0; i < goods.length; i++) {
+  try {
+    var str = stringifiedParse(goods[i].textContent);
+
+    // Look for expected attribute like this: <code expected="true">
+    if(goods[i].attributes.getNamedItem('expect')){
+      var expectedValue = goods[i].attributes.getNamedItem('expect').value;
+
+      // Create a regEx from the expectedValue
+      var re = new RegExp(expectedValue, "");
+
+      // Validate that the expected value matches the returned value
+      if(!str.match(re)){
+        var error = new Error('Expected '+expectedValue+" but got "+str)
+        error.line = 0;
+        throw error; 
+      }
+    }
+    // the code parsed, append result in grey
+    goods[i].innerHTML += "\n<em class='message' style='color:gray'>&#8627; " + str + "</em>";
+
+  } catch (err) {
+    // the code did not parse, append result in red
+
+    // Add carrot to show the position of the error
+    var carrot = '';
+    if(err.line == goods[i].textContent.split('\n').length){
+      carrot = Array(err.column).join(' ')+'&uarr;\n'
+    }
+
+    // If there is line info, add information about where the error is
+    var lineError = '';
+    if(err.line){
+      lineError = "<br>\t" + "Line " + err.line + " Column " + err.column;
+    }
+
+    goods[i].innerHTML += "\n<em class='message' style='color:red;'>" + carrot + " " + err.message + lineError + "</em>";
+  }
+}
+
+// collect all incorrect code examples and try and parse them
+var bads = document.querySelectorAll("code[bad]")
+for (var i = 0; i < bads.length; i++) {
+  try {
+    var str = stringifiedParse(goods[i].textContent);
+    // the code parsed, append result in red
+    bads[i].innerHTML += "\n<em class='message' style='color:red;'>&#8627; " + str + "</em>";
+
+  } catch (err) {
+    // the code did not parse, append result in gray
+    bads[i].innerHTML += "\n<em class='message' style='color:gray'>&#8627; " + err.message + "</em>";
+
+  }
+}
+</script>
+</body>
+</html>
