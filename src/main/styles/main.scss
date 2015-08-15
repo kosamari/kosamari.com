@@ -1,5 +1,5 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family:"PT Serif", serif;
   margin:0; 
   background-color:#FEFEFE;
   color: #333333;
@@ -39,17 +39,21 @@ body{
   max-width:800px;
 }
 h1{
+  font-family: 'Open Sans', sans-serif;
   font-size: 36px;
 }
 h2{
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   margin-top: 50px;
 }
 h3{
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   margin-top: 10px;
 }
 h4{
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin-bottom: 0px;
 }
@@ -75,7 +79,6 @@ footer{
 .note-desc{
   font-size:16px;
   line-height:1.6em;
-  font-family:"PT Serif", serif;
 }
 .note-title{
   margin-top:0px;
@@ -85,6 +88,6 @@ footer{
   font-size: 14px;
 }
 .note {
-  padding-top:50px;
+  padding-bottom:50px;
   clear: both;
 }

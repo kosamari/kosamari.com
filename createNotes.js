@@ -26,14 +26,14 @@ fs.readFile('./views/note_template.html','utf8', function (err, data) {
     response.on('end', function () {
       obj = JSON.parse(str);
       html = md.render(obj.files[Object.keys(obj.files)[0]].content);
-      filename = obj.files[Object.keys(obj.files)[0]].filename.split('.')[0]+'.html';
+      filename = obj.files[Object.keys(obj.files)[0]].filename.split('.')[0];
       date = new Date(obj.created_at)
       template = template
                   .replace(/{{date}}/g,date.toISOString().split('T')[0])
                   .replace('{{content}}',html)
                   .replace('{{title}}', filename.split('-').join(' '))
                   .replace('{{description}}', obj.description)
-      fs.writeFile('./notes/'+filename, template , function (err) {
+      fs.writeFile('./notes/'+filename+'.html', template , function (err) {
         if (err) throw err;
         console.log('post created !');
       });

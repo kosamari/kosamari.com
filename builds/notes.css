@@ -15,10 +15,8 @@ article {
     margin-bottom: 10px; }
   article p {
     font-size: 16px;
-    line-height: 1.6em;
-    font-family: "PT Serif", serif; }
+    line-height: 1.6em; }
   article blockquote {
-    font-family: "PT Serif", serif;
     margin: 16px;
     padding: 0 15px;
     color: #666;
