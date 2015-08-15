@@ -35,7 +35,7 @@ fs.readFile('./views/note_template.html','utf8', function (err, data) {
                   .replace('{{description}}', obj.description)
       fs.writeFile('./notes/'+filename+'.html', template , function (err) {
         if (err) throw err;
-        console.log('post created !');
+        console.log('post created: ' +filename);
       });
     });
   }).end();
