@@ -84,12 +84,12 @@ fs.readFile('template.html','utf8', function (err, data) {
       var filename = file.filename.split('.')[0];
       var date = new Date(res.created_at)
       template = template
-                  .replace(/{{date}}/g,date.toISOString().split('T')[0])
-                  .replace('{{content}}',html)
-                  .replace('{{title}}', filename.split('-').join(' '))
-                  .replace('{{description}}', res.description)
+                  .replace(/&#123;&#123;date&#125;&#125;/g,date.toISOString().split('T')[0])
+                  .replace('&#123;&#123;content&#125;&#125;',html)
+                  .replace('&#123;&#123;title&#125;&#125;', filename.split('-').join(' '))
+                  .replace('&#123;&#123;description&#125;&#125;', res.description)
 
-      fs.writeFile('filename+'.html', template , function (err) {
+      fs.writeFile(filename+'.html', template , function (err) {
         if (err) throw err;
         console.log('file created: ' +filename);
       });
@@ -102,13 +102,13 @@ fs.readFile('template.html','utf8', function (err, data) {
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
-    &lt;title&gt;{{title}}&lt;/title&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;{{description}}&quot; /&gt;
+    &lt;title&gt;&#123;&#123;title&#125;&#125;&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&#123;&#123;description&#125;&#125;&quot; /&gt;
   &lt;/head&gt;
   &lt;body&gt;
   &lt;article id=&quot;main&quot;&gt;
-    &lt;time datetime=&quot;{{date}}&quot; pubdate&gt;{{date}}&lt;/time&gt;
-    {{content}}
+    &lt;time datetime=&quot;&#123;&#123;date}}&quot; pubdate&gt;&#123;&#123;date&#125;&#125;&lt;/time&gt;
+    &#123;&#123;content&#125;&#125;
   &lt;/article&gt;
   &lt;/body&gt;
 &lt;/html&gt;
