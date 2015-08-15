@@ -25,10 +25,14 @@ body {
     #side a :hover {
       color: #9266CC; }
 
+#head-icon {
+  width: 60px; }
+
 #main {
   padding: 0 40px;
   overflow: scroll;
-  margin-left: 100px; }
+  margin-left: 100px;
+  max-width: 800px; }
 
 h1 {
   font-size: 36px; }
@@ -52,7 +56,29 @@ p {
 a {
   text-decoration: none;
   color: #9266CC; }
+  a :hover {
+    text-decoration: underline; }
 
 footer {
+  padding: 30px 40px;
+  margin-left: 100px; }
+
+.note-thumbnail {
+  float: left;
+  margin-right: 20px; }
+
+.note-desc {
+  font-size: 16px;
+  line-height: 1.6em;
+  font-family: "PT Serif", serif; }
+
+.note-title {
+  margin-top: 0px;
+  color: #333333; }
+
+.note-meta {
+  font-size: 14px; }
+
+.note {
   padding-top: 30px;
-  text-align: center; }
+  clear: both; }

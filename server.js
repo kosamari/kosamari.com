@@ -4,19 +4,27 @@ var hbs = require('hbs');
 var fs = require('fs');
 var favicon = require('serve-favicon');
 var appsPath;
+var notesPath;
 
 fs.readdir(__dirname +'/src', function(err, files){
   if (err) throw err;
   appsPath = files;
 });
+fs.readdir(__dirname +'/notes', function(err, files){
+  if (err) throw err;
+  notesPath = files.map(function(f){return f.split('.')[0]});
+});
+
 
 var app = module.exports = express();
 var routes = require('./routes');
 
+app.set('views', path.join(__dirname,'/views'));
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
 hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
 hbs.registerPartial('ga', fs.readFileSync(__dirname + '/views/ga.html', 'utf8'));
+hbs.registerPartial('copy', fs.readFileSync(__dirname + '/views/copy.html', 'utf8'));
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(checkapps)
@@ -34,7 +42,12 @@ function checkapps (req, res, next){
   //if the request has file extension, move next (= static file)
   if(req.url.split('.').length>2) return next();
   if(req.url==='/') return routes.root(req,res,next);
+  if(req.url==='/notes') return routes.notes(req,res,next);
   var dir = req.url.split('/');
+
+  if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) !== -1) return routes.notes(req,res,next,dir[2]);
+  if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) === -1) return notfound(req,res,next);
+
   if(appsPath.indexOf(dir[1]) === -1) return next();
   if(dir.length>2){
     var newUrl = req.protocol + '://' + req.get('Host') + '/'+dir[1]+'#' + dir.slice(2,dir.length).join('/');
@@ -46,7 +59,9 @@ function checkapps (req, res, next){
 function notfound (req, res, next){
   res.status(404);
   // respond with html page
-  if (req.accepts('html')) return res.render('404');
+  if (req.accepts('html')) return res.render('404',{
+    'css': [{'path': '/builds/main'}],
+  });
 
   // respond with json
   if (req.accepts('json')) return res.send({ error: 'Not found' });

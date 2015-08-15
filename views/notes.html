@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Mariko Kosaka - Notes</title>
+    <meta name="description" content="The portfolio of Mariko Kosaka." />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+  </head>
+
+  <body>
+  {{> sidebar}}
+  <div id="main">
+  <!--
+  <section class="note">
+    <aside class="note-meta">MM-DD-YYYY/Category</aside>
+    <a href="!!!LINK HERE!!!">
+      <h2 class="note-title">title</h2>
+    </a>
+    <img src="/img/___" width="200" class="note-thumbnail">
+    <p class="note-desc">
+      description
+      <a href="!!!LINK HERE!!!">[...]</a>
+    </p>
+  </section>
+  -->
+
+  <section class="note">
+    <aside class="note-meta">2014-09-02 / Coding</aside>
+    <a href="http://localhost:5000/notes/make-apps-with-node-webkit">
+      <h2 class="note-title">You can use your front-end chops to build desktop app!</h2>
+    </a>
+    <img src="https://cloud.githubusercontent.com/assets/4581495/9289291/e8a8972e-4338-11e5-8817-04cf41e4042b.gif" width="200" class="note-thumbnail">
+    <p class="note-desc">
+      Last weekend, I spent one night to build an desktop application with Node.js using node-webkit module. I did not anticipated to be done in one night, it was originally planned to be a weekend(s) project — but I got done in quarter of time
+      <a href="http://localhost:5000/notes/make-apps-with-node-webkit">[...]</a>
+    </p>
+  </section>
+
+  </div>
+  <footer>
+    <p>
+      {{> copy}}
+    </p>
+  </footer>
+  {{> ga}}
+  </body>
+</html>

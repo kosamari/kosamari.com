@@ -12,4 +12,18 @@ exports.root = function(req, res, next){
   });
 };
 
+exports.notes = function(req, res, next, article){
+  if(article){
+    res.render('../notes/'+article,{
+      'css': [{'path': '/builds/main'},{'path': '/builds/notes'}],
+    });
+  }else{
+    res.render('notes',{
+      'css': [{'path': '/builds/main'}],
+    });
+  }
+};
+
+
+
 require('./path');

@@ -7,30 +7,34 @@
     Remove this if you use the .htaccess -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Mariko Kosaka - Projects</title>
-    <meta name="description" content="The portfolio of Mariko Kosaka." />
+    <title>{{title}} - Mariko Kosaka</title>
+    <meta name="description" content="{{description}}" />
     <meta name="author" content="Mariko Kosaka" />
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     {{#css}}
       <link href="{{path}}.css" rel="stylesheet">
     {{/css}}
+    <style type="text/css" media="screen">
+
+    </style>
   </head>
 
   <body>
-  <!--[if lt IE 10]>
-    <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
   {{> sidebar}}
-  <div id="main"></div>
-  {{#js}}
-  <script src="{{path}}.js"></script>
-  {{/js}}
+  <article id="main">
+    <time datetime="{{date}}" pubdate>{{date}}</time>
+    {{content}}
+  </article>
+
   <footer>
     <p>
       {{> copy}}
     </p>
   </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   {{> ga}}
   </body>
 </html>
