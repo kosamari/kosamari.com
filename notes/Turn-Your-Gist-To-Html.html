@@ -55,6 +55,7 @@ It is a little bit tedious, but then, I'm only going to publish once in few mont
 <p><code>node gist2HTML.js [gist id]</code></p>
 <h4>gist2HTML.js</h4>
 <pre><code class="language-javascript">var fs = require('fs');
+var https = require('https');
 var md = require('markdown-it')();
 
 var gistID = process.argv[2]
