@@ -29,9 +29,9 @@
 <p>Lately, I've been doing a lot of side projects & talks. While I tweet most of my progress and research, when I finish a project, people ask if I documented the process somewhere.</p>
 <p>I'm most comfortable writing long form docs in markdown format and I already have many notes on my gist as markdown file. So I made a script to pull .md file from gist and convert to HTML.</p>
 <h2>Using gist API is very simple</h2>
-<p>If you already have gist id (https://gist.github.com/[username]/[ID]), getting data via API is very simple. Just make GET request to <code>https://api.github.com/gists/[id]</code> and you'll get JSON back.
+<p>If you already have gist id (https://gist.github.com/[username]/[ID]), getting data via API is very simple. Just make GET request to <code>https://api.github.com/gists/[id]</code> and you'll get JSON back - check <a href="https://api.github.com/gists/cd6d137f872b5f9c9423">this out</a>.
 <em>No API key, No authentication necessary.</em> (This applies to secret gist as well)<br>
-*you must set user agent when you are making GET Request.</p>
+*When you are calling API from command line, you must set user-agent in the headder.</p>
 <h2>Markdown to HTML parser</h2>
 <p>I've tried few markdown to HTML parser and settled on <a href="https://github.com/markdown-it/markdown-it">markdown-it</a>.  &quot;markdown-it&quot; parse code block in github favored markdown to hilight.js compatible HTML. This was major win for my documentation purpose which will have many code samples.</p>
 <p>This code block turn into...</p>
@@ -46,16 +46,15 @@
 </code></pre>
 <h2>Inject converted HTML to a template</h2>
 <p>Once you have a converted HTML, you can inject it to any file by doing handy dandy <code>String.replace()</code>.</p>
-<p>I made a template HTML with some place holder like <code>{{content}}</code> <code>{{date}}</code> <code>{{description}}</code> which will be populated with data returned from gist API.</p>
+<p>I made a template HTML with some place holder like <code>&#123;&#123;content&#125;&#125;</code> <code>&#123;&#123;date&#125;&#125;</code> <code>&#123;&#123;description&#125;&#125;</code> which will be populated with data returned from gist API.</p>
 <h2>Publish</h2>
-<p>After I convert gist markdown into HTML, I edit blog directory page to link to the new post, then manually deploy to my server.
+<p>After I convert gist markdown into HTML, I edit blog directory page, then manually deploy to my server.
 It is a little bit tedious, but then, I'm only going to publish once in few month, so this process is good enough.</p>
 <h2>The Script</h2>
 <p>Here is the script! To run it, I do following command and pass gist id as argument</p>
 <p><code>node gist2HTML.js [gist id]</code></p>
 <h4>gist2HTML.js</h4>
 <pre><code class="language-javascript">var fs = require('fs');
-var https = require('https');
 var md = require('markdown-it')();
 
 var gistID = process.argv[2]
