@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Turn Your Gist To Html - Mariko Kosaka</title>
+    <meta name="description" content="Writing markdown file on gist as blogging platform" />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+
+    </style>
+  </head>
+
+  <body>
+  {{> sidebar}}
+  <article id="main">
+    <time datetime="2015-08-15" pubdate>2015-08-15</time>
+    <h1>Turn Your Gist To HTML</h1>
+<p><strong>TL;DR; I needed a blog &amp; solved it in wee bit tedious but simple way</strong></p>
+<p>Lately, I've been doing a lot of side projects &amp; talks. While I tweet most of my progress and research, when I finish a project, people ask if I documented the process somewhere.</p>
+<p>I'm most comfortable writing long form docs in markdown format and I already have many notes on my gist as markdown file. So I made a script to pull .md file from gist and convert to HTML.</p>
+<h2>Using gist API is very simple</h2>
+<p>If you already have gist id (https://gist.github.com/[username]/[ID]), getting data via API is very simple. Just make GET request to <code>https://api.github.com/gists/[id]</code> and you'll get JSON back.
+<em>No API key, No authentication necessary.</em> (This applies to secret gist as well)<br>
+*you must set user agent when you are making GET Request.</p>
+<h2>Markdown to HTML parser</h2>
+<p>I've tried few markdown to HTML parser and settled on <a href="https://github.com/markdown-it/markdown-it">markdown-it</a>.  &quot;markdown-it&quot; parse code block in github favored markdown to hilight.js compatible HTML. This was major win for my documentation purpose which will have many code samples.</p>
+<p>This code block turn into...</p>
+<pre><code>    ```javascript
+    var sample ='sample'
+    ```
+</code></pre>
+<p>This HTML.</p>
+<pre><code>&lt;pre&gt;
+  &lt;code class=&quot;language-javascript&quot;&gt;var sample ='sample'&lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+<h2>Inject converted HTML to a template</h2>
+<p>Once you have a converted HTML, you can inject it to any file by doing handy dandy <code>String.replace()</code>.</p>
+<p>I made a template HTML with some place holder like <code>{{content}}</code> <code>{{date}}</code> <code>{{description}}</code> which will be populated with data returned from gist API.</p>
+<h2>Publish</h2>
+<p>After I convert gist markdown into HTML, I edit blog directory page to link to the new post, then manually deploy to my server.
+It is a little bit tedious, but then, I'm only going to publish once in few month, so this process is good enough.</p>
+<h2>The Script</h2>
+<p>Here is the script! To run it, I do following command and pass gist id as argument</p>
+<p><code>node gist2HTML.js [gist id]</code></p>
+<h4>gist2HTML.js</h4>
+<pre><code class="language-javascript">var https = require('https');
+var fs = require('fs');
+var md = require('markdown-it')();
+
+var gistID = process.argv[2]
+
+fs.readFile('template.html','utf8', function (err, data) {
+  if (err) throw err;
+  var template = data;
+
+  var options = {
+    host: 'api.github.com',
+    path: '/gists/'+gistID,
+    headers: {'user-agent': 'nodescript'}
+  };
+
+  https.request(options, function(response) {
+    var str = '';
+
+    response.on('data', function (chunk) {
+      str += chunk;
+    });
+
+    response.on('end', function () {
+      var res = JSON.parse(str);
+      var file = res.files[Object.keys(res.files)[0]];
+      var html = md.render(file.content);
+      var filename = file.filename.split('.')[0];
+      var date = new Date(res.created_at)
+      template = template
+                  .replace(/{{date}}/g,date.toISOString().split('T')[0])
+                  .replace('{{content}}',html)
+                  .replace('{{title}}', filename.split('-').join(' '))
+                  .replace('{{description}}', res.description)
+
+      fs.writeFile('filename+'.html', template , function (err) {
+        if (err) throw err;
+        console.log('file created: ' +filename);
+      });
+
+    });
+  }).end();
+});
+</code></pre>
+<h4>template.html</h4>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;{{title}}&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;{{description}}&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;article id=&quot;main&quot;&gt;
+    &lt;time datetime=&quot;{{date}}&quot; pubdate&gt;{{date}}&lt;/time&gt;
+    {{content}}
+  &lt;/article&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+  </article>
+
+  <footer>
+    <p>
+      {{> copy}}
+    </p>
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{> ga}}
+  </body>
+</html>

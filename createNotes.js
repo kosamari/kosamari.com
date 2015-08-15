@@ -3,11 +3,11 @@ var fs = require('fs');
 var md = require('markdown-it')();
 
 var gistID = process.argv[2]
-var template;
 
 fs.readFile('./views/note_template.html','utf8', function (err, data) {
   if (err) throw err;
-  template = data;
+  var template = data;
+
   var options = {
     host: 'api.github.com',
     path: '/gists/'+gistID,
@@ -16,29 +16,28 @@ fs.readFile('./views/note_template.html','utf8', function (err, data) {
 
   https.request(options, function(response) {
     var str = '';
-    var obj, html, date;
 
     response.on('data', function (chunk) {
       str += chunk;
     });
 
-    //the whole response has been recieved, so we just print it out here
     response.on('end', function () {
-      obj = JSON.parse(str);
-      html = md.render(obj.files[Object.keys(obj.files)[0]].content);
-      filename = obj.files[Object.keys(obj.files)[0]].filename.split('.')[0];
-      date = new Date(obj.created_at)
+      var res = JSON.parse(str);
+      var file = res.files[Object.keys(res.files)[0]];
+      var html = md.render(file.content);
+      var filename = file.filename.split('.')[0];
+      var date = new Date(res.created_at)
       template = template
                   .replace(/{{date}}/g,date.toISOString().split('T')[0])
                   .replace('{{content}}',html)
                   .replace('{{title}}', filename.split('-').join(' '))
-                  .replace('{{description}}', obj.description)
+                  .replace('{{description}}', res.description)
+
       fs.writeFile('./notes/'+filename+'.html', template , function (err) {
         if (err) throw err;
-        console.log('post created: ' +filename);
+        console.log('file created: ' +filename);
       });
+
     });
   }).end();
 });
-
-
