@@ -25,8 +25,8 @@
   <article id="main">
     <time datetime="2015-08-15" pubdate>2015-08-15</time>
     <h1>Turn Your Gist To HTML</h1>
-<p><strong>TL;DR; I needed a blog &amp; solved it in wee bit tedious but simple way</strong></p>
-<p>Lately, I've been doing a lot of side projects &amp; talks. While I tweet most of my progress and research, when I finish a project, people ask if I documented the process somewhere.</p>
+<p><strong>TL;DR; I needed a blog & solved it in wee bit tedious but simple way</strong></p>
+<p>Lately, I've been doing a lot of side projects & talks. While I tweet most of my progress and research, when I finish a project, people ask if I documented the process somewhere.</p>
 <p>I'm most comfortable writing long form docs in markdown format and I already have many notes on my gist as markdown file. So I made a script to pull .md file from gist and convert to HTML.</p>
 <h2>Using gist API is very simple</h2>
 <p>If you already have gist id (https://gist.github.com/[username]/[ID]), getting data via API is very simple. Just make GET request to <code>https://api.github.com/gists/[id]</code> and you'll get JSON back.
@@ -35,12 +35,12 @@
 <h2>Markdown to HTML parser</h2>
 <p>I've tried few markdown to HTML parser and settled on <a href="https://github.com/markdown-it/markdown-it">markdown-it</a>.  &quot;markdown-it&quot; parse code block in github favored markdown to hilight.js compatible HTML. This was major win for my documentation purpose which will have many code samples.</p>
 <p>This code block turn into...</p>
-<pre><code>    ```javascript
+<pre><code class="language-markdown">    ```javascript
     var sample ='sample'
     ```
 </code></pre>
 <p>This HTML.</p>
-<pre><code>&lt;pre&gt;
+<pre><code class="language-html">&lt;pre&gt;
   &lt;code class=&quot;language-javascript&quot;&gt;var sample ='sample'&lt;/code&gt;
 &lt;/pre&gt;
 </code></pre>
@@ -54,8 +54,7 @@ It is a little bit tedious, but then, I'm only going to publish once in few mont
 <p>Here is the script! To run it, I do following command and pass gist id as argument</p>
 <p><code>node gist2HTML.js [gist id]</code></p>
 <h4>gist2HTML.js</h4>
-<pre><code class="language-javascript">var https = require('https');
-var fs = require('fs');
+<pre><code class="language-javascript">var fs = require('fs');
 var md = require('markdown-it')();
 
 var gistID = process.argv[2]
@@ -107,7 +106,7 @@ fs.readFile('template.html','utf8', function (err, data) {
   &lt;/head&gt;
   &lt;body&gt;
   &lt;article id=&quot;main&quot;&gt;
-    &lt;time datetime=&quot;&#123;&#123;date}}&quot; pubdate&gt;&#123;&#123;date&#125;&#125;&lt;/time&gt;
+    &lt;time datetime=&quot;&#123;&#123;date&#125;&#125;&quot; pubdate&gt;&#123;&#123;date&#125;&#125;&lt;/time&gt;
     &#123;&#123;content&#125;&#125;
   &lt;/article&gt;
   &lt;/body&gt;
