@@ -693,7 +693,7 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/Baudot-Murray-code.png'width='28%' style='margin-left:20px;'>"
+    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/teletype.jpg'width='42%' style='margin-left:20px;'>"
   },
   "layout" :{
     "center":false,
@@ -705,13 +705,14 @@
   "size": 1,
   "type":"slide",
   "content" : {
-    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/teletype.jpg'width='42%' style='margin-left:20px;'>"
+    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/Baudot-Murray-code.png'width='28%' style='margin-left:20px;'>"
   },
   "layout" :{
     "center":false,
     "middle": true
   }
 },
+
 
 {
   "template" : "custom",
@@ -1209,18 +1210,6 @@
   }
 },
 {
-  "template" : "coverimage",
-  "size": 1,
-  "type":"slide",
-  "image" : {
-    "src":"img/fabricsample.jpg"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-{
   "template" : "custom",
   "size": 1,
   "type":"slide",
@@ -1232,6 +1221,19 @@
     "middle": true
   }
 },
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/fabricsample.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
 {
   "template" : "custom",
   "size": 1,
