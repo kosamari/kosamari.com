@@ -1,0 +1,1248 @@
+[
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/title.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Hi, I'm <span class='white-shadow'>Mariko</span>!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>@kosamari</span></h2><img src='img/kosamari.jpg' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I make textile with <span class='yellow-shadow'>JavaScript</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Write JavaScript at <span class='pink-shadow'>Scripto</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/vp.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Co-orgnizer of <span class='yellow-shadow'>BrooklynJS</span></h2><img src='img/brooklynjs_logo.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/brooklynjs.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/borojs.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/speakers.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Let's talk about  <span class='yellow-shadow'>CS</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2 class='gray'><strike>Computer Science</strike></h2><img src='img/head_icon_gray.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2> <span class='pink-shadow'>Craft</span> Science</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/textile_engineering.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitwork.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/counter_tweet.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>knitting is like coding...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h2>knit stitch</h2><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h2>purl stitch</h2><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<img src='./img/rib.gif' width=80%>",
+    "col2":"<img src='./img/angle.gif' width=80%>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : <span class='emphasis'>k5</span><br>R2 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R3 : *k1 <span class='emphasis'>repeat from * to end</span><br><br><span class='emphasis'>Repeat R2-3 for 5 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Cast On: CO 5</div><div class='code'>var myScarf = [];<br>var row0 = new Array(5);<br><br>// myScarf is <br>// [ , , , , ]</div></div><img src='./img/ks1.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 1: k5</div><div class='code javascript'>var myScarf = [];<br>var k = 'K';<br>var row0 = [k,k,k,k,k];<br><br>myScarf.push(row0);<br>// [['K','K','K','K','K']]</div></div><img src='./img/ks2.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: <span class='emphasis'>k2,</span>  m1,k until 2 sts remain, m1, k2</div><div class='code javascript'>var row1 = new Array(myScarf[0].length);<br>var index = 0;<br>row1[index] = k; index++;<br>row1[index] = k; index++;<br><br>//['K','K', , , ] (length:5)</div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, <span class='emphasis'>m1,</span> k until 2 sts remain, m1, k2</div><div class='code javascript'>function m(row, index){<br>&nbsp;&nbsp;&nbsp;&nbsp;row.splice(index, 0, 'k');<br>}<br><br>m(row1, index); index++;<br>//['K','K','K', , , ] (length:6)<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, <span class='emphasis'>k until 2 sts remain,</span>  m1, k2</div><div class='code javascript'>while (index < row1.length-2) {<br>&nbsp;&nbsp;&nbsp;&nbsp;row[index] = 'k';<br>&nbsp;&nbsp;&nbsp;&nbsp;index++;<br>}<br><br>//['K','K','K','K', , ] (length:6)<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, k until 2 sts remain, <span class='emphasis'>m1, k2</span></div><div class='code javascript'>m(row1, index); index++;<br>//['K','K','K','K','K', , ] (length:7) <br><br>row1[index] = k; index++;<br>row1[index] = k; index++;<br>//['K','K','K','K','K','K','K']<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, k until 2 sts remain, m1, k2</div><div class='code javascript'>myScarf.push(row1) <br><br>// myScarf is now ...<br>// [['K','K','K','K','K'], ['K','K','K','K','K','K','K']] </div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jsknit.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/patternmaking.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='80%' controls><source src='img/knittingvideo.MOV' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/framenitting.jpg",
+    "note":"TextielMuseum Library in Tilburg, Netherlands"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/machineinside.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitscketch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcard.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>Punchcards</span> are cool!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>Automation</span></h2><h2>Computation</h2><h2>Communication</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Automation</h2><h2><span class='yellow-shadow'>Computation</span></h2><h2>Communication</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Automation</h2><h2>Computation</h2><h2><span class='yellow-shadow'>Communication</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1>Automation</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1745</h2><h3>Jacques de Vaucanson</h3><h4>Created the world's first completely automated loom</h4></div><img src='./img/vaucanson.jpg'width='40%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1801</h2><h3>Joseph Marie Jacquard</h3><h4>Commissioned by Lyon’s silk merchant to make a loom.<br>(in order to meet demands from Napoleon Bonaparte)</h4></div><img src='./img/jacquard.jpg'width='35%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='80%' controls><source src='img/jaquard.mov' type='video/mp4'></video><br><span class='note'>Exhibit at TextielMuseum in Tilburg, Netherlands</span>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jaquard_annimation.gif",
+    "note":"Video: Jacquard weaving - by Victoria and Albert Museum"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage2",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jaquardimage.jpg",
+    "note":"TextielMuseum Library in Tilburg, Netherlands"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1>Computation</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1832</h2><h3>Semen Korsakov</h3><h4>Linear Homeoscope<br>The first to use the cards for information storage</h4></div><img src='./img/Korsakov.jpg'width='35%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/Linear_Homeoscope.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1837</h2><h3>Charles Babbage</h3><h4>The Analytical Engine<br><br>Exchanged letters with <br>Ada Lovelace</h4></div><img src='./img/Babbage.jpg'width='35%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1837</h2><h3>Charles Babbage</h3><h4>The Analytical Engine<br><br>Exchanged letters with <br>Ada Lovelace</h4></div><img src='./img/AnalyticalEnginePunch.jpg'width='40%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h3><i>the <span class='yellow-shadow'>Analytical Engine</span> weaves algebraic patterns just as the <span class='pink-shadow'>Jacquard-loom</span> weaves flowers and leaves.</i></h3><h3>- Ada Lovelace</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1889</h2><h3>Herman Hollerith</h3><h4>An Electric Tabulating System<br><br>Developed to meet demand of US Census</h4></div><img src='./img/Hollerith.jpg'width='35%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/tab_punch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1>Communication</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><h2>1864</h2><h3>Telegraph service between Washington D.C./New York</h3><h4>Used piano like keyboard</h4></div><div style='float:right; width:45%'><h2>1874</h2><h3>A five unit code<br>'The Baudot system'</h3><h4>Made by Émile Baudot<br>Adopted in France</h4></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/Baudot-Murray-code.png'width='28%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1901</h2><h3>Donald Murray</h3><h4>Father of the remote Typewriter<br><br>International Telegraph Alphabet No. 2 (ITA2)</h4></div><img src='./img/teletype.jpg'width='42%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1963</h2><h3>ASCII</h3><h4>American Standard Code for Information Interchange<br><br>7bit = 128 characters</h4></div><img src='./img/ASCIItable.png'width='40%' style='margin-left:20px;margin-top:100px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Here comes computer !</h2><h2>&nbsp;</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Here comes computer !</h2><h2>8 bit(WTF)</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>What do we do with extra bits ?</h2><h2>&nbsp;</h2><h2>&nbsp;</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>What do we do with extra bits ?</h2><h2>Multiple standards !</h2><h2>&nbsp;</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>What do we do with extra bits ?</h2><h2>Multiple standards !</h2><h2>Multi-byte encoding! (WTF)</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1987</h2><h3>Unicode</h3><h4>unique, unified, universal encoding</h4></div><img src='./img/Unicode.png'width='20%' style='margin-left:20px;padding-top:100px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>! ! ! ! ! ! ! !</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>(...that was a lot of wikipedia)</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Puchcards are <span class='pink-shadow'>really cool</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I wanna make<br>punchcard computer!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch_prototype.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch0.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch1.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch2.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch3.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch4.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punch5.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcardfinal.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>http://electro.mechanical.computer/</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>var five = require('johnny-five');<br>var board = new five.Board();<br><br>board.on('ready', function() {<br>&nbsp;&nbsp;var socket = require('socket.io-client')('http://localhost:5040');<br><br>&nbsp;&nbsp;var button1 = new five.Button(2);<br>&nbsp;&nbsp;var button2 = new five.Button(3);<br>&nbsp;&nbsp;var button3 = new five.Button(4);<br>&nbsp;&nbsp;var button4 = new five.Button(5);<br>&nbsp;&nbsp;var button5 = new five.Button(6);<br>&nbsp;&nbsp;var button6 =  new five.Button(7);<br>&nbsp;&nbsp;var button7 = new five.Button(8);<br>&nbsp;&nbsp;var button8  = new five.Button(9);<br>...</div></div><img src='./img/punch6.gif'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>button1.on('hold', function() {<br>&nbsp;&nbsp;console.log( '1 Button held' );<br>&nbsp;&nbsp;socket.emit('hold', {pin:0});<br>});<br><br>button1.on('release', function() {<br>&nbsp;&nbsp;console.log( '1 Button released' );<br>&nbsp;&nbsp;socket.emit('release', {pin:0});<br>});<br></div></div><img src='./img/punch6.gif'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>var pattern = [0,0,0,0,0,0,0,0];<br><br>socket.on('hold', function (data) {<br>&nbsp;pattern[data.pin] = 1;<br>&nbsp;var bin = parseInt(pattern.join(''), 2)<br>&nbsp;var str = String.fromCharCode(binary)<br>});<br></div></div><img src='./img/ascii.png' width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Oh, this is how code works huh?</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Ugh, Binary...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Make your own language<br>JavaScript way</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Make a parser !</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://pegjs.org/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://64sts.com"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src" : "img/64ststweet.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A_*__**_*%20until%2032%20sts%20remain%0A**_*_*__%20until%20end%0A' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @jeni_hackett</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%2010%0A__*_*__*__%0A_*_*_*__*_%0A_*___*__*_%0A__***_**__%0A__*_***___%0A__*_*__*__%0A____' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @hamishmurphy</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A*_____**%0A_______*%0A_______*%0A_*___*_*%0A___*___*%0A*_____**%0A*_*_*_**%0A********%0A' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @amandaglosson</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A_*___*__%0A__*_*___%0A_*****__%0A**_*_**_%0A*_***_*_%0A*_***_*_%0A________' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @brindelle</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%2010%0A__**_****_%0A___*_*____%0A___*__**__%0A_*_*____*_%0A_***_****__' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @overra</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>What's next?</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>F**king put the code on Github!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>App for Knitters, not Techies</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='pink-shadow'>Craft</span> as <span class='yellow-shadow'>Computer Science</span></span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/craftscience.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/fabricsample.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h3><span style='font-size:0.5em' class='gray'>Pattern Generation language</span><br>64sts.com<br>github.com/kosamari/64sts</h3><h3><span style='font-size:0.5em' class='gray'>Punchcard Reader</span><br>github.com/kosamari/electro.mechanical.computer<br></h3><h3><span style='font-size:0.5em' class='gray'>Knitting App</span><br>github.com/kosamari/electroknit <span style='font-size:0.7em' class='pink'>coming soon!</span></h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>Thanks!</span></h2><img src='img/head_icon.png'><h3><span class='white-shadow'>@kosamari</span></h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+}
+
+]
