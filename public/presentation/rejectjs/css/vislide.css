@@ -1,7 +1,7 @@
 html,body{
   height:100%; /*height set so #vislidecan be window height*/
   margin: 0px;
-  /*min-width: 1200px;*/
+  min-width: 1200px;
   overflow: hidden;
   background-color: #f0f0f0;
   /*  background-image: url("../img/Laser_Neon.png");
