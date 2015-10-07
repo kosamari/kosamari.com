@@ -1,0 +1,480 @@
+[
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Hi, I'm <span class='white-shadow'>Mariko</span>!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>@kosamari</span></h2><img src='img/kosamari.jpg' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I make textile with <span class='yellow-shadow'>JavaScript</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Write JavaScript at <span class='pink-shadow'>Scripto</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Co-orgnizer of <span class='yellow-shadow'>BrooklynJS</span></h2><img src='img/brooklynjs_logo.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I like <span class='yellow-shadow'>CS</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2 class='gray'><strike>Computer Science</strike></h2><img src='img/head_icon_gray.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2> <span class='pink-shadow'>Craft</span> Science</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/textile_engineering.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>knitting is like coding...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Cast On: CO 5</div><div class='code'>var myScarf = [];<br>var row0 = new Array(5);<br><br>// myScarf is <br>// [ , , , , ]</div></div><img src='./img/ks1.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 1: k5</div><div class='code javascript'>var myScarf = [];<br>var k = 'K';<br>var row0 = [k,k,k,k,k];<br><br>myScarf.push(row0);<br>// [['K','K','K','K','K']]</div></div><img src='./img/ks2.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: <span class='emphasis'>k2,</span>  m1,k until 2 sts remain, m1, k2</div><div class='code javascript'>var row1 = new Array(myScarf[0].length);<br>var index = 0;<br>row1[index] = k; index++;<br>row1[index] = k; index++;<br><br>//['K','K', , , ] (length:5)</div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, <span class='emphasis'>m1,</span> k until 2 sts remain, m1, k2</div><div class='code javascript'>function m(row, index){<br>&nbsp;&nbsp;&nbsp;&nbsp;row.splice(index, 0, 'k');<br>}<br><br>m(row1, index); index++;<br>//['K','K','K', , , ] (length:6)<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, <span class='emphasis'>k until 2 sts remain,</span>  m1, k2</div><div class='code javascript'>while (index < row1.length-2) {<br>&nbsp;&nbsp;&nbsp;&nbsp;row[index] = 'k';<br>&nbsp;&nbsp;&nbsp;&nbsp;index++;<br>}<br><br>//['K','K','K','K', , ] (length:6)<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, k until 2 sts remain, <span class='emphasis'>m1, k2</span></div><div class='code javascript'>m(row1, index); index++;<br>//['K','K','K','K','K', , ] (length:7) <br><br>row1[index] = k; index++;<br>row1[index] = k; index++;<br>//['K','K','K','K','K','K','K']<br></div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code markdown' style='margin-bottom:20px;'>Row 2: k2, m1, k until 2 sts remain, m1, k2</div><div class='code javascript'>myScarf.push(row1) <br><br>// myScarf is now ...<br>// [['K','K','K','K','K'], ['K','K','K','K','K','K','K']] </div></div><img src='./img/ks3.jpg'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jsknit.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/patternmaking.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitscketch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Oh, this is how code works huh?</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Ugh, Binary...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Make your own language<br>JavaScript way</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h1>Make a parser !</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://kosamari.com/talking-to-machines/barcode/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://64sts.com"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src" : "img/parserfactory.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src" : "img/custom_parser.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://pegjs.org/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src" : "img/64ststweet.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A_*__**_*%20until%2032%20sts%20remain%0A**_*_*__%20until%20end%0A' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @jeni_hackett</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%2010%0A__*_*__*__%0A_*_*_*__*_%0A_*___*__*_%0A__***_**__%0A__*_***___%0A__*_*__*__%0A____' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @hamishmurphy</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A*_____**%0A_______*%0A_______*%0A_*___*_*%0A___*___*%0A*_____**%0A*_*_*_**%0A********%0A' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @amandaglosson</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%208%0A_*___*__%0A__*_*___%0A_*****__%0A**_*_**_%0A*_***_*_%0A*_***_*_%0A________' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @brindelle</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe src='http://64sts.com/p?code=CO%2010%0A__**_****_%0A___*_*____%0A___*__**__%0A_*_*____*_%0A_***_****__' frameborder='0' width='100%' height='80%'></iframe><br><span class='note'>by @overra</span>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>Abstraction</span></h2><h2>Error Messages</h2"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span>Abstraction</span></h2><h2 class='yellow-shadow'>Error Messages</h2"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>Thanks!</span></h2><img src='img/head_icon.png'><h3><span class='white-shadow'>@kosamari</span></h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+}
+
+]

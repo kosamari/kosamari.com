@@ -180,6 +180,9 @@ pre {
   color: #F9C132;
   text-shadow: 0px 3px #ffffff;
 }
+.gray-shallow{
+  text-shadow: 0px 3px #999999;
+}
 .pink-shadow{
   text-shadow: 0px 6px #C0414E;
 }

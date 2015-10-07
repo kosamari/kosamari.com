@@ -1,0 +1,263 @@
+html,body{
+  height:100%; /*height set so #vislidecan be window height*/
+  margin: 0px;
+  min-width: 1200px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  /*  background-image: url("../img/Laser_Neon.png");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;*/
+}
+
+.oneimage{
+  max-height:100%;
+ max-width: 100%;
+  height:auto;
+  width:auto;
+}
+#vislide{
+  height:100%;
+  position: relative;
+  color:#666;
+  /*fill:#666;*/
+}
+#vislide #slides {
+  position:relative;
+  overflow:hidden;
+}
+#tl-focus, #tl-control{
+  background-color:#f5f5f5;
+  padding:none;
+  margin:none;
+}
+#tl-control{
+  position: absolute;
+}
+
+/* Arrows */
+#vislide .slide-navigation {
+  z-index: 1;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#vislide .right{
+  right:0;
+  padding-right:10px;
+  text-align: right;
+}
+#vislide .left{
+  left:0;
+  padding-left:10px;
+  text-align: left;
+}
+#vislide .arrow{
+  color: #00B2F2;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fn-guideline{
+    stroke:#00B2F2;
+    stroke-width:5px;
+}
+/* Slideshow */
+#vislide #slide-container {
+  position: relative;
+  top:0;
+  left:0;
+  /*transition: left;*/
+  /*transition-duration: 0.5s;*/
+}
+
+#vislide .notransition {
+  transition: none !important;
+}
+
+#vislide .slide {
+  float:left;
+  height:100%;
+  display: table;
+}
+
+#vislide .slide-contents {
+  display: table-cell;
+  height:100%;
+}
+
+#vislide .align-middle {
+  vertical-align: middle;
+}
+#vislide .align-center {
+  text-align: center;
+}
+#vislide .align-right {
+  text-align: right;
+}
+#vislide .align-left {
+  text-align: left;
+}
+
+
+
+/*Chart area*/
+#chart-container{
+    /*background-color: #3A3C43*/
+}
+h1{
+    color:#00B2F2;
+    font-family: 'Raleway';
+    font-weight: 100;
+    text-shadow: 3px 3px #F9C132;
+    font-size: 6em;
+    /*text-shadow: 1px 1px #666666;*/
+}
+h2{
+    font-family: 'Raleway';
+    color:#00B2F2;
+    text-shadow: 1px 1px #999999;
+    font-size: 4em
+}
+h3{
+    font-family: 'Raleway';
+    color:#00B2F2;
+    text-shadow: 1px 1px #999999;
+    font-size: 3em
+}
+h4{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 3em
+}
+h5{
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 3.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li{
+    font-family: monospace;
+    font-weight: 100;
+    list-style-type: none;
+    color:#333333;
+}
+ul.credit li{
+  font-size:2em;
+}
+.code{
+    font-size: 2.5em;
+    font-family: monospace;
+    overflow: hidden;
+}
+.note{
+  font-family: 'Raleway';
+  font-size: 1.5em;
+}
+
+.big-text{
+    color:#F8555B;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 7em;
+    text-shadow: 1px 1px #666666;
+}
+.tiny{
+  font-size: 1em
+}
+.fill{
+  background-color: #DDDDDD;
+}
+.gray{
+    color:#666;
+}
+.pink{
+    color:#F8555B;
+}
+.green{
+    color:#07AAA4;
+}
+.yellow-shadow{
+    text-shadow: 3px 3px #F9C132;
+}
+.pink-shadow{
+    text-shadow: 3px 3px #F8555B;
+}
+.white-shadow{
+    text-shadow: 3px 3px #FFFFFF;
+}
+.extra-large{
+    font-size: 3em
+}
+.large{
+    font-size: 1.3em
+}
+.emphasis{
+    color: #F8555B;
+    font-weight: bold;
+}
+.left-float{
+    float:left;
+    display: block;
+}
+.four-col{
+    width:24%;
+}
+.three-item{
+    width:33%;
+}
+.one-col{
+    width:100%;
+}
+.no-margin{
+  margin-bottom: 0px
+}
+.box-pink{
+  background-color:rgb(255, 0, 134);
+  width:150px;
+  height:150px;
+  display:box;
+}
+.box-pink-gray{
+  background-color:rgb(255,255,255);
+  width:150px;
+  height:150px;
+  display:box;
+}
+.box-blue{
+  background-color:rgb(7, 170, 164);
+  width:150px;
+  height:150px;
+  display:box;
+}
+.box-blue-gray{
+  background-color:rgb(170,170,170);
+  width:150px;
+  height:150px;
+  display:box;
+}
+.matrix{
+  text-align: center;
+  font-size: 3em;
+  font-family: monospace;
+}
+table.matrix th td {
+    border: 1px solid #fff;
+}
+a{
+  text-decoration: none;
+  color:#f3f3f3;
+}
+/*
+CSS for each slide template.
+Put together rather quick, better re-factored & re-orgnized.
+*/
+.half-right{ width:50%; float: right;}
+.half-left{ width:50%; float: left;}
+.right-60{ width:60%; float: right;}
+.left-40{ width:40%; float: left;}
+.forth-item{text-align: center; width:25%; float: left;}
+
+.slide-split-image{text-align: center; width:50%; float: right;}
+.slide-split-text{width:50%; float:left;}
