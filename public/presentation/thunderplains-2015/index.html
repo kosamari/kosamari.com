@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Confusio Linguarum - how to help your large silent minority users</title>
+    <meta name="description" content="Presentation for EmpireNode">
+    <meta name="author" content="Mariko Kosaka">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/custom.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="css/monokai_sublime.css">
+    <style type="text/css">
+    .reveal pre code {
+      font-size:1.9em;
+    }
+    .left{
+      text-align: left;
+    }
+    .right{
+      text-align: right;
+    }
+    ul.list{
+      margin-left: 0;
+    }
+    .list li{
+      /*list-style: none;*/
+      font-size: 1.4em;
+      line-height: 1.5em;
+    }
+
+    .reveal pre code.expand {
+      max-height: 600px;
+    }
+    .pointer{
+      cursor: pointer;
+    }
+    .textfocus{
+      color:#FFA500
+    }
+    .attribution{
+      position:absolute;
+      bottom:0;
+      right:0;
+      font-size:0.5em
+    }
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    span::selection {
+      background: GreenYellow;
+      color: #f6f6f6;
+    }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+   <div class="reveal">
+      <div class="slides">
+
+<!-- Introduction -->
+        <section>
+          <img src="img/head_icon.png" height="200" width="200" alt="" class="no-border">
+          <h2 class="noselect">Hi! I'm Mariko - @kosamari</h2>
+        </section>
+        <section>
+          <img src="img/head_icon.png" height="200" width="200" alt="" class="no-border">
+          <h2 class="noselect">I write JavaScript at Scripto</h2>
+        </section>
+        <section data-background="img/brooklynjs.png">
+        </section>
+        <section>
+          <h2><span class="fragment">How taking care of</span></h2>
+          <h1><span class="yellow-text">Language</span><span class="fragment"> issues</span></h1>
+          <h2 class="fragment">can help your project 10X</h2>
+        </section>
+        <section>
+          <h1>I learned<br><span class="yellow-text">English</span><br>as an <span class="yellow-shadow">adult</span></h1>
+        </section>
+        <section>
+          <h1>I learned<br>to <span class="yellow-text">Code</span><br>as an <span class="yellow-shadow">adult</span></h1>
+        </section>
+<!--         <section>
+          <h1>I have</h1>
+          <h2><span class="pink-shadow">(mostly) frustrated</span></h2>
+          <h1><span class="pink-text">Feelings</span></h1>
+          <h2>about this.</h2>
+        </section> -->
+        <section>
+          <h1><span class="yellow-text">One size does not fit ALL</span></h1>
+          <h2 class="fragment">Be aware & make it better</h2>
+        </section>
+
+        <section data-background="img/codecademy.png"></section>
+        <section data-background="img/japanesebooks.png"></section>
+        <section>
+          <pre><code data-trim class="expand">
+
+function goToStore(state, order, payment){
+  var price = priceList[order];
+  var change = payment - price;
+
+  return {order: order, change: change};
+}
+
+goToStore('thirsty', 'water', 5);
+
+          </code></pre>
+        </section>
+        <section data-background="img/nodedoc1.png"></section>
+        <section data-background="img/nodedoc2.png"></section>
+        <section data-background="img/nodedoc3.png"></section>
+
+        <section data-background="img/ameba1.png"></section>
+        <section data-background="img/ameba2.png"></section>
+        <section>
+          <h1><span class="yellow-shadow">OPINIONS™</span></h1>
+          <h2 class="fragment">"Isomorphic JavaScript"</h2>
+        </section>
+        <section>
+          <h2><i><span class="yellow-shadow">"isomorphic"</span> is misused we should say <span class="yellow-shadow">"portable"</span>.</i></h2>
+        </section>
+        <section>
+          <h2><i>It is just <span class="yellow-shadow">flashy math word</span>.</i></h2>
+        </section>
+        <section>
+          <h2><i>It's the <span class="yellow-shadow">new semicolon</span>.</i></h2>
+        </section>
+        <section>
+          <img src="img/subtweet.png">
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Really?</span></h1>
+        </section>
+        <section data-background="img/arabic_repo.png">
+          <img src="img/create_repo.png" alt="" class="fragment">
+        </section>
+        <section>
+          <h1>. . .</h1>
+        </section>
+        <section>
+          <h1>Tech is <span class="yellow-shadow">f**king</span><br><span class="yellow-text">Anglo-centric</span></h1>
+          <h2 class="fragment">& we have to <span class="yellow-shadow">deal with it</span>.</h2>
+        </section>
+        <section>
+          <h1>Tech is <span class="yellow-shadow">f**king</span><br><span class="yellow-text">Angro-centric</span></h1>
+          <h2>& we have to <span class="yellow-shadow">deal with it</span>.</h2>
+        </section>
+        <!-- <section data-background="img/The-More-You-Know.jpg">
+        </section> -->
+        <section data-background="img/i18n1.png">
+        </section>
+        <section data-background="img/i18n2.png">
+        </section>
+        <section data-background="img/i18n3.png">
+        </section>
+        <section>
+          <h2>34 teams are created</h2>
+          <div class="fragment">
+          <h4>Arabic, Bulgarian, Bengali, Chinese, Czech, Danish,</h4>
+          <h4>German, Greek, Spanish, Persian, Finnish, French,</h4>
+          <h4>Hebrew, Hindi, Hungarian, Indonesian, Italian,</h4>
+          <h4>Japanese, Georgian, Korean, Macedonian, Malay,</h4>
+          <h4>Dutch, Norwegian, Polish, Portuguese, Russian,</h4>
+          <h4>Romanian, Swedish, Tanuk, Turkish, Taiwanese,</h4>
+          <h4>Ukrainian, Vietnamese<span class="yellow-text"></h4>
+          </div>
+        </section>
+        <section>
+          <h2><span class="yellow-shadow">23</span> became active</h2>
+          <div>
+          <h4>Arabic, Bulgarian, Bengali, <span class="yellow-shallow">Chinese</span>, Czech, <span class="yellow-shallow">Danish</span>,</h4>
+          <h4><span class="yellow-shallow">German</span>, <span class="yellow-shallow">Greek</span>, <span class="yellow-shallow">Spanish</span>, Persian, <span class="yellow-shallow">Finnish</span>, <span class="yellow-shallow">French</span>,</h4>
+          <h4><span class="yellow-shallow">Hebrew</span>, <span class="yellow-shallow">Hindi</span>, <span class="yellow-shallow">Hungarian</span>, <span class="yellow-shallow">Indonesian</span>, <span class="yellow-shallow">Italian</span>,</h4>
+          <h4><span class="yellow-shallow">Japanese</span>, <span class="yellow-shallow">Georgian</span>, <span class="yellow-shallow">Korean</span>, Macedonian, Malay,</h4>
+          <h4><span class="yellow-shallow">Dutch</span>, <span class="byellow-shallow">Norwegian</span>, Polish, <span class="yellow-shallow">Portuguese</span>, <span class="yellow-shallow">Russian</span>,</h4>
+          <h4>Romanian, Swedish, Tanuk, <span class="yellow-shallow">Turkish</span>, <span class="yellow-shallow">Taiwanese</span>,</h4>
+          <h4><span class="yellow-shallow">Ukrainian</span>, <span class="yellow-shallow">Vietnamese</span></h4>
+          </div>
+        </section>
+        <section data-background="img/ko.png">
+        </section>
+        <section data-background="img/tw.png">
+        </section>
+        <section data-background="img/tr.png">
+        </section>
+        <section data-background="img/io-js_slack.png">
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Where to start?</span></h1>
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Write it Simple</span></h1>
+        </section>
+        <section data-background="img/howto1.png"></section>
+        <section data-background="img/howto2.png"></section>
+        <section data-background="img/nodedoc3.png"></section>
+        <section data-background="img/note-buffer.jpg"></section>
+        <section>
+          <h1><span class="yellow-shadow">Set Policy<br>and License</span></h1>
+        </section>
+        <section data-background="img/hood_ie.png">
+        </section>
+        <section>
+          <img src="img/nolan.png">
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Accessibility</span></h1>
+        </section>
+        <section>
+          <h2><span class="gray-shallow">Readability is everything</span></h2>
+        </section>
+        <section data-background="img/hackernews.png">
+        </section>
+        <section data-background="img/nodedoc3.png"></section>
+        <section data-background="img/githubmarkdown.png">
+        </section>
+        <section>
+          <h2><span class="gray-shallow">Selectability is everything</span></h2>
+        </section>
+        <section>
+        <h3 class="fragment">...just let me <span class='noselect'>select text</span></h3>
+          <pre><code data-trim class="expand">
+.noselect {
+  user-select: none;
+}
+</code></pre>
+<div class="fragment">
+        <h3 class="fragment">...don't use wacky <span class='select'>highlighting</span></h3>
+        <pre><code data-trim class="expand">
+span::selection {
+  background: GreenYellow;
+}
+          </code></pre>
+</div>
+        </section>
+        <section data-background="img/highlight.gif">
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Mind the gap</span></h1>
+        </section>
+        <section data-background="img/lgtm.png">
+        </section>
+<!--         <section>
+        <h2>ggrks( ´ω` )</h2>
+        <h2 class="fragment">= google it yourself</h2>
+        </section> -->
+        <section>
+          <h1><span class="yellow-shadow">Ask about what they need</span></h1>
+        </section>
+         <section>
+        <h2><span class="gray-shallow">Get a Consensus</span></h2>
+        </section>
+        <section>
+          <h2><span class="gray-shallow">Chance to get (usually) unheard voice</span></h2>
+        </section>
+        <section>
+          <h2><span class="gray-shallow">Never start with<br>"Do you speak English?"</span></h2>
+        </section>
+        <section data-background="img/summitmemo.png">
+        </section>
+        <section class="left">
+          <h3 class="fragment">1. Write in simple English</h3>
+          <h3 class="fragment">2. Have a content policy</h3>
+          <h3 class="fragment">3. Improve accessibility</h3>
+          <h3 class="fragment">4. Be aware of culture gap</h3>
+          <h3 class="fragment">5. Ask for needs (ask often)</h3>
+        </section>
+        <section>
+          <h1><span class="yellow-shadow">Want more?</span></h1>
+        </section>
+        <section data-background="img/GDC.png">
+        </section>
+        <section data-background="img/FikaScript.png">
+        </section>
+<!--         <section>
+          <img src="img/neko.png">
+        </section> -->
+        <section data-background="img/nadeshiko.png">
+        </section>
+        <section>
+          <img src="img/Kate.png">
+          <p>Kate Hudson: Contributors Wanted: Encouraging Diversity in Your Open Source Project</p>
+        </section>
+        <section>
+          <img src="img/Katie.png">
+          <p>Katie Kurkoski: Developing for Localization</p>
+        </section>
+        <section class="left">
+          <h2><span class="yellow-shadow">reference</span></h2>
+          <br>
+          <h5>- <a href="http://ameblo.jp/ca-1pixel/entry-11476850674.html">Node.js for FrontEnd Engineer (Japanese Blog Post)</a></h5>
+          <h5>- <a href="https://github.com/nasser/---">The قلب Programming Language</a></h5>
+          <h5>- <a href="https://drive.google.com/folderview?id=0B4tYrG9tjAW0fk9VOG52R2VQMmZHNWdpYnpqWU5MYUlfamNycktmeEl3UkNhdk1PS1Rid3c&usp=sharing">Node.js Collaborators Summit Notes</a></h5>
+          <h5>- <a href="http://www.gdcvault.com/play/1022362/We-Suck-at-Inclusivity-How">We Suck at Inclusivity: How Language Creates the Largest Invisible Minority for Games</a></h5>
+          <h5>- <a href="http://fikascript.se/">FikaScript</a></h4>
+          <h5>- <a href="http://nadesi.com/">Programming Language "Nadesiko"</a></h5>
+          <h5>- <a href="https://www.youtube.com/watch?v=xcRakXhQP2Q">Kate Hudson: Contributors Wanted: Encouraging Diversity in Your Open Source Project</a></h5>
+          <h5>- <a href="https://www.youtube.com/watch?v=CNNUCECrjso">Katie Kurkoski: Developing for Localization</a></h5>
+        </section>
+        <section class="left">
+          <h2><span class="yellow-shadow">I really applicate your help!</span></h2>
+          <br>
+          <h4><span class="gray-shallow">Aria Stewart</span>, <span class="gray-shallow">Mikeal Rogers</span>, <span class="gray-shallow">Jeremiah Senkpiel</span></h4>
+          <br>
+          <h4><span class="gray-shallow">Todd Kennedy</span>, <span class="gray-shallow">Rusty Foster</span>, <span class="gray-shallow">Rob Dubbin</span></h4>
+          <br>
+          <h4><span class="gray-shallow">Vijith Assar</span>, <span class="gray-shallow">Tracy Hinds</span>, <span class="gray-shallow">Amanda Harlin</span></h4>
+          <br>
+          <h4>...and many more!</h4>
+        </section>
+        <section>
+          <img src="img/sticker.png">
+        </section>
+        <section>
+          <h1 class="left fragment"><span class="yellow-shadow">Thank you</span></h1>
+          <br>
+          <h3 class="left">@kosamari</h3>
+          <h4 class="left">Slides : <a href="http://kosamari.com/presentation/empire-node">http://kosamari.com/presentation/thunderplains-2015</a></h4>
+        </section>
+
+      </div>
+
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https: //github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        keyboard: true,
+        overview: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: 'none', // default/cube/page/concave/zoom/linear/none
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        ]
+      });
+
+      //Syntax hilighter
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
