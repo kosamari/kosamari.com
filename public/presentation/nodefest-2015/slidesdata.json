@@ -1,0 +1,1180 @@
+[
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1><span class='yellow-shadow'>Electroknit！</span></h1><h3>Node.jsでセーターを編む方法</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>こさまりです！</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>@kosamari</span></h2><img src='img/kosamari.jpg' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>Scripto</span>でNode/Socket.ioを中心に<br>アプリを書いています</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>実は<span class='yellow-shadow'>アクシデント</span>で<br>プログラマーになりました</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/counter_tweet.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>BrooklynJS</span> をやってます</h2><img src='img/brooklynjs_logo.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/brooklynjs.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://borojs.com/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>なに話すの？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>ウェブエンジニアだって<br><span class='yellow-shadow'>ハッカー</span>になれる<br><br></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>ウェブエンジニアだって<br><span class='yellow-shadow'>ハッカー</span>になれる<br>そう、<span class='yellow-shadow'>JavaScript </span>ならね</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitwork.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>編み物ってコードと一緒だな...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h2>表編み</h2><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h2>裏編み</h2><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>編み図（英語圏）</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>編み図（英語圏）</h2><div class='code nohighlight'>CO 5<br>R1 : <span class='emphasis'>k5</span><br>R2 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>編み図（英語圏）</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R3 : *k1 <span class='emphasis'>repeat from * to end</span><br><br><span class='emphasis'>Repeat R2-3 for 5 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/knit_js.png' width='80%''>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/render_pattern_black.png' width='98%''>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitcomputer.jpg",
+    "note":"http://knitlabo.cute.bz/?p=6746"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>なにこれ楽しい！</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/textile_engineering.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>ドットマトリクスプリンターのように</h3><img src='./img/dotmatrix.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>編地を作っていきます</h3><img src='./img/needleselect.gif' width=60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/machineinside.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>PythonとかProcessingでできるなら<br><br></h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>PythonとかProcessingで出来るなら<br><span class='yellow-shadow'>Node.js</span>で出来るでしょ？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>(...ヤバい<span class='yellow-shadow'> JSConf  </span>受かっちゃった)</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/jsconf.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>どうやってデータ読み込むの？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/ppd.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='./img/brotherbinery.gif'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitscketch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'> Bitwise Operator  </span>初めて使いました</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>でも画像はどうすれば良いの？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>データが取れれば良いんでしょ？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>Canvasを使った読み込み</h3><div class='code'>var img = new Image();<br>img.src ='./cat.jpg';<br><br>var width = img.width;<br>var height = img.width;<br><br>var canvas  = document.getElementById('canvas');<br>var ctx = canvas.getContext('2d');<br><br>var data = ctx.getImageData( 0, 0, width, height).data;<br>// Uint8ClampedArray (r, g, b, a) [155, 171, 196, 255, 161...</div>"
+  },
+  "layout" :{
+    "center":false  ,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://aheckmann.github.io/gm/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>Graphics Magicを使った読み込み</h3><div class='code'>0,0: (153,169,194) #99A9C2<br>1,0: (155,171,196) #9BABC4<br>2,0: (158,174,200) #9EAEC8<br>3,0: (160,176,202) #A0B0CA<br>4,0: (153,169,194) #99A9C2<br>5,0: (155,171,196) #9BABC4<br>6,0: (158,174,200) #9EAEC8<br>7,0: (160,176,202) #A0B0CA</div><br><br><div class='code javascript'>line.match(/\\((...),(...),(...)\\)/).slice(1,4).map(Number);</div><br>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>グレースケール</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right'><div class='box-pink'></div></td><td  align='left'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right'><div class='box-pink'></div></td><td  align='left'><ul><li class='emphasis'>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:7</li><li class='emphasis'>G:170</li><li>B:164</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-pink'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:170</li><li>G:170</li><li>B:170</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-pink'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:0</li><li>B:134</li></ul></td><td align='right' width='25%'><div class='box-pink-gray'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:7</li><li>G:170</li><li>B:164</li></ul></td><td align='right' width='25%'><div class='box-blue-gray'></div></td><td  align='left' width='25%'><ul><li>R:170</li><li>G:170</li><li>B:170</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h3>JavaScriptで書くなら</h3><div class='code'>var colorImage = [[240, 219, 79],[0, 157, 220],[28, 29, 57]];<br><br>colorImage.map(function(rgb){<br>&nbsp;&nbsp;return Math.max.apply(null, rgb);<br>});<br><br>//[ 240, 220, 57 ]</div>"
+  },
+  "layout" :{
+    "center":false  ,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/catgray.jpg'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>ぼかし・シャープ</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>カーネルコンボリューション</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>なにそれオイシイの？</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/cc1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/cc2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/cc3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/c2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/c3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/c4.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/c5.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/c6.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>エッジ検出</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/e1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/e2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/e3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>ディザリング</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/catgray.jpg' width='40%'><br><br><img src='./img/255gray.png' width='80%'><br><br><img src='./img/bandw.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/cat50.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz4.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/bayercat.png' >"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>画像の送り込み</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>まだ Child Process なんです…<br>(Pythonのライブラリを使ってます)</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='80%' controls><source src='img/knittingvideo.MOV' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/sortscarf.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/D3AMA.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>コードってこうやって動くんだ！</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>もっといろいろやりたい…</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>もっといろいろやりたい…</h2><img src='img/head_icon.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcardfinal.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='80%' controls><source src='img/punch.MOV' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>var five = require('johnny-five');<br>var board = new five.Board();<br><br>board.on('ready', function() {<br>&nbsp;&nbsp;var socket = require('socket.io-client')('http://localhost:5040');<br><br>&nbsp;&nbsp;var button1 = new five.Button(2);<br>&nbsp;&nbsp;var button2 = new five.Button(3);<br>&nbsp;&nbsp;var button3 = new five.Button(4);<br>&nbsp;&nbsp;var button4 = new five.Button(5);<br>&nbsp;&nbsp;var button5 = new five.Button(6);<br>&nbsp;&nbsp;var button6 =  new five.Button(7);<br>&nbsp;&nbsp;var button7 = new five.Button(8);<br>&nbsp;&nbsp;var button8  = new five.Button(9);<br>...</div></div><img src='./img/punch6.gif'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>button1.on('hold', function() {<br>&nbsp;&nbsp;console.log( '1 Button held' );<br>&nbsp;&nbsp;socket.emit('hold', {pin:0});<br>});<br><br>button1.on('release', function() {<br>&nbsp;&nbsp;console.log( '1 Button released' );<br>&nbsp;&nbsp;socket.emit('release', {pin:0});<br>});<br></div></div><img src='./img/punch6.gif'width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:65%'><div class='code javascript'>var pattern = [0,0,0,0,0,0,0,0];<br><br>socket.on('hold', function (data) {<br>&nbsp;pattern[data.pin] = 1;<br>&nbsp;var bin = parseInt(pattern.join(''), 2)<br>&nbsp;var str = String.fromCharCode(binary)<br>});<br></div></div><img src='./img/ascii.png' width='30%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>コードってこうやって動くんだ！</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://64sts.com"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://pegjs.org/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1>結論</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2 class='gray'><strike>JavaScriptしか知らない…</strike></h2><img src='img/head_icon_gray.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>もうなんでも <span class='yellow-shadow'>JavaScript</span> で出来る！</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>編み機デモ</span>できるかな？</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>ステッカー</span>持ってきました❤</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>ありがとうございました！</span></h2><img src='img/head_icon.png'><h3><span class='white-shadow'>@kosamari</span></h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+}
+
+]
