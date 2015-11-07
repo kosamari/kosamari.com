@@ -986,19 +986,6 @@
   }
 },
 
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom":"<h2>もっといろいろやりたい…</h2><img src='img/head_icon.png' width='200px'>"
-  },
-  "layout" :{
-    "center":true,
-    "middle": true
-  }
-},
-
 
 {
   "template" : "coverimage",
@@ -1059,18 +1046,6 @@
   },
   "layout" :{
     "center":false,
-    "middle": true
-  }
-},
-{
-  "template" : "custom",
-  "size": 1,
-  "type":"slide",
-  "content" : {
-    "custom":"<h2>コードってこうやって動くんだ！</h2><img src='img/head_icon.png'>"
-  },
-  "layout" :{
-    "center":true,
     "middle": true
   }
 },
