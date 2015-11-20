@@ -1,0 +1,1528 @@
+[
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Hi, I'm <span class='white-shadow'>Mariko</span>!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>@kosamari</span></h2><img src='img/kosamari.jpg' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Write JavaScript at <span class='pink-shadow'>Scripto</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Co-orgnizer of <span class='yellow-shadow'>BrooklynJS</span></h2><img src='img/brooklynjs_logo.png' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Make <span class='pink-shadow'>textile</span> with JavaScript</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/textile_engineering.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h1>Electroknit!<br> Pixel to Textile</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I design & knit in JavaScript</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='100%' controls><source src='img/Knit_web.mp4' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitscketch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/machineinside.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcard.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcardfinal.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='100%' controls><source src='img/textilepunch.MOV' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Knitting is like coding...</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h2>knit stitch</h2><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h2>purl stitch</h2><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'><br><br></div><br><br><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern == Code</h2><div class='code javascript'>var scarf = new Array(5)</div><br><br><div class='code nohighlight'><span class='emphasis'>CO 5</span><br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern == Code</h2><div class='code javascript'>scarf[0]='k'; scarf[1]='k'; scarf[2]=...</div><br><br><div class='code nohighlight'>CO 5<br>R1 : <span class='emphasis'>k5</span><br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern == Code</h2><div class='code javascript'>function m1(index){ scarf.splice(index, 0, 'k'); }</div><br><br><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, <span class='emphasis'>m1</span>, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern == Code</h2><div class='code javascript'>while(i < scarf.length-2){ scarf[i]='k'; i++;} </div><br><br><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<video width='100%' controls><source src='img/knittingvideo.MOV' type='video/mp4'></video>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Textile design with JavaScript</h1>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/sortscarf.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://64sts.com"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/outagescarf.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/catphotoshop.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Image Processing... </h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Can I do it in JavaScript..? </h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='./img/flow.png' width='100%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Raster Graphics</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/colorpick.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/pixcelline.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Raster</h2><div class='code javascript' width='80%'>image = ['#fff','#000','#000','#fff','#fff'...]</div><br><h2 style='visibility:hidden'>Vector</h2><div style='visibility:hidden' class='code javascript' width='80%'>&lt;line x1='20' y1='100' x2='100' y2='20' <br>&nbsp;stroke='black' stroke-width='2'/&gt;</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Raster</h2><div class='code javascript' width='80%'>image = ['#fff','#000','#000','#fff','#fff'...]</div><br><h2>Vector</h2><div class='code javascript' width='80%'>&lt;line x1='20' y1='100' x2='100' y2='20' <br>&nbsp;stroke='black' stroke-width='2'/&gt;</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>but image is &lt;img /&gt; ... </h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:75%'><div class='code javascript' style='margin-bottom:20px;'>var canvas =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('canvas');<br>var ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;canvas.getContext('2d');</div><div style='visibility:hidden' class='code javascript' style='margin-bottom:20px;'>var data =<br>&nbsp;&nbsp;&nbsp;&nbsp;ctx.getImageData(0,0,200,200).data;</div><div style='visibility:hidden' class='code javascript' style='margin-bottom:20px;'>// console.log(data)<br>//[38, 95, 147, 255, 9, 42, 131, 255, 1, 26, 126, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255 …]</div></div><img src='./img/jsconf_asia.png'  style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:75%'><div class='code javascript' style='margin-bottom:20px;'>var canvas =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('canvas');<br>var ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;canvas.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>var data =<br>&nbsp;&nbsp;&nbsp;&nbsp;ctx.getImageData(0,0,200,200).data;</div><div style='visibility:hidden' class='code javascript' style='margin-bottom:20px;'>// console.log(data)<br>//[38, 95, 147, 255, 9, 42, 131, 255, 1, 26, 126, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255 …]</div></div><img src='./img/jsconf_asia.png'  style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:75%'><div class='code javascript' style='margin-bottom:20px;'>var canvas =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('canvas');<br>var ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;canvas.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>var data =<br>&nbsp;&nbsp;&nbsp;&nbsp;ctx.getImageData(0,0,200,200).data;</div><div   class='code javascript' style='margin-bottom:20px;'>// data is array of rgba<br>//[38, 95, 147, 255, 9, 42, 131, 255, 1, 26, 126, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255, 2, 28, 127, 255 …]</div></div><img src='./img/jsconf_asia.png'  style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix0.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both; visibility:hidden;'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px; visibility:hidden;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix0.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both;'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px; visibility:hidden;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix0.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[<span class='emphasis'>0, 43, 125, 255,</span><br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix1.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;<span class='emphasis'>44, 113, 193, 255,</span><br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix2.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;<span class='emphasis'>44, 113, 193, 255,</span><br>&nbsp;255, 231, 67, 255,<br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix3.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;<span class='emphasis'>255, 231, 67, 255,</span><br>&nbsp;255, 231, 67, 255, ...]</div></div><img src='./img/pix4.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:45%'><div class='code nohighlight' style='margin-bottom:20px;'>[0, 43, 125, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;44, 113, 193, 255,<br>&nbsp;255, 231, 67, 255,<br>&nbsp;<span class='emphasis'>255, 231, 67, 255,</span> ...]</div></div><img src='./img/pix5.png'  width='50%' style='padding-top:25px;margin-left:20px;'><div class='code javascript' style='margin-bottom:20px; clear:both'>var output =<br>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('output');<br>var out_ctx =<br>&nbsp;&nbsp;&nbsp;&nbsp;output.getContext('2d');</div><div class='code javascript' style='margin-bottom:20px;'>function draw(x, y, r, g, b){<br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix5.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawInvert(x, y, r, g, b){<br>&nbsp;&nbsp;r = 255 - r;<br>&nbsp;&nbsp;g = 255 - g;<br>&nbsp;&nbsp;b = 255 - b; <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix_invert.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawInvert(x, y, r, g, b){<br>&nbsp;&nbsp;r = 255 - r;<br>&nbsp;&nbsp;g = 255 - g;<br>&nbsp;&nbsp;b = 255 - b; <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix5.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawMoreBlue(x, y, r, g, b){<br>&nbsp;&nbsp;b = b + 60; <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix_moreblue.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawMoreBlue(x, y, r, g, b){<br>&nbsp;&nbsp;b = b + 60; <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ r +','+ g +','+ b +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix5.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawGrayScale(x, y, r, g, b){<br>&nbsp;&nbsp;var l = Math.max.apply(null,[r,g,b]); <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ l +','+ l +','+ l +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='text-align:center;'><img src='./img/pix_gray.png'  width='50%'></div><br><div class='code javascript' style='margin-bottom:20px;'>function drawGrayScale(x, y, r, g, b){<br>&nbsp;&nbsp;var l = Math.max.apply(null,[r,g,b]); <br>&nbsp;&nbsp;out_ctx.fillStyle =<br>&nbsp;&nbsp;'rgb('+ l +','+ l +','+ l +')';<br>&nbsp;&nbsp;out_ctx.fillRect(x, y, 1, 1);<br>}</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right'><div class='box-yellow'></div></td><td  align='left'><ul><li>R:255</li><li>G:231</li><li>B:67</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:44</li><li>G:113</li><li>B:193</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right'><div class='box-yellow'></div></td><td  align='left'><ul><li class='emphasis'>R:255</li><li>G:231</li><li>B:67</li></ul></td><td align='right'></td><td  align='left'></td></tr><tr><td align='right'><div class='box-blue'></div></td><td  align='left'><ul><li>R:44</li><li>G:113</li><li class='emphasis'>B:193</li></ul></td><td align='right'></td><td  align='left'></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-yellow'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:231</li><li>B:67</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:44</li><li>G:113</li><li>B:193</li></ul></td><td align='right' width='25%'></td><td  align='left' width='25%'><ul><li>R:193</li><li>G:193</li><li>B:193</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 5,
+  "type":"math",
+  "content" : {
+    "custom" : "<h3><table width='100%'><tr><td align='right' width='25%'><div class='box-yellow'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:231</li><li>B:67</li></ul></td><td align='right' width='25%'><div class='box-yellow-gray'></div></td><td  align='left' width='25%'><ul><li>R:255</li><li>G:255</li><li>B:255</li></ul></td></tr><tr><td align='right' width='25%'><div class='box-blue'></div></td><td  align='left' width='25%'><ul><li>R:44</li><li>G:113</li><li>B:193</li></ul></td><td align='right' width='25%'><div class='box-blue-gray'></div></td><td  align='left' width='25%'><ul><li>R:193</li><li>G:193</li><li>B:193</li></ul></td></tr></table>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Blur / Sharpening</h2><h2>Edge Detection</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2 style='visibility:hidden;'>Pixel Social Graph</h2><h3>(Kernel Convolution)</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Pixel Social Graph</h2><h3>(Kernel Convolution)</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc0.png' ></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div><img src='./img/kcm1.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div><img src='./img/kcm2.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div><img src='./img/kcm2-2.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div><img src='./img/kcm3-2.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc2.png' ></div><img src='./img/kcm4.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc4.png' ></div><img src='./img/kcm4.png' >"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc5.png' ></div><img src='./img/kcm5.png' ><div class='code markdown' >159 * 1 = 159</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc6.png' ></div><img src='./img/kcm6.png' ><div class='code markdown' >159 * 1 = 159<br>136 * 2 = 272</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc7.png' ></div><img src='./img/kcm7.png' ><div class='code markdown' >159 * 1 = 159<br>136 * 2 = 272<br>&nbsp;63 * 1 = 63</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc3.png' ></div><img src='./img/kcm4.png' ><div class='code markdown' >Sum &nbsp;&nbsp;&nbsp;&nbsp;: 2061</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc3.png' ></div><img src='./img/kcm4.png' ><div class='code markdown' >Sum &nbsp;&nbsp;&nbsp;&nbsp;: 2061<br> Divider : &nbsp;&nbsp;16<br>(Sum of Convolution)</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc4.png' ></div><img src='./img/kcm4.png' style><div class='code markdown' >Sum &nbsp;&nbsp;&nbsp;&nbsp;: 2061<br> Divider : &nbsp;&nbsp;16<br> --------------<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;128</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc8.png' ></div><img src='./img/kcm4.png' style><div class='code markdown' >Sum &nbsp;&nbsp;&nbsp;&nbsp;: 1288<br> Divider : &nbsp;&nbsp;16<br> --------------<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:50%'><img src='./img/kc9.png' ></div><img src='./img/kcm4.png' style><div class='code markdown' >Sum &nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;866<br> Divider : &nbsp;&nbsp;16<br> --------------<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml.png' width='90%' ></div><img src='./img/kcm4.png' style><h4>Divided by Sum</h4><h3 style='visibility:hidden'>Blur</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml_blur.png' width='90%' ></div><img src='./img/kcm4.png' style><h4>Divided by Sum</h4><h3>Blur</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml.png' width='90%' ></div><img src='./img/kcm_sharp.png' style><h4>Divided by Sum</h4><h3 style='visibility:hidden'>Sharp</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml_sharp.png' width='90%' ></div><img src='./img/kcm_sharp.png' style><h4>Divided by Sum</h4><h3>Sharp</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml.png' width='90%' ></div><img src='./img/kcm_edge.png' style><h4>Divided by Size</h4><h3 style='visibility:hidden;'>Edge</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:70%'><img src='./img/ml_edge.png' width='90%' ></div><img src='./img/kcm_edge.png' style><h4>Divided by Size</h4><h3>Edge</h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>It's really slow...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Can I make it parallel process?</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Yes ! with Web Worker"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/ww1.png' width='80%'><div class='code javascript' >var worker = new Worker('./worker.js');</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/ww2.png' width='80%'><div class='code javascript' >worker.postMessage({id:id, data:[255,138,136 ...]});</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/ww3.png' width='75%'><div class='code javascript' style='text-align:left;'>var workers = new Array(5);<br> wokers[i] = new Worker('./worker.js');;</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/ww4.png' width='75%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='img/ww5.png' width='75%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='./img/flow.png' width='100%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/ml.png' width='50%'><br><br><img src='./img/255gray.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/ml.png' width='50%'><br><br><img src='./img/255gray.png' width='80%'><br><br><img src='./img/bandw.png' width='80%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='./img/ml_bin.png' width='50%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Dithering</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz1.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 2,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz2.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz3.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/diz4.png' width='90%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 3,
+  "type":"math",
+  "content" : {
+    "custom" : "<img src='./img/ml_half.png' >"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Can I save as an image file?</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div class='code javascript' style='margin-bottom:20px'>var imageArray = [255,255,255,255,0,0,0,255,0,0,0,255,...]</div><div class='code javascript' style='margin-bottom:20px;visibility:hidden;'>var canvas = document.getElementById('canvas');<br>var context = canvas.getContext('2d');<br><br>var imageData = context.createImageData(width, height);<br>imageData.data = imageArray;<br>context.putImageData(imageData,0,0);</div><div class='code javascript' style='visibility:hidden;'>var url = canvas.toDataURL(); <br>url.replace(/^data:image\/[^;]/, 'data:application/octet-stream');<br>location.href = dataURL;<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div class='code javascript' style='margin-bottom:20px'>var imageArray = [255,255,255,255,0,0,0,255,0,0,0,255,...]</div><div class='code javascript' style='margin-bottom:20px'>var canvas = document.getElementById('canvas');<br>var context = canvas.getContext('2d');<br><br>var imageData = context.createImageData(width, height);<br>imageData.data = imageArray;<br>context.putImageData(imageData,0,0);</div><div class='code javascript' style='visibility:hidden;'>var url = canvas.toDataURL(); <br>url.replace(/^data:image\/[^;]/, 'data:application/octet-stream');<br>location.href = dataURL;<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div class='code javascript' style='margin-bottom:20px'>var imageArray = [255,255,255,255,0,0,0,255,0,0,0,255,...]</div><div class='code javascript' style='margin-bottom:20px'>var canvas = document.getElementById('canvas');<br>var context = canvas.getContext('2d');<br><br>var imageData = context.createImageData(width, height);<br>imageData.data = imageArray;<br>context.putImageData(imageData,0,0);</div><div class='code javascript'>var url = canvas.toDataURL(); <br>url.replace(/^data:image\/[^;]/, 'data:application/octet-stream');<br>location.href = dataURL;<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div class='code javascript' style='margin-bottom:20px; visibility:hidden'>var imageArray = [255,255,255,255,0,0,0,255,0,0,0,255,...]</div><div class='code javascript' style='margin-bottom:20px'>var canvas = document.getElementById('canvas');<br>var context = canvas.getContext('2d');<br><br>var imageData = context.createImageData(width, height);<br>imageData.data = imageArray;<br>context.putImageData(imageData,0,0);</div><div class='code javascript' style='visibility:hidden'>var url = canvas.toDataURL(); <br>url.replace(/^data:image\/[^;]/, 'data:application/octet-stream');<br>location.href = dataURL;<br></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<img src='./img/typed_log.png' >"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Typed Array... </h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Typed...??? </h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>JavaScript Array</h2><div class='code javascript' style='margin-bottom:20px;text-align:left'>var array = [];<br><br> array[0] = 1;<br>array.push(2);<br>array[2] = {};<br>array.push('string')<br><br>------------------<br>[1,2,{},'string']</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/oventray.jpg",
+    "note":"photo by whitneyinchicago on flickr"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/muffins.jpg",
+    "note":"photo by Katrin Gilger on flickr"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Typed Array</h2><div class='code javascript' style='margin-bottom:20px;text-align:left'>var typedArray = new Uint8Array(4);<br><br> typedArray[0] = 280; <br>typedArray[1] = 'string'; <br>typedArray[2] = 30; <br>typedArray[3] = 255; <br><br>------------------<br>[24,0,30,255]</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Typed Array</h2><div class='code javascript' style='margin-bottom:20px;text-align:left'>Int8Array // 8-bit signed integer<br>Uint8Array// 8-bit unsigned integer<br>Uint8ClampedArray // 8-bit unsigned integer (clamped)<br>Int16Array // 16-bit two's complement signed integer<br>Uint16Array // 16-bit unsigned integer unsigned<br>Int32Array  // 32-bit two's complement signed integer<br>Uint32Array // 32-bit unsigned integer unsigned<br>Float32Array // 32-bit IEEE float unrestricted float<br>Float64Array // 64-bit IEEE float unrestricted double</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>What is Clamped</h2><div class='code javascript' style='margin-bottom:20px;text-align:left'>var typedArray = new Uint8ClampedArray(4);<br><br> typedArray[0] = 280; <br>typedArray[1] = -30; <br>typedArray[2] = 30; <br>typedArray[3] = 255; <br><br>------------------<br>[255,0,30,255]</div>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div class='code javascript' style='margin-bottom:20px;'>var imageArray = [255,255,255,255,0,0,0,255,0,0,0,255,...]<br><br>var canvas = document.getElementById('canvas');<br>var context = canvas.getContext('2d');<br><br>var imageData = context.createImageData(width, height);<br>for(var i=0;i&lt;imageData.length;i++){<br>&nbsp;&nbsp;imageData.data[i] = imageArray[i];<br>}<br><br>context.putImageData(imageData,0,0);</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>(surprisingly) I learned a lot <br>about web by knitting...</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>JavaScript, all the things!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h3><span style='font-size:0.5em' class='gray'>Pattern Generation language</span><br>64sts.com<br>github.com/kosamari/64sts</h3><h3><span style='font-size:0.5em' class='gray'>Knitting App</span><br>github.com/kosamari/electroknit <span style='font-size:0.7em' class='pink'>coming soon!</span></h3><h3><span style='font-size:0.5em' class='gray'>Thank you!</span><br><span style='font-size:0.7em' class='gray'>Zach Lieberman & School for Poetic Computation</span></h3>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>Thanks!</span></h2><img src='img/head_icon.png'><h3><span class='white-shadow'>@kosamari</span></h3><h3>bit.ly/pixcel2knit</h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+}
+
+]
