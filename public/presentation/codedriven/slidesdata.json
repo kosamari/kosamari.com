@@ -1,0 +1,600 @@
+[
+{
+    "template" : "custom",
+    "size": 1,
+    "type":"slide",
+    "content" : {
+      "custom":"<h2><span class='pink-shadow'>Weaving My Own Learning Path</span></h2>"
+    },
+    "layout" :{
+      "center":true,
+      "middle": true
+    }
+  },
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Hi, I'm <span class='white-shadow'>Mariko</span>!</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>@kosamari</span></h2><img src='img/kosamari.jpg' width='200px'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Write JavaScript at <span class='pink-shadow'>Scripto</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I make textile with <span class='yellow-shadow'>JavaScript</span></h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/textile_engineering.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/scarf.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://64sts.com"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://kosamari.github.io/sweaterify/"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitwork.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I learned a lot about computer by knitting</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Knitting == Coding</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<h2>knit stitch</h2><img src='./img/KnitStich.gif' width='60%'><br><img src='./img/knit_sample.jpg' width='60%'>",
+    "col2":"<h2>purl stitch</h2><img src='./img/PurlStich.gif' width='60%'><br><img src='./img/purl_sample.jpg' width='60%'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "twocolmuns",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "col1":"<img src='./img/rib.gif' width=80%>",
+    "col2":"<img src='./img/angle.gif' width=80%>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : <span class='emphasis'>k5</span><br>R2 : <span class='emphasis'>k2</span>, m1, k until 2 sts remain, m1, k2<br>R3 : *k1 repeat from * to end<br><br>Repeat R2-3 for 5 times</div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<h2>Knitting Pattern</h2><div class='code nohighlight'>CO 5<br>R1 : k5<br>R2 : k2, m1, <span class='emphasis'>k until 2 sts remain</span>, m1, k2<br>R3 : *k1 <span class='emphasis'>repeat from * to end</span><br><br><span class='emphasis'>Repeat R2-3 for 5 times</span></div>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<img src='img/knit_js.png'>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jsknit.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>It did not end there...</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe width='900' height='500' src='https://www.youtube.com/embed/UvhadkBh30Y' frameborder='0' allowfullscreen></iframe>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/machineinside.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/pd100.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/el0.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/knitscketch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcard.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom" : "<iframe width='900' height='500' src='https://www.youtube.com/embed/4IFGJFDgIBA' frameborder='0' allowfullscreen></iframe>"
+    },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/jaquard_annimation.gif",
+    "note":"Video: Jacquard weaving - by Victoria and Albert Museum"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<div style='float:left; width:55%'><h2>1889</h2><h3>Herman Hollerith</h3><h4>An Electric Tabulating System<br><br>Developed to meet demand of US Census</h4></div><img src='./img/Hollerith.jpg'width='35%' style='margin-left:20px;'>"
+  },
+  "layout" :{
+    "center":false,
+    "middle": true
+  }
+},
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/tab_punch.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>I feel like I can make computer now</h2><img src='img/head_icon.png'>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchdemo.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/punchcardfinal.jpg"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/catdither.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/catphotoshop.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/catphotoshop.gif"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>image = &lt;img /&gt; ... right?</h2><h2>&nbsp;</h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>image = &lt;img /&gt; ... right?</h2><h2>How do I draw image with code? </h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://canvas.advent.today/01"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "iframe",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "src" : "http://canvas.advent.today/02"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "oneimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/typedarray.png",
+    "note":"http://canvas.advent.today/03  <br>'What the heck is Typed Array'"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='gray'>This took me 10 months to understand</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/buffer.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Be <span class='yellow-shadow'>curious</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2>Don't be afraid to <span class='yellow-shadow'>look under the hood</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='yellow-shadow'>Support</span> and <span class='yellow-shadow'>Respect</span></h2>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "coverimage",
+  "size": 1,
+  "type":"slide",
+  "image" : {
+    "src":"img/irs.png"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+},
+{
+  "template" : "custom",
+  "size": 1,
+  "type":"slide",
+  "content" : {
+    "custom":"<h2><span class='white-shadow'>Thanks!</span></h2><img src='img/head_icon.png'><h3><span class='white-shadow'>@kosamari</span></h3>"
+  },
+  "layout" :{
+    "center":true,
+    "middle": true
+  }
+}
+]
