@@ -1,0 +1,662 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ink on fingers! The history of printing (with code!)</title>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css" media="screen">
+
+    /*
+    * CSS for the scrolly-slides it necessary for the layout.
+    * Change it at your own risk. You might want to add custom css at the end.
+    */
+      body, html{
+        height:100%;
+        margin:0;
+        font-family: 'Roboto Slab', sans-serif;
+        color:#fff;
+
+      }
+      .scrolly-article {
+        width: 0px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      .scrolly-section {
+        padding:20px;
+        opacity: .2;
+        color:#000;
+      }
+      .scrolly-slide {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        height:100%;
+        width:100%;
+        padding:0px 30px;
+        overflow: scroll;
+        background-color: #000;
+      }
+
+      /* You might want to change this to style you like */
+      .scrolly-slide h1{
+        font-size: 9vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h2{
+        font-size: 5vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide .small{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h3{
+        font-size: 4vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h4{
+        font-size: 3vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h5{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h6{
+        margin: 0px;
+        font-size: 2.5vw;
+      }
+      .scrolly-slide p{
+        font-size: 3vw;
+      }
+      .scrolly-slide li{
+        font-size: 2.5vw;
+      }
+      .scrolly-slide pre{
+        font-size: 2.5vw;
+      }
+      /* You might want to use some kind of syntax highlighting library */
+      pre {
+        font-family:'Inconsolata', monospace;
+        overflow: scroll;
+        padding:10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      pre > .pre-gray {
+        color:gray;
+      }
+      pre > .pre-small {
+        font-size: 2vw;
+      }
+      a {
+        color:#fff;
+      }
+    </style>
+
+    <link href='assets/css/slides.css' rel='stylesheet' type='text/css'>
+
+    <!-- Library dependency -->
+    <script src="assets/lib/jquery-1.12.0.min.js"></script>
+    <script src="assets/lib/scrolly-slides.js"></script>
+  </head>
+  <body>
+    <article class="scrolly-article">
+
+
+
+<!-- Introduction -->
+    <section class="scrolly-section" data-slide-id="title">
+      <h2>Ink on fingers!</h2>
+      <p>Hi thank you for reading, this is a 10 min talk I gave at <a href="http://bangbangcon.com/" title="!!Con website">!!Con 2016</a></p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="title">
+        <h1>Ink on fingers!</h1>
+        <h2>The history of printing (with code!)</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="profile">
+      <h2>Little bit about me</h2>
+      <p>I'm <a href="https://twitter.com/kosamari" title="">@kosamari</a> on the Internet pretty much everywhere.</p>
+       <p>I'm a software engineer (of JavaScript kind) at <a href="http://www.scripto.cc/" title="">Scripto</a> in NYC</p>
+      <p>I also co-organize JavaScript meetup called <a href="http://brooklynjs.com/">BrooklynJS</a> in Brooklyn.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-colmuns" data-slide-id="profile">
+        <div class="center-center column w-200">
+          <img src="assets/img/profile-1.png" alt="" width="100%">
+          <h6>Tweet: @kosamari</h6>
+        </div>
+        <div class="center-center column w-200">
+          <img src="assets/img/profile-2.jpg" alt="" width="100%">
+          <h6>Work : Scripto</h6>
+        </div>
+        <div class="center-center column w-200">
+          <img src="assets/img/profile-3.png" alt="" width="100%">
+          <h6>Organize : BrooklynJS</h6>
+        </div>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="wisiwig">
+      <p>I work on text editors on my job. Since the software is used in TV industry "print out text" is an essential part of the application.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="wisiwig">
+        <img src="assets/img/WISIWYG.png" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="punchcard">
+      <p>On my personal time, I'm kind of obsessed with punch cards and early machines which influenced computers.</p>
+      <p>This is my 8 bit punch card reader making textile patterns.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="punchcard">
+        <video class="fullheight" src="assets/img/punchcard.mov" autoplay loop muted/></video>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="typeset-title">
+      <h2>Typesetting Machine is AWESOME</h2>
+      <p>So in the intersection of those two interests, I discovered a thing called Typesetting Machine & I wanted to share with you today.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="typeset-title">
+        <h1>Typesetting Machine</h1>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="intro1">
+      <p>What comes in your mind when someone say "Typesetting" or "Letterpress" ?</p>
+      <p>You might think hip printing shop where you order wedding invitation & fancy stationaries...</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="intro1">
+        <img src="assets/img/intro1.png" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="intro2">
+      <p>... or you might think about Gutenberg Bible</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="intro2">
+        <img src="assets/img/intro2.jpg" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="intro3">
+      <p>in both case, you may be familiar with this process of picking up each letter of press and set it in frame to print a page. In fact this was the way to print on paper for long time.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="intro3">
+        <img src="assets/img/intro3.jpg" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="intro4">
+      <p>But this is our reality now, right? you click on print icon & printed paper come out of printer with out any hustle of typesetting.</p>
+      <p>I was interested in what happened between typesetting by hand & clicking print icon, particularly the part when machine and idea of automation was introduced.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="intro4">
+        <img src="assets/img/intro4.png" width="50%">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype0">
+      <p>Which lead me to Linotype, and it's evolution as Typesetter. Linotype was invented by German immigrant Ottmar Mergenthaler who was trained in watch making.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype0" style="background-color: #fff">
+        <img src="assets/img/linotype0.jpg" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype1">
+      <p>It has spacial keyboard based on most frequently used alphabets</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype1">
+        <img src="assets/img/linotype1.png" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype2">
+      <p>When you type on keyboard small metal mold for a type fall down from top parts called magazine.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype2">
+        <img src="assets/img/linotype2.png" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype3">
+      <p>These metal type molds are called matrices</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype3">
+        <img src="assets/img/linotype3.gif" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype4">
+      <p>Once one line is set, these molds are sent to casting section where molten metal shoots into the molds</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype4">
+        <img src="assets/img/linotype4.gif" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype5">
+      <p>hardens and creates a line of type.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype5">
+        <img src="assets/img/linotype5.png" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype6">
+      <p>[this is the most cool part !] once you are done with those matrices, this large arm falls down, and grab them.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype6">
+        <img src="assets/img/linotype6.gif" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype7">
+      <p>sent to distribution system ...</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype7">
+        <img src="assets/img/linotype7.gif" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="linotype8">
+      <p>...where each matrices are dropped to correct section</p>
+      <p>It's amazing piece of technology... I mean when was the last time your build process worked this flawlessly ?</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="linotype8">
+        <img src="assets/img/linotype8.gif" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="times0">
+      <p>Linotype was invented in 1886, it made books much more affordable, newspapers were able to publish more frequently, it was such a solid technology used for almost 100 years.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="times0">
+        <img src="assets/img/times0.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="times2">
+      <p>New York Times used this "hot metal" typesetting until July 2nd, 1978.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="times2">
+        <img src="assets/img/times2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="times3">
+      <p>There is a short documentary of the last day they used this technology.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="times3">
+        <img src="assets/img/times3.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="computer1">
+      <p>Clearly new type of technology was coming.</p>
+      <p>I screen capture this from promotional video from International Typographic Union called "Story of Technology(1966)". Where they described computer is not a green monster eating paper tape in a black box...</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="computer1">
+        <img src="assets/img/computer1.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="computer2">
+      <p>... but rather a clear box made out of logic.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="computer2">
+        <img src="assets/img/computer2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="computer3">
+      <p>Even though computer was introduced in work flow, it was used for data input. It still needed a typesetting machine, different kind of machine called photo typesetter.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="computer3">
+        <img src="assets/img/computer3.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype1">
+      <p>It was called "cold type"</p>
+      <p>Instead of metal type molds, it used font film</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype1">
+        <img src="assets/img/coldtype1.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype3">
+      <p>You also don't need to have multiple font size because it was all done in lenses.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype3">
+        <img src="assets/img/coldtype3.gif" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="coldtype4">
+      <p>The machine exposed film to contact sheet, then develop it and created type in paper</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype4">
+        <img src="assets/img/coldtype4.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype5">
+      <p>It was then laid out to page</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype5">
+        <img src="assets/img/coldtype5.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype6">
+      <p>Lines were drawn by hand or with decorative tape. It ~*literally*~ was a "what you see is what you get".</p>
+      <p>Once page was set, it was photographed/scanned to create printing plate.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype6">
+        <img src="assets/img/coldtype6.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype8">
+      <p>So new typesetting department looked like this - a room full of computers.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype8">
+        <img src="assets/img/coldtype8.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype9">
+      <p>Rules to and guide lines to type set was starting to emerge</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype9">
+        <img src="assets/img/coldtype9.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype10">
+      <p>here is a markup specification for font type and size.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype10">
+        <img src="assets/img/coldtype10.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="coldtype11">
+      <p>This is like you are opening dev tool and looking at style of a DOM element</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="coldtype11">
+        <img src="assets/img/coldtype11.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell0">
+      <p>Exciting thing in computing history happened around this time at Bell Labs.</p>
+      <p>Bell Lab has purchased </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="bell0">
+        <h1>Typeset with Unix</h1>
+        <h2>at Bell Labs</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell1">
+      <p>I was possible to control by PDP-11</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="bell1">
+        <img src="assets/img/pdp-11.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell2">
+      <p>We learned yesterday's that hidden purpose of PDP-11 at Bell Labs was so that Ken Thompson to play game.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="bell2">
+        <img src="assets/img/yesterday.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell3">
+      <p>Some of you laughed that Bell Labs authorized $100,000 machine to typeset patent application, but I argue that it was big deal for a research facility to have control over typesetting machine.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="bell3">
+        <img src="assets/img/unixtypesetting.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell4">
+      <p>It seems natural progression as computer research facility in late 60s and early 70s when study about Document preparation system (text formating) was actively researched. Idea that you can use create a document using computer was new and exciting subject.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="bell4">
+        <h2>Document Preparation System</h2>
+        <h2><code>runoff</code> - <span class='small'>made for Multics by Jerry Saltzer (MIT)</span></h2>
+        <h2><code>roff</code> - <span class='small'>made for Unix by Joe Ossanna (Bell Labs)</span></h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell5">
+      <p>These document preparation system was not specifically made for typesetting machine.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="bell5">
+        <h2><code>troff</code> - special <code>roff</code> for Typesetter </h2>
+        <h5>Started by Joe Ossanna</h5>
+        <h5>Continued by Brian Kernighan</h5>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell6">
+      <p>This also sparked invention of few preprocessor, like <code>tbl</code> for typesetting table contents</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="bell6">
+        <h2><code>tbl</code> - table contents,</h2>
+        <img src="assets/img/tbl.png" height="75%" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell7">
+      <p><code>eqn</code> for mathematical equations,</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="bell7">
+        <h2><code>eqn</code> - math symbols</h2>
+        <img src="assets/img/eqn.png" width="70%" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="bell9">
+      <p>Brian</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="bell9">
+        <img src="assets/img/brian.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="crt0">
+      <p>After 7 or 8 yeas using GSI C/A/T, it was time to upgrade, because another new technology was introduced in computer mechanics called Cathode Ray Tube.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt0">
+        <h1>Cathode Ray Tube</h1>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt1">
+      <p>Here is what it looked like</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt1">
+        <img src="assets/img/crt1.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt2">
+      <p>With CRT, you did not need to have font film anymore. Any graphics drawn on CRT was transferred directly to contact paper.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt2">
+        <img src="assets/img/crt2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt3">
+      <p>Which meant you could program your own font face.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt3">
+        <img src="assets/img/crt3.gif" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt4">
+      <p>Brian Kernighan was on the initiative to purchase new typesetter for Bell Labs, and they decided on Linotron 202 which was CRT photo typesetter</p>
+      <p>Linotron 202 came with a software the manufacturer developed, but according to Brian Kernighan " It was totally un-usable"</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt4">
+        <img src="assets/img/crt4.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt5">
+      <p>So what would engineers do? At the time in Bell Labs, Ken Thompson and Joe Condon had just completed the Belle Chess Machine project. They had a knowledge of hardware machinery & interest in publishing chess book using chess font (or Emoji). </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt5">
+        <img src="assets/img/crt5.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt6">
+      <p>Kernighan, Thompson, and Condon decided to reverse engineer how Linotron 202 operates, and published internal memo about their learnings. It shows chess font they created with Linotorn 202, and explanation of how they think Linotorn is drawing font face.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt6">
+        <iframe src="assets/summermemo.pdf" style="border:none;" width="100%" height="100%"></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="crt7">
+      <p>But the best part of this memo is the title</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="crt7">
+        <img src="assets/img/summermemotitle.png" alt="" class="fullscreen"  onmouseover="this.setAttribute('src', 'assets/img/summermemotitle2.png')" onmouseout="this.setAttribute('src', 'assets/img/summermemotitle.png')">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="wrapup1">
+      <h2>Wrap up</h2>
+      <p>Hope this was interesting story. A lot of what we see on computer has ties to history.
+      For example, point is a measurement used for metal type. In Many software default largest font size is 72pt because that was often the type size offered in metal type.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="wrapup1">
+        <img src="assets/img/css.png" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="wrapup2">
+      <p>Even if you think many fonts in computer are basic af, it was once hand curved by someone else and survived many generation of technological change.</p>
+      <p>Just like textile loom became base of computer, many elements on computer has a history going back to pre-computer era. Hopefully, next time you sit in front of computer screen or click on that print icon, you think of past craftsman who brought you the technology we use everyday.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="wrapup2">
+        <img src="assets/img/font.png" alt="" class="fullscreen">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="closing">
+      <h2>Thanks!</h2>
+      <p>If you have any comments/questions, hit me up on twitter @kosamari</p>
+    </section>
+</article>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="closing">
+        <h3>Thanks!</h3>
+        <h4>@kosamari</h4>
+        <p class="credit-text">
+        <b>Reference</b><br>
+        <a href="http://www.linotypefilm.com/" title="">Linotype: The Film</a><br>
+        <a href="https://vimeo.com/128146910" title="">I.T.U. - Story of Technology</a><br>
+        <a href="https://vimeo.com/127605643" title="">Farewell - ETAOIN SHRDLU</a><br>
+        <a href="https://vimeo.com/75532294" title="">Linotron 505</a><br>
+        <a href="http://www.cs.princeton.edu/~bwk/202/" title="">Digital restoration and typesetter forensics</a><br>
+        <a href="https://www.youtube.com/watch?v=tc4ROCJYbm0" title="">AT&T Archives: The UNIX Operating System</a><br>
+        <a href="https://books.google.com/books?id=VKPBHCWTCGEC" title="">UNIX Document Processing and Typesetting</a><br>
+        <a href="https://books.google.com/books?id=Wz1C5JhTzlYC" title="">Document Formatting and Typesetting on the UNIX System</a><br>
+        <a href="http://archive.computerhistory.org/resources/text/DEC/pdp-11/Digital.PDP-11.1970.102646128.pdf" title="">PDP-11 document</a><br>
+        <br><br>
+        <b>Photo Credit</b><br>
+        Metal movable type - Willi Heidelbach<br>
+        Joe Condon and Ken Thompson in front of Belle chess computer - Courtesy of Lucent Bell Labs<br>
+        </p>
+    </div>
+    </aside>
+
+
+    <!-- INITIALIZE SCROLLY SLIDES -->
+    <script>
+      var scrolly = new Scrolly()
+      scrolly.init({show_article: false}) //true to show article view by default
+    </script>
+  </body>
+</html>
