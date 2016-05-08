@@ -95,8 +95,11 @@
       pre > .pre-small {
         font-size: 2vw;
       }
-      a {
+      .scrolly-slide a {
         color:#fff;
+      }
+      .scrolly-section a {
+        color:#000;
       }
     </style>
 
@@ -650,7 +653,7 @@
     <!-- INITIALIZE SCROLLY SLIDES -->
     <script>
       var scrolly = new Scrolly()
-      scrolly.init({show_article: false}) //true to show article view by default
+      scrolly.init({show_article: true}) //true to show article view by default
     </script>
   </body>
 </html>
