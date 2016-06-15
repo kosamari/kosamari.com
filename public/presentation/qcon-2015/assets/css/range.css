@@ -1,0 +1,83 @@
+input[type=range].vertical-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height:100px;
+  // -webkit-transform:rotate(-90deg);
+  // -moz-transform:rotate(-90deg);
+  // -o-transform:rotate(-90deg);
+  // -ms-transform:rotate(-90deg);
+  // transform:rotate(-90deg);
+  z-index: 0;
+  cursor: pointer;
+}
+
+input[type=range].vertical-range.red-range {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, black, red);  /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black, red); /* Standard syntax */
+}
+
+input[type=range].red-range::-moz-range-track {
+
+  background: linear-gradient(to right, black, red); /* Standard syntax */
+}
+
+input[type=range].vertical-range.green-range {
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, black, green);  /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black, green); /* Standard syntax */
+}
+input[type=range].green-range::-moz-range-track {
+  background: linear-gradient(to right, black, green); /* Standard syntax */
+}
+input[type=range].vertical-range.blue-range {
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, black, blue);  /*For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black, blue); /* Standard syntax */
+}
+input[type=range].blue-range::-moz-range-track {
+  background: linear-gradient(to right, black, blue); /* Standard syntax */
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0);
+    border: solid 2px black;
+    width: 40px;
+    height: 44px;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: solid 2px black;
+  width: 40px;
+  height: 44px;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  border: solid 2px black;
+  width: 40px;
+  height: 44px;
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
