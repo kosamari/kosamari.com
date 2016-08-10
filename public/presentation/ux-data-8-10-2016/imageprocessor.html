@@ -1,0 +1,77 @@
+<html>
+  <input type="file" id="input">
+  <h1>original</h1>
+  <img id="original" hidden>
+  <h1>processed</h1>
+  <div id="btn">
+    <!-- <a>download</a> -->
+  </div>
+  <canvas id="canvas" hidden></canvas>
+  <script>
+    var input = document.getElementById('input');
+    var name
+    input.addEventListener('change', function(){
+      input.innerHTML = ''
+      name = this.files[0].name.split('.')[0]
+      reader.readAsDataURL(this.files[0])
+    }, false);
+
+
+    var original = document.getElementById('original')
+    var canvas = document.getElementById('canvas')
+    var btn = document.getElementById('btn')
+    var canvasCtx = canvas.getContext('2d')
+    var reader = new FileReader()
+    var url
+    var imgData
+    reader.onload = function() {
+      original.src = reader.result
+    }
+
+    original.onload = function () {
+      canvas.width = original.width
+      canvas.height = original.height
+      canvasCtx.drawImage(original, 0, 0)
+      imgData = canvasCtx.getImageData(0,0, canvas.width, canvas.height)
+      var types = ['blur', 'gblur', 'sharp']
+      var workers = new Array(types.length)
+      types.forEach(function(el, i){
+        workers[i] = new Worker('assets/js/ConvolutionWorker.js')
+        var data = {data:imgData, type:el}
+        workers[i].postMessage(data)
+        workers[i].onmessage = function(message){
+          canvas.toBlob(function(blob){
+            var a = document.createElement('a')
+            a.download = name+'-'+message.data.type + '.png';
+            a.href = window.URL.createObjectURL(blob);
+            a.textContent = message.data.type
+            btn.appendChild(a)
+            btn.appendChild(document.createElement('br'))
+            workers[i].terminate()
+          },'image/png')
+        }
+      })
+    }
+
+
+if (!HTMLCanvasElement.prototype.toBlob) {
+Object.defineProperty(HTMLCanvasElement.prototype, 'toBlob', {
+  value: function (callback, type, quality) {
+
+    var binStr = atob( this.toDataURL(type, quality).split(',')[1] ),
+        len = binStr.length,
+        arr = new Uint8Array(len);
+
+
+    for (var i=0; i<len; i++ ) {
+     arr[i] = binStr.charCodeAt(i);
+    }
+  console.log(arr)
+    callback( new Blob( [arr], {type: type || 'image/png'} ) );
+  }
+ });
+}
+
+  </script>
+
+</hmtl>
