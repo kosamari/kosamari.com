@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The World of Pixels</title>
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Copse);
+
+    *{
+      background-color: #fff;
+      font-family: 'Copse', serif;
+      color:#292133;
+    }
+    img {
+      min-width: 300px;
+      max-width: 600px;
+      width:100%;
+    }
+    #container {
+      /*text-align: center;*/
+    }
+    h1 {
+      font-size: 3.5em;
+      text-shadow: 1px 1px #aaa;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    a {
+      color:#0C3B40;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    #msg {
+      font-size: 0.9em;
+      height:20px;
+    }
+    #buttons {
+      text-align: center;
+    }
+    #container {
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .center{
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+<div id="container">
+  <h1 class="center">The World of Pixels</h1>
+  <p class="center"><em>by <a href="http://twitter.com/kosamari">Mariko Kosaka</a></em></p>
+  <p>Explore the world of image processing and computer vision...with googly eyes.</p>
+  <p>I've been making a lot of demo & illustration about pixels... people often ask me If I was writing book about it. Should I ?</p><p>
+  You can check out some of the talks I've given <a href="https://www.youtube.com/watch?v=-6REd8lLsPM">here</a> and <a href="https://www.youtube.com/watch?v=_H0eJw6lGZU">here</a>. If you like, click the button to let me know if I should actually write it! </p>
+  <div id="buttons">
+    <button type="" onclick="ping()">I want to read this book!</button><br>
+    <p id="msg" class="center">&nbsp;</p>
+    <img src="hero.png" alt="">
+  </div>
+
+</div>
+</body>
+<script type="text/javascript">
+  var msg = document.getElementById('msg')
+  function ping() {
+    var request = new XMLHttpRequest();
+    request.open('GET', 'http://kosamari.com:5432/', true);
+    request.send()
+    msg.innerText = "Awe Thanks ! I'll work on it o(´▽｀*)/♪ "
+  }
+</script>
+</html>
