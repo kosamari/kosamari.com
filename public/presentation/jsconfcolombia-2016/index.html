@@ -1,0 +1,690 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to be a Compiler</title>
+    <style type="text/css" media="screen">
+
+    /*
+    * CSS for the scrolly-slides it necessary for the layout.
+    * Change it at your own risk. You might want to add custom css at the end.
+    */
+      body, html{
+        height:100%;
+        margin:0;
+        font-family: Baskerville, serif;
+        color:rgb(29, 62, 114);
+
+      }
+      .scrolly-article {
+        width: 0px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      .scrolly-section {
+        padding:20px;
+        opacity: .2;
+        color:#000;
+      }
+      .scrolly-slide {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        height:100%;
+        width:100%;
+        padding:0px 30px;
+        overflow: scroll;
+        background-color: rgb(246, 246, 246);
+      }
+
+      /* You might want to change this to style you like */
+      .scrolly-slide h1{
+        font-size: 12vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h1.nopadding{
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h2{
+        font-size: 5vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide .small{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h3{
+        font-size: 4vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h4{
+        font-size: 3vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h5{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h6{
+        margin: 0px;
+        font-size: 2.5vw;
+      }
+      .scrolly-slide p{
+        margin:5px;
+        font-size: 5vw;
+      }
+      .scrolly-slide li{
+        font-size: 2.5vw;
+      }
+      .scrolly-slide pre{
+        font-size: 2.5vw;
+      }
+      /* You might want to use some kind of syntax highlighting library */
+      pre {
+        font-family: monospace;
+        overflow: scroll;
+        padding:10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color:#000;
+      }
+      pre > .pre-gray {
+        color:gray;
+      }
+      pre > .pre-small {
+        font-size: 2vw;
+      }
+      .scrolly-slide a {
+        color:#fff;
+      }
+      .scrolly-section a {
+        color:#000;
+      }
+      h2, h3, h6 {
+        font-weight: normal;
+        font-style: italic;
+      }
+      h1 {
+        text-shadow: 1px 1px 0px rgb(240, 219, 79);
+        font-style: italic;
+        font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+        color:#0C0CE8;
+      }
+      .shadow {
+        text-shadow: 1px 1px 0px rgb(240, 219, 79);
+
+      }
+      p.reallybig {
+        font-size:11vw;
+      }
+      p.italic {
+        font-style: italic;
+      }
+      p.big {
+        font-size:10vw;
+      }
+      pre.big {
+        font-size:4.3vw;
+      }
+
+      pre.medium {
+        font-size: 3vw;
+      }
+
+      p.middle {
+        font-size:8vw;
+        font-style: italic;
+      }
+      iframe {
+        background-color: #fff
+      }
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+
+    </style>
+
+    <link href='assets/css/slides.css' rel='stylesheet' type='text/css'>
+
+
+    <!-- Library dependency -->
+    <script src="assets/lib/jquery-1.12.0.min.js"></script>
+    <script src="assets/lib/scrolly-slides.js"></script>
+    <script src="assets/lib/sbn.js"></script>
+  </head>
+  <body>
+    <article class="scrolly-article">
+
+
+
+<!-- Introduction -->
+    <section class="scrolly-section" data-slide-id="title">
+      <h2>Introduction</h2>
+      <p>Hi ! My name is Mariko & you can find me on twitter as <a href="http://twitter.com/kosamari" title="">@kosamari</a>.</p>
+      <p>This is a talk I gave at JSConf Colombia in Medellin, Colombia about building a compiler and lessons I learned by making one. Let me know if you have any questions and comments!</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="title">
+        <h1>How to be a <br>COMPILER</h1>
+        <p>guided by @kosamari</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english1">
+      <h2>How I learned English</h2>
+      <p>I first started learning English at 7th grade. In Japan, at least when I took English class, "This is a pen" was a omnipresent sentence which every English text book used as 1st sentence to learn.</p>
+      <p>It's useless as a English sentence, but it was simple to get started. I was really excited to learn new language, so at first, I even took extra curricular to learn English. </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english1">
+        <p class="reallybig">This is a pen.</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english2">
+      <p>As you advance in lessons, things got a lot complicated. You start reading paragraphs instead of a sentence. Questions asked in exams become more about understanding context, and what's happening in the reading, than if you remembered a meaning of a word.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english2">
+        <img src="assets/img/english2.png" alt="" width="98%">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="english3">
+      <p>So when I graduated from High school, English was not my strongest subject. In fact, I suck at it so much that I failed on every collage entry exam I took.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="english3">
+        <p class="reallybig italic">“English sucks.”</p>
+        <p>me, in 2004</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english4">
+      <p>English was getting the way of my trying to do things I wanted to do, so I took ESL class at Temple University in Tokyo, and 6 month later, I earned enough TOFEL score to enroll in undergraduate program.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center  column" data-slide-id="english4">
+        <p class="reallybig italic"><strike>“English sucks.”</strike></p>
+        <p class="reallybig italic">“It's okay”</p>
+        <p>me, also in 2004</p>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english5">
+      <p>One this that helped me while I was learning English was visualizing how sentences are structured. I'm a visual learner, I tend to perform well when I can draw what is happening.</p>
+      <p>This is a note I made while I was learning Rust. It helped me a lot. In fact, I took this learning style from when I learned English.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english5">
+        <img src="assets/img/rust.jpeg" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6">
+      <p>There are certain rules in English. For example, a and the are always followed by a noun, a verb is always followed by subject, word ending with -ly is usually adverb which can not be added to a noun... etc. This is how I used these rules to de-construct English sentence to something I can understand.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6">
+        <img src="assets/img/note.JPG" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+
+    <section class="scrolly-section" data-slide-id="english7">
+      <p>Of cause, English is a very divers language, and there is always new grammar and word invented, so these rules are often broken. For example, "I'm lovin' it" is not grammatically correct. The verb "Love" does not have continuous version of that. If you are using "loving" then it has to be adjective.</p>
+      <p>To be grammatically correct, you would say "I love it." JavaScript was a human it would probably throw an error</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english7" style="background-color: rgb(233, 0, 0)">
+        <img src="assets/img/mac.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler1">
+      <h2>How I learned to make new language.</h2>
+      <p>Lat summer I spent a week writing a small programming language, which would compile knitting instructions into a pattern image.</p>
+      <p>In process of this, I had to make a compiler. This was completely new language I made up, so I needed to transform them so that browser can understand to make those patterns.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler1">
+        <iframe src="http://64sts.com/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler3">
+      <p>At first, with out even knowing what a compiler does, I was scared. It sounded like a lot of computer science.</p>
+      <p>But once I started making one, I realized it was a lot simpler concepts that we all do and was very close to how I learned English.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler3">
+        <img src="assets/img/scarycompiler.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="dbn-1">
+      <h2>Let's try to be a compiler.</h2>
+      <p>Let's see what a compiler does by learning new language right now. The language we are going to look at it called "Design By Numbers" by John Maeda. It is a programming language made at MIT Media Lab in late 90s. It was designed to introduce computer programming concepts in visual way.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="dbn-1">
+        <div class="w-40p" style="padding-right: 3vw">
+         <img src="assets/img/dbn.jpg" alt="" width="100%">
+        </div>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="dbn-2">
+      <p>Here is very 1st program in the book. Which makes the image on the left.</p>
+      <p>There are 3 commands in this code, Paper defines color of the paper, Pen defines color the pen, and Line draw a line. In this programming environment, a paper is always 100 x 100, and a Line is defined by x y coordinates of start point, and x y coordinate of end point.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="dbn-2">
+        <div class="w-20p" style="padding-right: 3vw">
+          <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <rect x="0" y="0" width="100" height="100" fill="rgb(100%, 100%, 100%)"></rect>
+            <line x1="0" y1="100" x2="100" y2="0" stroke="rgb(0%, 0%, 0%)" stroke-linecap="round"></line>
+          </svg>
+        </div>
+        <div class="w-60p">
+          <pre class="big">
+Paper 0
+Pen 100
+Line 0 0 100 100 </pre>
+        </div>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="dbn-3">
+      <p>So, which image do you think this code will produce ?</p>
+      <p>It will produce the one on the bottom. Did you get it right ? congratulations! You just experienced being an compiler !!</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="dbn-3">
+      <div class="w-20p" style="padding-right: 3vw">
+        <!-- <div > -->
+          <svg width="100" height="220" viewBox="0 0 100 220" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <rect x="0" y="0" width="100" height="100" fill="rgb(100%, 100%, 100%)"></rect>
+            <line x1="40" y1="100" x2="100" y2="20" stroke="rgb(0%, 0%, 0%)" stroke-linecap="round"></line>
+      
+            <rect x="0" y="120" width="100" height="100" fill="rgb(100%, 100%, 100%)"></rect>
+            <line x1="0" y1="170" x2="100" y2="170" stroke="rgb(0%, 0%, 0%)" stroke-linecap="round"></line>
+          </svg>
+        <!-- </div> -->
+</div>
+        <div>
+          <pre class="big">
+Paper 0
+Pen 100
+Line 0 50 100 50 </pre>
+        </div>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-1">
+      <h2>How does a compiler work?</h2>
+      <p>Let's look at what just happened in our head as a compiler right now. A compiler goes through a series of steps to transform a code to another form.</p>
+      <h3>Tokenization</h3>
+      <p>First thing we did was to spread each key words.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-1">
+        <img src="assets/img/compiler1.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-2">
+      <p>It's easy to spot what's a word in English because we use spaces to separate them. So it may seem like not even a step, but in language like Japanese it will be an effort to separate words.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-2">
+       <img src="assets/img/compiler2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-3">
+      <p>While we are separating words, we can also assign primitive types to each keyword, like "word" or "number".</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-3">
+        <img src="assets/img/compiler3.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-4">
+      <h3>Parsing</h3>
+      <p>Once a blob of text is separated into tokens, we go through them and try to find a relation ship between tokens.</p>
+      <p>In this case, we group numbers associated with command keyword as one command. By doing this, you start seeing a structure of the code.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-4">
+        <img src="assets/img/compiler4.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-5">
+      <h3>Transformation</h3>
+      <p>Once you analyzed syntax by parsing, then you can transform the structure to something suitable for the result.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-5">
+        <img src="assets/img/compiler5.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-6">
+      <p>In this case, we are going to draw a picture, so we are going to transform to step by step instruction for humans to draw.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-6">
+        <img src="assets/img/compiler6.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="compiler-deepdive-7">
+      <h3>Code Generation</h3>
+      <p>Lastly, we make a compiled result, an image. At this point, instructions are already written in previous step, so we just follow them to make compiled image.</p>
+      <p>Ant that's what a compiler does!</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-deepdive-7">
+        <video controls width="100%">
+          <source src="assets/img/codegen.mp4" >
+        </video>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="compiler-code-1">
+      <h3>Let's make a compiler.</h3>
+      <p>Now that you know what compiler does, lets make one right now.</p>
+      <p>I created a demo for this Design by Numbers language. Instead of drawing by hand, this compiller produce SVG code so we can see them in browser.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-code-1">
+        <img src="assets/img/sbn.png" width="80%" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-2">
+      <p>First thing is tokenization. We just split the code with white space, then check if a keyword is a number. If it is, we assign a type "number", if not we assign a type "word".</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="compiler-code-2">
+        <p class="shadow">Lexical Analyzer (tokenize)</p>
+        <pre class="medium">
+[
+  {
+    "type": "word",
+    "value": "Paper"
+  },
+  {
+    "type": "number",
+    "value": "100"
+  }
+]</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-3">
+      <p>Next we go through the tokens, and try to extract sentences. For example, when we find a word "Paper" then the next talk should be a number for the color. </p>
+      <p>If the next token is not a number, then we throw an error.</p>
+      <p>Extracted data is represented in a object called AST - Abstract Syntax Tree.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="compiler-code-3">
+        <p class="shadow">Parser (create AST)</p>
+        <pre class="medium">
+{
+  "type": "Drawing",
+  "body": [{
+      "type": "CallExpression",
+      "name": "Paper",
+      "arguments": [{
+          "type": "number",
+          "value": "100"
+        }]
+    }]
+}</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-4">
+      <p>Now we know what's happening in this code, but this AST is not really suited for making SVG. There is no "Paper" tag in SVG, you would probably replicate one using rectangle element. So we transform one AST into another AST that is more SVG friendly.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="compiler-code-4">
+        <p class="shadow">Transformer (create new AST)</p>
+        <pre class="medium">
+{
+  "tag": "svg",
+  "attr": { "width": 100, "height": 100 },
+  "body": [{
+      "tag": "rect",
+      "attr": { "x": 0, "y": 0, 
+                "width": 100, "height": 100,
+                "fill": "rgb(0%, 0%, 0%)"},
+      "body": []
+  }]
+}</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-5">
+      <p>Now we can go a head and generate SVG based on the new SVG friendly AST we just made.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="compiler-code-5">
+        <p class="shadow">Code generator (produce final result)</p>
+        <pre class="medium">
+
+&lt;svg width="100" height="100"&gt;
+    &lt;rect x="0" y="0" width="100" height="100"
+    fill="rgb(0%, 0%, 0%)"&gt;&lt;/rect&gt;
+&lt;/svg&gt;</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-7">
+      <p>Now we have our little compiler. I made a demo site that shows you results of a each step in this compiler. It's available on the web, links will be at the end of the slides.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-code-7">
+        <iframe src="https://kosamari.github.io/sbn/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-code-6">
+      <p>But wouldn't compiler require a recursion and traversal and visitor etc ?</p>
+      <p>Yes, those are all wonderful way to build a compiler, but that doesn't mean you have to take that approach. Yes, if we were to expand this little language into more complex one, it would be a good idea to use those technique, but it is not a requirement.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-code-6">
+        <img src="assets/img/boxoffun.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="compiler-sample-1">
+      <h2>Things you can make with compiler.</h2>
+      <p>Knowing how to make a compiler is really powerful and fun. Do you use Babel ? Babel is a type of compiler. Have you ever wanted to type "función" in stead of "function" ? You can make compiler for that.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-sample-1">
+        <pre class="big">
+función () {
+  si (verdadero) {
+    return «¡Hola!»
+  }
+}</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-sample-2">
+      <p>In fact there is a person who made fika script to write JavaScript code in Swedish.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-sample-2">
+        <iframe src="http://fikascript.se/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-sample-3">
+      <p>There is a programing language called Emojicode to program in Emojis.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-sample-3">
+        <iframe src="http://www.emojicode.org/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="compiler-sample-4">
+      <p>It does not even have to be a text! Piet is a language to write program in color.</p>
+      <p>There are so many things you can make with compiler, so I recommend you make one, it's fun !</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="compiler-sample-4">
+        <iframe src="http://www.dangermouse.net/esoteric/piet/samples.html" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="lessons-learnd-1">
+      <h2>It's great way to learn about software development.</h2>
+      <p>Making compiler is fun, but most importantly, it teach you a lot about software development. Here are few things I learned while making compiler.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="lessons-learnd-1">
+        <p class="big">I learned about software development from compiler. <p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="lessons-learnd-2">
+      <h3>It's okay to have unfamiliar things.</h3>
+      <p>Much like our lexical analyzer, you don't need to know everything from the begging. So if you don't really understand a piece of code or technology, it's okay to just say. "There is a thing, I know that much" and pass it on to next step. Don't stress about it, you'll get there eventually.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="lessons-learnd-2">
+        <p>Start as lexical analyzer<p>
+        <p class="big">It's okay to have unfamiliar things.<p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="lessons-learnd-3">
+      <h3>Don't be a jerk with bad error message.</h3>
+      <p>Parser's role is to follow the rule and check if things are written according to those rules. So many times, error happens. When it does, try to send helpful and welcoming messages. It's easy to say "It doesn't work that way", like "ILLEGAL Token" error or "undefined is not a function" message. In stead, try to tell users what should happen as much as you can.</p>
+      <p>When someone is stuck with a question, instead of saying "yeah that doesn't work", may be you can start saying "I would google __ and __ keywords." or "I recommend reading this page on documentation." You don't need to do a work for them, but you can certainly help them do the work better.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="lessons-learnd-3">
+        <p>Be a good parser<p>
+        <p class="big">Don't be a jerk with bad error message.<p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="lessons-learnd-4">
+      <p>Elm is a programming language that embrace this method. They put "Maybe you want to try this ?" in their error message. </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="lessons-learnd-4">
+        <iframe src="http://elm-lang.org/blog/compiler-errors-for-humans" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="lessons-learnd-5">
+      <h3>Context is everything</h3>
+      <p>Finally, just like our transformer transformed one type of AST to another more fitting one for the final result. There is no one perfect way to do things. Everything is context specific.</p>
+      <p>So don't just do things because it is popular or you have done it before, think about the context first. Things that work for one user may be a disaster for another user.</p>
+      <p>Also, applicate the work those transformers do, you may know good transformers in your team, those work they put in to bridge the gap may not directly create a program, but it is a damn important work in our community.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="lessons-learnd-5">
+        <p>Bridge the gap like transformer<p>
+        <p class="big">Context is everything.<p>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="closing-1">
+      <h2>Conclusions</h2>
+      <p>So hopefully, I convinced you how it's so awesome to be a compiler. It certainly is not scary to make one.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="closing-1" style="background-color:rgb(29, 62, 114);">
+        <p style="text-align: center; font-weight:bold; font-style:italic; font-size:15vw; color:rgb(240, 219, 79); text-shadow: 2px 2px 2px rgb(213, 35, 41)">Compiler<br>rules !!</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="closing-2">
+      <p>I wrote a program for our compiler, so if you feel like it, be a compiler and draw them, or you can copy it into the demo site.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="closing-2">
+        <p class="big">compile challenge<p>
+        <pre>Paper 100
+Pen 0
+Line 19 91 0 70   Line 0 70 39 91   Line 19 91 39 91
+Line 39 91 73 68  Line 73 68 73 50  Line 73 50 46 50
+Line 46 50 25 83  Line 69 71 89 97  Line 89 97 85 62
+Line 89 97 100 81 Line 100 81 88 86 Line 85 62 95 62
+Line 95 54 95 62  Line 95 54 91 53  Line 91 53 93 55
+Line 95 54 89 60  Line 89 60 73 68  Line 89 60 46 31
+Line 30 0 55 50   Line 30 0 61 22   Line 61 22 58 39</pre>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="closing">
+      <p>Here are links to the projects and samples. If you have any comments/questions, hit me up on twitter @kosamari.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="closing">
+        <h1>&nbsp;</h1>
+        <p>@kosamari</p>
+        <p><small><i>demo:</i></small> kosamari.github.io/sbn/</p>
+        <p><small><i>code challenge:</i></small> bit.ly/compiler_challenge</p>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="closing2">
+      <p>Thanks!</p>
+      <p>"How to be a Compiler" - Talk given at JSConf Colombia 2016 by Mariko Kosaka</p>
+    </section>
+</article>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="closing2">
+        <h1>Thank you. </h1>
+        <p>@kosamari</p>
+        <p><small><i>demo:</i></small> kosamari.github.io/sbn/</p>
+        <p><small><i>code challenge:</i></small> bit.ly/compiler_challenge</p>
+    </div>
+    </aside>
+
+
+    <!-- INITIALIZE SCROLLY SLIDES -->
+    <script>
+
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+      var mode = getParameterByName('present') === 'true'
+      var scrolly = new Scrolly()
+      scrolly.init({show_article: !mode }) //true to show article view by default
+    </script>
+  </body>
+</html>
