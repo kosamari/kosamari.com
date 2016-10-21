@@ -1,0 +1,692 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>How to be a Compiler</title>
+    <style type="text/css" media="screen">
+
+    /*
+    * CSS for the scrolly-slides it necessary for the layout.
+    * Change it at your own risk. You might want to add custom css at the end.
+    */
+      body, html{
+        height:100%;
+        margin:0;
+        font-family: Baskerville, serif;
+        color:rgb(85, 85, 85)
+
+      }
+      .scrolly-article {
+        width: 0px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      .scrolly-section {
+        padding:20px;
+        opacity: .2;
+        color:#000;
+      }
+      .scrolly-slide {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        height:100%;
+        width:100%;
+        padding:0px 30px;
+        overflow: scroll;
+        background-color: rgb(246, 246, 246);
+      }
+
+      /* You might want to change this to style you like */
+      .scrolly-slide h1{
+        font-size: 12vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h1.nopadding{
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h2{
+        font-size: 5vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide .small{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h3{
+        font-size: 4vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h4{
+        font-size: 3vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h5{
+        font-size: 3.5vw;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+      }
+      .scrolly-slide h6{
+        margin: 0px;
+        font-size: 2.5vw;
+      }
+      .scrolly-slide p{
+        margin:5px;
+        font-size: 5vw;
+      }
+      .scrolly-slide li{
+        font-size: 2.5vw;
+      }
+      .scrolly-slide pre{
+        font-size: 2.5vw;
+      }
+      /* You might want to use some kind of syntax highlighting library */
+      pre {
+        font-family: monospace;
+        overflow: scroll;
+        padding:10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color:rgb(85, 85, 85);
+      }
+      pre > b {
+        color:black;
+      }
+      pre > .pre-gray {
+        color:gray;
+      }
+      pre > .pre-small {
+        font-size: 2vw;
+      }
+      .scrolly-slide a {
+        color:#fff;
+      }
+      .scrolly-section a {
+        color:#000;
+      }
+      h2, h3, h6 {
+        font-weight: normal;
+        font-style: italic;
+      }
+      h1 {
+        text-shadow: 1px 1px 0px rgb(240, 219, 79);
+        font-style: italic;
+        font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+        color:#0C0CE8;
+      }
+      .shadow {
+        text-shadow: 1px 1px 0px rgb(240, 219, 79);
+
+      }
+      p.reallybig {
+        font-size:11vw;
+      }
+      p.italic {
+        font-style: italic;
+      }
+      p.big {
+        font-size:10vw;
+      }
+      pre.big {
+        font-size:4.3vw;
+      }
+
+      pre.medium {
+        font-size: 3vw;
+      }
+
+      p.middle {
+        font-size:8vw;
+        font-style: italic;
+      }
+      iframe {
+        background-color: #fff
+      }
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+
+    </style>
+
+    <link href='assets/css/slides.css' rel='stylesheet' type='text/css'>
+
+
+    <!-- Library dependency -->
+    <script src="assets/lib/jquery-1.12.0.min.js"></script>
+    <script src="assets/lib/scrolly-slides.js"></script>
+    <script src="assets/lib/sbn.js"></script>
+  </head>
+  <body>
+    <article class="scrolly-article">
+
+
+
+<!-- Introduction -->
+    <section class="scrolly-section" data-slide-id="title">
+      <h2>Introduction</h2>
+      <p>Hi ! My name is Mariko & you can find me on twitter as <a href="http://twitter.com/kosamari" title="">@kosamari</a>.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="title">
+        <h1>What's that <code style="font-style: normal">d</code></h1>
+        <p>@kosamari</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english1">
+      <h2>How I learned d3</h2>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english1">
+        <p class="reallybig">2013</p>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english2">
+      <p>graphite</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english2">
+        <img src="assets/img/graphite.png" alt="" width="100%">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="english3">
+      <p>then I was mad at this</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="english3">
+        <img src="assets/img/graphite.jpg" alt="" height="100%">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english4">
+      <p>so I wanted to make this one </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center  column" data-slide-id="english4">
+        <iframe src="http://square.github.io/cubism/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english4-2">
+      <p>so I wanted to make this one </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center  column" data-slide-id="english4-2">
+        <pre style="font-size:3.2vw;">
+d3.selectAll("circle").transition()
+  .duration(750)
+  .delay(function(<b>d</b>, i) { return i * 10; })
+  .attr("r", function(<b>d</b>) {
+    return Math.sqrt(<b>d</b> * scale);
+  });
+        </pre>
+      </div>
+    </aside>
+
+
+
+
+
+    <section class="scrolly-section" data-slide-id="english5">
+      <p>thank you D3</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english5">
+        <p class="big">Thank you D3.js 🙏</p>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="knitting-3" data-fragment-ids="1">
+      <p>...and turn those array into 0s and 1s to move knitting machine.</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="knitting-3" data-fragment-ids="1,2">
+      <p>I also made D3 scarf !</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-3">
+        <video class="fullscreen" src="assets/img/knitting-3-1.mp4" poster="" autoplay loop data-fragment-id="1"/></video>
+        <img data-fragment-id="2" src="assets/img/knitting-3-2.png" alt="" class="center-image-600" >
+      </div>
+    </aside>
+
+        <section class="scrolly-section" data-slide-id="knitting-4">
+      <p>Because of this, I got really interested in "print out" digital image as knitted fabric. In order to do this, I needed to learn how digital image is perceived by computers... turns out, it's also array of data.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide" data-slide-id="knitting-4">
+        <video class="fullscreen" src="assets/img/knitting-4.mp4" poster="" autoplay loop muted data-fragment-id="1"/></video>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="machine">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine">
+        <img src="assets/img/machineinside.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="machine2">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine2">
+        <img src="assets/img/machineinside_emb.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="machine222">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine222">
+        <img src="assets/img/pd100.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="machine1">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine1">
+        <img src="assets/img/machineinside_ant.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="machine-sol">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine-sol">
+        <img src="assets/img/sol.gif" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="machine3">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="machine3">
+        <img src="assets/img/knitscketch.jpg" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-3">
+      <p>algorithm viz</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-3">
+        <iframe src="https://bost.ocks.org/mike/algorithms/#sorting" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-4">
+      <p>problems</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-4">
+        <img src="assets/img/pixcelline.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-5">
+      <p>problems</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-5">
+        <img src="assets/img/lines.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-6">
+      <p>texsure</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-6">
+        <img src="assets/img/texture.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="english6-6-2">
+      <p>texsure</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-6-2">
+        <img src="assets/img/texture2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-7">
+      <p>travis</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-7">
+        <img src="assets/img/travis.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+     <section class="scrolly-section" data-slide-id="english6-7-2">
+      <p>travis</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-7-2">
+        <img src="assets/img/travis2.png" class="fullscreen" alt="">
+        
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-8">
+      <p>etsy</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-8">
+        <img src="assets/img/etsy.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-9">
+      <p>etsy</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-9">
+        <img src="assets/img/knitting-1-2.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-9-2">
+      <p>etsy</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-9-2">
+        <iframe src="http://64sts.com/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="english6-10">
+      <p>datamonster</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="english6-10">
+        <h2><a style="color:black;" href="https://github.com/sarahgp/data-monster" title="">data monster by Sarah Groff Hennigh-Palermo </a></h2>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="sample0">
+      <p>IDEAS</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample0">
+        <h1>Ideas for hack</h1>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="sample1">
+      <p>CSS Box Shadow</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample1">
+        <h2>CSS Box Shadow?</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-css">
+      <p>...or make an phantom image.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css">
+        <img src="assets/img/ghost-image.png" alt="" width="100%">
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-css2">
+      <p>it is 1x1 pixel</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css2">
+        <img src="assets/img/ghost-image2.png" alt="" width="100%">
+    </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="image-data-css3">
+      <p>it is 1x1 pixel</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css3">
+        <img src="assets/img/ghost-image3.png" alt="" width="100%">
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample3">
+      <p>CSS Box Shadow</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample3">
+        <iframe src="http://www.vinceallen.com/bit-shadow-machine/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample4">
+      <p>Web Worker/ Service worker</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample4">
+        <h2>Use Web & Service Workers</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="worker-as-iss">
+      <h2>worker is like ISS</h2>
+    </section>
+
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-as-iss" style="background-color:#E9F4FF">
+      <img src="assets/img/ww.jpeg" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="worker-code">
+      <p>worker code.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code1">
+      <p>worker code 1.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code1" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode1.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code2">
+      <p>worker code2.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code2" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode2.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code3">
+      <p>worker code3.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code3" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode3.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code4">
+      <p>worker code 4.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code4" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode4.png" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sw-as-ufo">
+      <h2>SW is like UFO</h2>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sw-as-ufo" style="background-color:#E9F4FF">
+      <img src="assets/img/SW.jpeg" class="fullscreen" alt=""></div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="sample5">
+      <p>Dan flight line</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample5">
+        <iframe src="http://ellieirons.com/projects/flight-lines/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample52">
+      <p>Dan flight line</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample52">
+        <iframe src="http://turbulence.org/commissions/flightlines/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample60">
+      <p>visural</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample60">
+       <h2>Visceral Visualization</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample6">
+      <p>Going hardware</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample6">
+        <iframe src="https://player.vimeo.com/video/138549946" width="940" height="660" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample70">
+      <p>sound ?</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample70">
+       <h2>Sound Visualization</h2>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="sample7">
+      <p>sound ?</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample7">
+       <iframe src="https://player.vimeo.com/video/118358642" width="940" height="660" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="sample80">
+      <p>recreating past</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample80">
+       <h2>Recreating the Past</h2>
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="sample81">
+      <p>recreating past</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample81">
+        <iframe src="http://10print.org/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample8">
+      <p>recreating past</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample8">
+        <iframe src="http://www.p01.org/10_print_theremin/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sample9">
+      <p>sbn</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sample9">
+        <iframe src="https://kosamari.github.io/sbn/" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="conc1">
+      <p>D3</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="conc1">
+       <h1>D3 is our tool for creation</h1>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="conc2">
+      <p>D3</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="conc2">
+       <h1><code style="font-style: normal">d</code> is the interface</h1>
+      </div>
+    </aside>
+
+
+
+
+    <section class="scrolly-section" data-slide-id="closing2">
+      <p>Thanks!</p>
+      <p>"How to be a Compiler" - Talk given at JSConf Colombia 2016 by Mariko Kosaka</p>
+    </section>
+</article>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="closing2">
+        <h1>Thank you. </h1>
+        <p>@kosamari</p>
+    </div>
+    </aside>
+
+
+    <!-- INITIALIZE SCROLLY SLIDES -->
+    <script>
+
+      // function getParameterByName(name, url) {
+      //   if (!url) url = window.location.href;
+      //   name = name.replace(/[\[\]]/g, "\\$&");
+      //   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      //       results = regex.exec(url);
+      //   if (!results) return null;
+      //   if (!results[2]) return '';
+      //   return decodeURIComponent(results[2].replace(/\+/g, " "));
+      // }
+      // var mode = getParameterByName('present') === 'true'
+      var scrolly = new Scrolly()
+      scrolly.init({show_article: false }) //true to show article view by default
+    </script>
+  </body>
+</html>
