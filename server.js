@@ -3,13 +3,14 @@ var path = require('path');
 var hbs = require('hbs');
 var fs = require('fs');
 var favicon = require('serve-favicon');
-var appsPath;
 var notesPath;
+var projectData;
 
-fs.readdir(__dirname +'/src', function(err, files){
+fs.readFile(__dirname +'/src/projects/data.json', 'utf8', function(err, data){
   if (err) throw err;
-  appsPath = files;
+  projectData = JSON.parse(data);
 });
+
 fs.readdir(__dirname +'/notes', function(err, files){
   if (err) throw err;
   notesPath = files.map(function(f){return f.split('.')[0]});
@@ -22,14 +23,23 @@ var routes = require('./routes');
 app.set('views', path.join(__dirname,'/views'));
 app.set('view engine', 'html');
 app.engine('html', require('hbs').__express);
-hbs.registerPartial('sidebar', fs.readFileSync(__dirname + '/views/sidebar.html', 'utf8'));
+
+
+
+hbs.registerPartial('topbar', fs.readFileSync(__dirname + '/views/topbar.html', 'utf8'));
 hbs.registerPartial('ga', fs.readFileSync(__dirname + '/views/ga.html', 'utf8'));
 hbs.registerPartial('copy', fs.readFileSync(__dirname + '/views/copy.html', 'utf8'));
 
 app.use(favicon(__dirname + '/public/img/favicon.ico'));
-app.use(checkapps)
+
+app.get('/', function(req, res, next) { routes.root(req,res,next) });
+app.get('/notes', function(req, res, next) { routes.notes(req,res,next) });
+app.get('/projects', function(req, res, next) { routes.projects(req,res,next,projectData) });
+
+app.use(checknotes)
 app.use('/builds',express.static(path.join(__dirname + '/builds')));
 app.use(express.static(path.join(__dirname + '/public')));
+
 app.use(notfound);
 
 app.listen(process.env.PORT || 5000);
@@ -38,22 +48,15 @@ console.log('listening on port 5000');
 /*
  FUNCTIONS
 */
-function checkapps (req, res, next){
+function checknotes (req, res, next){
   //if the request has file extension, move next (= static file)
   if(req.url.split('.').length>2) return next();
-  if(req.url==='/') return routes.root(req,res,next);
-  if(req.url==='/notes') return routes.notes(req,res,next);
   var dir = req.url.split('/');
 
   if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) !== -1) return routes.notes(req,res,next,dir[2]);
   if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) === -1) return notfound(req,res,next);
 
-  if(appsPath.indexOf(dir[1]) === -1) return next();
-  if(dir.length>2){
-    var newUrl = req.protocol + '://' + req.get('Host') + '/'+dir[1]+'#' + dir.slice(2,dir.length).join('/');
-    return res.redirect(newUrl);
-  }
-  routes.apps(req,res,next);
+  return next();
 }
 
 function notfound (req, res, next){

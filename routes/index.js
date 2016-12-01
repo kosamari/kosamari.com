@@ -1,7 +1,7 @@
-exports.apps = function(req, res, next){
-  res.render('app',{
-    'css': [{'path': '/builds/main'}, {'path': '/builds' + req.url}],
-    'js': [{'path': '/builds/main'}, {'path': '/builds' + req.url}]
+exports.projects = function(req, res, next, data){
+  res.render('projects',{
+    'css': [{'path': '/builds/main'}, {'path': '/builds/projects'}],
+    'data': data
     }
   );
 };
@@ -23,7 +23,5 @@ exports.notes = function(req, res, next, article){
     });
   }
 };
-
-
 
 require('./path');
