@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>But why can't I code like that? - Mariko Kosaka</title>
+    <meta name="description" content="Oldies JavaScript I grew up with...which I didn't know WHY it's not hip anymore." />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+
+    </style>
+  </head>
+
+  <body>
+  {{> topbar}}
+  <article id="main">
+    <time datetime="2017-01-09" pubdate>2017-01-09</time>
+    <h1>But why can't I code like that?</h1>
+<h2>Oldies JavaScript I grew up with...which I didn't know WHY it's not hip anymore.</h2>
+<p>I don't really know how people lean JavaScipt &quot;properly&quot; or if there is even a &quot;proper&quot; way to learn JavaScript. For me it started with copy and pasting code I found on weblogs into my HTML file (without even understanding syntax) 10 years ago. I did some tutorials on syntax and read a book on jQuery about 5 years later (This was when I starting making &quot;web apps&quot; because I was told HTML5 is really cool 😎). Most recently, I've been copy and pasting someone's code professionally for about 3 years.</p>
+<p>Last time I sat down with tutorials on JS syntax (5 years ago), I didn't even know JavaScript had versions. I didn't know there are groups of people called standards body like W3C and TC39, and I didn't know JavaScript is actually called ECMAScript. (I know, surprising right ? I want my money back too.)</p>
+<p>My point is, no one really told me what I'm supposed to do, or what is the most current way of doing things. Some times I copy tricks from a website made in 1999, and sometimes I copy from new and shiny ES<strong>5</strong> syntax (Note, I thought ES5 was <em>new</em> until about the end of 2014).</p>
+<p>Over this past 3 years, some parts of my coding habit was corrected by working with people and getting code reviews. I've accumulated knowledge of &quot;oh that's old way of doing things, do it this way because it's new and better&quot;. But often <em>why</em> it's old and bad was left out. Here is 2 of those <em>why</em>s I found this weekend.</p>
+<h2>Why should ".onEVENT" be written in "addEventListener('EVENT')" ?</h2>
+<p>I have definitely wrapped application code in <code>window.onload</code> before because probably some code sample I copied did so. But I've been using <code>window.addEventListener('load', function...)</code> instead for the most part.</p>
+<p>Why people should stop using <code>.onEVENT</code> is perhaps obvious when you realize that when you write <code>window.onload = function(){}</code> you are assigning new function to <code>onload</code> method of window object. Thus if mistakenly assign <code>onload</code> twice in your code, you will over write the method.</p>
+<pre><code>// you might be thinking this will get executed
+window.onload = function () {
+  console.log('loaded!')
+}
+
+// ... but in fact this will
+window.onload = function(){
+  console.log('Oops!...I Did It Again')
+}
+
+</code></pre>
+<p>To avoid this situation, <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">EventTarget.addEventListener</a> was introduced. Unlike <code>.onEVENT</code> which assigns single function to a method in target object, EventListener can register multipl listeners to a target.</p>
+<pre><code>// This event will fire!
+window.addEventListener('load', function (e) {
+  console.log('loaded!')
+}, false)
+
+// ... and then this will too, yay!!
+window.addEventListener('load', function (e) {
+  console.log('Oops!...I Did It Again')
+}, false)
+
+</code></pre>
+<p>You might be thinking, &quot;I only need to register this event listener once, can't I just use <code>.onEvent</code> ?&quot; but can you <em><strong>really guarantee</strong></em> that nothing in the codebase (including external library you included in the project) will over write it ? CAN YOU ??? I can't. It's better to keep my pudding in the safe place 💅.</p>
+
+<h2>Why should I pass function, not code string, to "setInterval" and "setTimeout" ?</h2>
+<p>I have no idea where I picked this up, but I used to think I have to write setInterval and setTimeout like this <code>setTimeout('done()', 500)</code> (note the first argument is code string). Nowadays I simply pass name of the callback function like <code>setTimeout(done, 500)</code>.</p>
+<p>I remember the moment reading code sample on MDN and realizing that I can just pass around function by name. It was kind if mind blowing (Why I didn't know about it in the 1st place? who knows).</p>
+<p>So why does both function and code string work as the first argument? Turns out, code string as 1st argument is archaeological artifact from browser wild wide west days (or at least so did my twitter <a href="https://twitter.com/TheRealPomax/status/818338068679659520">friends</a>, <a href="https://twitter.com/izs/status/818338999961956353">said</a>. ) I didn't even know DOM had Level 0 and Level 1 (if you want to know more, <a href="http://www.quirksmode.org/js/dom0.html">this is what I raed</a> on DOM Level 0).</p>
+<p>With little more digging, I found explanation online that said &quot;when you pass code string as the first argument, the string is wrapped in Function object&quot;... WOW WOW WOW what do you mean wrapping string in a function object?</p>
+<p></p>
+<h3>apparently you can <code>new</code> a Function (who knew !)</h3>
+<p>As far as I can remember, no tutorial taught me to make functiom by using <code>new</code> keyword like <code>const omg = new Function()</code>, but apparently you can. On top of that, you can pass argument names and function body as sting (WTF!)</p>
+<pre><code>
+const omg = new Function('keyword', 'return &quot;omg! &quot; + keyword')
+console.log(omg('waaaaah!?')) // 'omg! waaaaah!?'
+
+</code></pre>
+<p>For more, read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">MDN article on Function Object</a>. I mean... everything is Object in JavaScript, so this make sense. I'm just surprised I survived thus far without knowing about it.</p>
+<p>Now, why is it bad to pass code sting? because you risk executing malicious code with privileged of the caller. Passing code string may risk running bad code on the user's machine 🙅. Better to avoid it if you can.</p>
+---<br>
+<p>
+This post is more or less a memo to myself. I have few more which I haven't really understood enough to write it in words (like use <code>insertAdjacentHTML</code> instead of <code>innerHTML</code>) I might write follow up post as I learn more !</p>
+
+  </article>
+
+  <footer>
+    <p>
+      {{> copy}}
+    </p>
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{> ga}}
+  </body>
+</html>
