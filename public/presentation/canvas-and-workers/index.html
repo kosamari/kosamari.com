@@ -1,0 +1,773 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Playing with Canvas</title>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css" media="screen">
+
+    /*
+    * CSS for the scrolly-slides it necessary for the layout.
+    * Change it at your own risk. You might want to add custom css at the end.
+    */
+      body, html{
+        height:100%;
+        margin:0;
+        font-family: 'Roboto Slab', sans-serif;
+        color:#333;
+
+      }
+      .scrolly-article {
+        width: 0px;
+        overflow: hidden;
+        z-index: -1;
+      }
+      .scrolly-section {
+        padding:20px;
+        opacity: .2;
+      }
+      .scrolly-slide {
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        height:100%;
+        width:100%;
+        padding:0px 30px;
+        overflow: scroll;
+        background-color: #EAF4FE;
+      }
+
+      /* You might want to change this to style you like */
+      .scrolly-slide h1{
+        font-size: 9vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h2{
+        font-size: 5vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h3{
+        font-size: 4vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h4{
+        font-size: 3vw;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .scrolly-slide h5{
+        margin-bottom: 0px;
+        font-size: 3vw;
+      }
+      .scrolly-slide h6{
+        margin: 0px;
+        font-size: 2.5vw;
+      }
+      .scrolly-slide p{
+        font-size: 3vw;
+      }
+      .scrolly-slide li{
+        font-size: 2.5vw;
+      }
+      .scrolly-slide pre{
+        font-size: 2.5vw;
+      }
+      /* You might want to use some kind of syntax highlighting library */
+      pre {
+        font-family:'Inconsolata', monospace;
+        overflow: scroll;
+        /*background-color:#F5F4F0;*/
+        padding:10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      pre > .pre-gray {
+        color:gray;
+      }
+      pre > .pre-small {
+        font-size: 2vw;
+      }
+      code{
+        color:#CB0000;
+      }
+    </style>
+
+    <!-- Style Sheets for Demo -->
+    <link rel="stylesheet" type="text/css" href="assets/css/toggle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/chart.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slides.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/range.css">
+
+    <!-- Library dependency -->
+    <script src="assets/lib/jquery-1.12.0.min.js"></script>
+    <script src="assets/lib/scrolly-slides.js"></script>
+  </head>
+  <body>
+    <article class="scrolly-article">
+
+
+<!-- Introduction -->
+    <section class="scrolly-section" data-slide-id="title">
+      <h2>Introduction</h2>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="title">
+        <h1>Playing with &lt;canvas&gt;</h1>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="profile" data-fragment-ids="1">
+      <h2>Little bit about me</h2>
+      <p>I'm <a href="https://twitter.com/kosamari" title="">@kosamari</a> on the internet pretty much everywhere except Myspace.</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="profile" data-fragment-ids="1,2">
+      <p>I write JavaScript everyday at <a href="http://www.scripto.cc/" title="">Scripto</a> in NYC</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="profile" data-fragment-ids="1,2,3">
+      <p>I also co-organize JavaScript meetup called <a href="http://brooklynjs.com/">BrooklynJS</a> in NYC.</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="profile" data-fragment-ids="1,2,3,4">
+      <p>... and my favorite data type is Array</p>
+    </section>
+
+    <aside>
+      <div class="scrolly-slide slide-type-colmuns" data-slide-id="profile">
+        <div class="center-center column w-200" data-fragment-id="1">
+          <img src="assets/img/profile-1.png" alt="" width="100%">
+          <h6>@kosamari</h6>
+        </div>
+        <div class="center-center column w-200" data-fragment-id="2">
+          <img src="assets/img/profile-2.jpg" alt="" width="100%">
+          <h6>Scripto</h6>
+        </div>
+        <div class="center-center column w-200" data-fragment-id="3">
+          <img src="assets/img/profile-3.png" alt="" width="100%">
+          <h6>BrooklynJS</h6>
+        </div>
+        <div class="center-center column w-200" data-fragment-id="4">
+          <img src="assets/img/profile-4.png" alt="" width="100%">
+          <h6>❤ Data</h6>
+        </div>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="knitting-1">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-1">
+        <video class="play" src="assets/img/knitting-1-1.mp4" controls poster=""/></video>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="knitting-2">
+      <p>I make small programming language that spits out array to design knitting pattern...</p>
+      <p>Cat pattern by <a href="https://twitter.com/hamishmurphy/status/635271721000370176" title="">@hamishmurphy</a></p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-2">
+        <img src="assets/img/64sts.gif" alt="" width="85%">
+      </div>
+    </aside>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="knitting-2-2">
+      <p>I like writing JavaScript arrays to visualize my knitting process.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-2-2">
+        <img src="assets/img/Sweaterify.png" alt="" width="85%">
+      </div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="knitting-2-3">
+      <p>I like writing JavaScript arrays to visualize my knitting process.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-2-3">
+        <img src="assets/img/sweaterifyv2.png" alt="" width="85%">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="knitting-1-2">
+      <h2>Array and Me</h2>
+      <p>I like dealing with physical array like knit stitches on needle.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-1-2">
+        <video class="play" src="assets/img/knit.mp4" controls poster=""/></video>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="squigglyfunc">
+      <p>Doing research was reading about a lot of math, & learning to use tools... I wonder, can I do all of this in a language I'm familiar (JavaSript) and a software I already use everyday (browser)?</p>
+      <p>The answer is YES, let's look at what we can do</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="squigglyfunc">
+        <img src="assets/img/squigglyfunc.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="canvas-1" data-fragment-ids="1">
+      <h2>What is Canvas</h2>
+      <p>So, let's start with "what is Canvas?"</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="canvas-1" data-fragment-ids="1,2">
+      <p>According to MDN, Canvas was "Added in HTML5, the HTML &lt;canvas&gt; element can be used to draw graphics via scripting in JavaScript. "</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="canvas-1">
+        <h1 data-fragment-id="1">&lt;canvas&gt; </h1>
+        <h3 data-fragment-id="2"><em>An HTML element that can be used to draw graphics using JavaScript</em></h3>
+      </div>
+    </aside>
+
+<!-- What is Canvas -->
+    <section class="scrolly-section" data-slide-id="canvas-3">
+      <p>In order to talk to this canvas we created, we need to make something called <code>context</code>.
+      <p>In other wards. creating canvas is like you are reserving piece of land, but you don't know where this land is located yet.</p>
+      <p>you can set width and height of the element, but we can't really talk to this canvas in JavaScript yet.
+      </p>
+      <p>So, let's get coding, you can create canvas element like this, or write in your HTML and reference it</p>
+    </section>
+    <section class="scrolly-section" data-slide-id="canvas-4">
+      <p>You might want to have this land in the city where there is a lot of skyscrapers and very 3d... </p>
+    </section>
+    <section class="scrolly-section" data-slide-id="canvas-5">
+      <p>... or you might be putting vegetable garden in your back yard.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="canvas-3">
+        <img src="assets/img/createcanvas.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="canvas-4">
+        <img src="assets/img/canvaswebgl.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="canvas-5">
+        <img src="assets/img/canvas2d.png" class="fullscreen" alt="">
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="canvas-6">
+      <h2>Talking to canvas</h2>
+      <p>Now that we have context established, we can talk to canvas like draw shapes and fill with color.</p>
+      <p>We can even load picture into canvas. </p>
+      <p>There are all human understandable language to communicate with canvas...</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="canvas-6">
+      <img src="assets/img/canvasdraw.png" data-fragment-id="2" class="fullscreen" alt="">
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="canvas-8">
+      <p>...but canvas and code can also talk in data using <code>getImageData()</code> and <code>putImageData()</code></p>
+      <p>There are all human understandable language to communicate with canvas, but canvas can also talk to you in data or I call it pixel language.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="canvas-8">
+      <img src="assets/img/imagedata.png" class="fullscreen" alt="">
+    </aside>
+
+
+
+
+<!-- image-data -->
+    <section class="scrolly-section" data-slide-id="image-data-title">
+      <h2>Let's understand ImageData.</h2>
+      <p>So, let's start with "what is Canvas?"</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="image-data-title">
+        <h1>What's ImageData</h1>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data">
+      <h3>Inside ImageData</h3>
+      <p>So let's look what's inside of ImageData. Few things are somewhat obvious like width and height -it's the width and height of the image,  But then you see this array of numbers. This is a flat array of Red, Green, Blue, and Alpha value of each pixel.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data">
+        <div class="--center-column w-50p">
+          <pre style="width:85%" contenteditable="true" class="scrolly-focus-void" id="image-data-data">
+{
+  "width": 3,
+  "height": 3,
+  "data": [254, 43, 117, 255, 57, 51, 135, 255, 57, 51, 135, 255, 57, 51, 135, 255, 57, 51, 135, 255, 44, 212, 222, 255, 44, 212, 222, 255, 44, 212, 222, 255, 254, 43, 117, 255]
+}</pre>
+        </div>
+        <div class="--center-column w-50p target">
+          <canvas id="image-data-demo"></canvas>
+        </div>
+    </div>
+    </aside>
+
+
+
+    <section class="scrolly-section" data-slide-id="about-rgba" data-event-name="pixel-stack">
+      <h3>What's in a pixel</h3>
+
+      <p>A pixel in our computer screen consists of Red, Green, and Blue light illuminating at different level, and steps are 0 to 255.</p>
+
+    </section>
+    <section class="scrolly-section" data-slide-id="about-rgba" data-event-name="pixel-reveal">
+      <p>So imagine you have giant single pixel here, combination of 3 lights create color. And if you put equal number for every light you get gray. This is how images are grayscale.</p>
+
+      <p>There is 4th number in each pixel called Alpha. This is an extra opacity information so canvas knows how to blend in colors when things are overlapping.</p>
+
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="about-rgba">
+        <div id="pixel-color" class="" ></div>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="image-data2">
+      <p>So if we change the 1st 3 numbers to 255, 0, 0, the top left corner pixel change color to Red. </p>
+      <p>The data is flat, so you need to do a little bit of formatting to get position of each pixel on 2 dimensional plane. </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data2">
+        <div class="--center-column w-50p">
+          <pre style="width:85%" contenteditable="true" class="scrolly-focus-void" id="image-data-data2">
+{
+  "width":3,
+  "height":3,
+  "data":[
+    👀 254, 43, 117, 255,
+    👀 57, 51, 135, 255,
+    👀 57,51, 135, 255,
+    👀 57, 51, 135, 255,
+    👀 57, 51, 135, 255,
+    👀 44, 212, 222, 255,
+    👀 44, 212, 222, 255,
+    👀 44, 212, 222, 255,
+    👀 254, 43, 117, 255
+  ]
+}</pre>
+          <button id="image-data-data2-update">update</button>
+        </div>
+        <div class="--center-column w-50p target">
+          <canvas id="image-data-demo2"></canvas>
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-text">
+      <h2>It's like writing on graph paper</h2>
+      <p>I think of it like you have blob of text, and you have write each letter to each to each cell. So the width and height in data gives you size of the graph paper. and you are going to fill in text while breaking line when you run out of grid horizontally. </p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-text">
+        <img src="assets/img/imagedataastext.png" class="fullscreen" alt="" width="100%">
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-code">
+      <h2>Dealing with ImageData in your code</h2>
+      <p>When you are dealing with pixel data, you see lots of this double nested for loops. The outer loop moves vertically each row, and inner loop move horizontally to catch each column. </p>
+      <p>Remember, we have 4 numbers for each pixel, so you'll need to x4 the index to access every data.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-code">
+        <img src="assets/img/forloop.png" class="fullscreen" alt="" width="100%">
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-css">
+      <p>...or make an phantom image.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css">
+        <img src="assets/img/ghost-image.png" alt="" width="100%">
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-css2">
+      <p>it is 1x1 pixel</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css2">
+        <img src="assets/img/ghost-image2.png" alt="" width="100%">
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="image-data-css3">
+      <p>with lots of box-shadow</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="image-data-css3">
+        <img src="assets/img/ghost-image3.png" alt="" width="100%">
+    </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="touch-perfect-00">
+      <h3>Touch Perfect</h3>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="touch-perfect-00">
+        <div class="--center-column w-40p target" style="padding-right:20px">
+          <img src="assets/img/boston.png" alt="" width='100%'>
+        </div>
+        <div class="--center-column w-60p">
+          <h4>
+Challenge: <br>
+Add interactivity to this map
+        </h4>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="touch-perfect-0">
+      <h3>Touch Perfect</h3>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="touch-perfect-0">
+        <div class="--center-column w-40p target" style="padding-right:20px">
+          <img src="assets/img/tp0.png" alt="" width='100%'>
+        </div>
+        <div class="--center-column w-60p">
+          <pre style="width:90%">
+&lt;div class="wrapper"&gt;
+  &lt;img src="image.jpg" alt="Image"&gt;
+  &lt;a class="item" href="target.html"&gt;&lt;/a&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="touch-perfect-1">
+      <h3>Touch Perfect</h3>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="touch-perfect-1">
+        <div class="--center-column w-40p target" style="padding-right:20px">
+          <img src="assets/img/tp1.png" alt="" width='100%'>
+        </div>
+        <div class="--center-column w-60p">
+          <pre style="width:90%">
+&lt;div class="wrapper"&gt;
+  &lt;img src="image.jpg" usemap="#boston"&gt;
+  &lt;map name="boston"&gt;
+    &lt;area shape="poly" coords="312,180,363,267,312,360,242,434,152,500,112,434,199,360,199,267,231,192,312,180" href="target.html"&gt;
+  &lt;/map&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="touch-perfect-2">
+      <h3>Touch Perfect</h3>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="touch-perfect-2">
+        <div class="--center-column w-33p" >
+          <img src="assets/img/maptransform1.png" alt="" width='100%'>
+        </div>
+        <div class="--center-column w-33p" >
+          <img src="assets/img/maptransform2.png" alt="" width='100%'>
+        </div>
+        <div class="--center-column w-33p" >
+          <img src="assets/img/maptransform3.png" alt="" width='100%'>
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="touch-perfect-3">
+      <h3>Touch Perfect</h3>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="touch-perfect-3">
+        <div class="--center-column w-40p target" style="padding-right:20px">
+          <img src="assets/img/boston.png" width="100%" onmouseover="this.setAttribute('src', 'assets/img/maptransform3.png')" onmouseout="this.setAttribute('src', 'assets/img/boston.png')">
+        </div>
+        <div class="--center-column w-60p">
+          <pre style="width:90%">
+
+hiddenCtx.drawImage(threshholdImage, 0, 0)
+
+var refData = hiddenCtx.getImageData(0, 0, width, height)
+
+<b>function clickAreaCheck(x, y) {
+  var index = (x + y * refData.width) * 4
+  return refData.data[index] === 255
+}</b></pre>
+        </div>
+    </div>
+    </aside>
+
+   <!--  <section class="scrolly-section" data-slide-id="socialconstruct">
+      Social Construct
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="socialconstruct">
+        <div class="slide-type-center w-50p column">
+          <h2><em>Social Construct</em></h2>
+          <h3><em>( filters )</em></h3>
+        </div>
+        <div class="slide-type-center w-50p">
+          <img src="assets/img/socialc.png" alt="" width="100%">
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="socialgraph">
+      Social Graph
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="socialgraph">
+        <div class="slide-type-center w-50p column">
+          <h2><em>Social Graph</em></h2>
+          <h3><em>( convolution )</em></h3>
+        </div>
+        <div class="slide-type-center w-50p">
+          <img src="assets/img/socialg.png" alt="" width="100%">
+        </div>
+    </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="socialsegmention">
+      Social Segmentation
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="socialsegmention">
+        <div class="slide-type-center w-50p column">
+          <h2><em>Segmentation</em></h2>
+          <h3><em>( labeling )</em></h3>
+        </div>
+        <div class="slide-type-center w-50p">
+          <img src="assets/img/socialseg.png" alt="" width="100%">
+        </div>
+    </div>
+    </aside> -->
+
+
+    <section class="scrolly-section" data-slide-id="worker-sample">
+      <p>worker sample</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-sample">
+        <video class="play" src="assets/img/noworkerdemo.mov" controls poster=""/></video>
+      </div>
+    </aside>
+
+
+<!-- Web Worker -->
+    <section class="scrolly-section" data-slide-id="worker-title">
+      <h2>## Make it faster</h2>
+      <p>Doing math on full color, large scake image takes lots of computing power.  You can, optimize how you calculate values by tweaking your code, but also you can get help from browser features to help with speed, with Web Workers.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="worker-title">
+        <h1>Web Worker</h1>
+        <h3><em>A way to run your JavaScript in background threads.</em></h3>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="worker-as-iss">
+      <h2>worker is like ISS</h2>
+    </section>
+
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-as-iss">
+      <img src="assets/img/ww.jpeg" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sw-as-ufo">
+      <h2>SW is like UFO</h2>
+    </section>
+
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sw-as-ufo">
+      <img src="assets/img/SW.jpeg" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="sw-as-ufo-jake">
+      <h2>SW is like UFO</h2>
+    </section>
+
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="sw-as-ufo-jake">
+      <img src="assets/img/jake-sw.png" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="worker-code">
+      <p>worker code.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code1">
+      <p>worker code 1.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code1" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode1.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code2">
+      <p>worker code2.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code2" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode2.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code3">
+      <p>worker code3.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code3" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode3.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="worker-code4">
+      <p>worker code 4.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-code4" style="background-color:#E9F4FF">
+      <img src="assets/img/workercode4.png" class="fullscreen" alt=""></div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="worker-sample2">
+      <p>worker sample1</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="worker-sample2">
+        <video class="play" src="assets/img/workered_demo.mov" controls poster=""/></video>
+      </div>
+    </aside>
+
+    <!-- How to save file -->
+   <!--  <section class="scrolly-section" data-slide-id="data-title">
+      <h2>## Make it faster</h2>
+      <p>Doing math on full color, large scake image takes lots of computing power.  You can, optimize how you calculate values by tweaking your code, but also you can get help from browser features to help with speed, with Web Workers.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="data-title">
+        <h1><code class="black">toDataURL</code>?<br>or<br><code class="black">toBlob</code> ?</h1>
+      </div>
+    </aside>
+
+
+    <section class="scrolly-section" data-slide-id="toDataURL-code">
+      <p>toDataURL</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="toDataURL-code">
+      <img src="assets/img/toDataURL.png" class="fullscreen" alt=""></div>
+    </aside>
+    <section class="scrolly-section" data-slide-id="toDataURL-demo">
+      <p>toDataURL</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="toDataURL-demo">
+        <iframe src='http://64sts.com/' frameborder='0' width='100%' height='100%'></iframe>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="toDataURL-issue">
+      <p>toDataURL</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-middle column" data-slide-id="toDataURL-issue">
+        <h2>- expensive to handle image in Base64</h2>
+        <h2>- <code class="black">href</code> length is capped<br>&nbsp;&nbsp;(~2000 characters)</h2>
+      </div>
+    </aside>
+
+    <section class="scrolly-section" data-slide-id="toBlob-code">
+      <p>toBlob</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="toBlob-code">
+      <img src="assets/img/toBlob.png" class="fullscreen" alt=""></div>
+    </aside>
+ -->
+    <section class="scrolly-section" data-slide-id="knitting-2-4">
+      <p>I like writing JavaScript arrays to visualize my knitting process.</p>
+    </section>
+    <aside>
+      <div class="scrolly-slide slide-type-center" data-slide-id="knitting-2-4">
+        <img src="assets/img/Sweaterify4.png" alt="" width="80%">
+      </div>
+    </aside>
+
+
+
+
+    <section class="scrolly-section" data-slide-id="closing0">
+      <h3>Thanks!</h3>
+    </section>
+</article>
+    <aside>
+      <div class="scrolly-slide slide-type-center column" data-slide-id="closing0">
+        <h1>Thank you !</h1>
+        <h3>@kosamari</h3>
+        <p class="credit-text">
+        <br>
+        <u>Special Thanks</u><br>
+        Zach Lieberman & School for Poetic Computation<br>
+        Suz Hinton, Jake Archibald, Luke Schantz
+        <br><br>
+        <u>Photo Credit</u><br>
+        New York. Central Park. Wollman Rink by Tomás Fano (CC BY-SA)<br>
+        <br>
+        All Rights Reserved for the hand drawings
+        </p>
+        </div>
+    </aside>
+
+
+    <!-- JavaScript files used for Demo -->
+    <script src="assets/lib/d3.v3.min.js"></script>
+    <script src="assets/js/pixelcolor.js"></script>
+    <script src="assets/js/imagedata.js"></script>
+
+    <!-- INITIALIZE SCROLLY SLIDES -->
+    <script>
+      var scrolly = new Scrolly()
+      scrolly.init({show_article: false}) //true to show article view by default
+      var slider
+
+      var pc = new PixelColor('#pixel-color', $('.scrolly-slide').width(), [254, 43, 117, 255])
+
+      var id_data = JSON.parse($('#image-data-data').text().split('👀').join(''))
+      var id = new ImageDataDemo(
+        '#image-data-demo', 
+        $('.scrolly-slide').width()/2,
+        id_data)
+
+      var id_data2 = JSON.parse($('#image-data-data2').text().split('👀').join(''))
+      var id2 = new ImageDataDemo(
+        '#image-data-demo2', 
+        $('.scrolly-slide').width()/2,
+        id_data,
+        true)
+      $('#image-data-data2-update').on('click', function(){
+        id2.redraw($('.scrolly-slide').width()/2, JSON.parse($('#image-data-data2').text().split('👀').join('')))
+      })
+
+      var resizeTimer;
+      var interval = Math.floor(1000 / 60 * 10);
+      window.addEventListener('scrolly-slides-resized',function(){
+        resizeEvents()
+      })
+      function resizeEvents(){
+        pc.redraw($('.scrolly-slide').width())
+        id.redraw($('.scrolly-slide').width()/2)
+        id2.redraw($('.scrolly-slide').width()/2)
+        id3.redraw($('.scrolly-slide').width()*0.8)
+      }
+    </script>
+  </body>
+</html>
