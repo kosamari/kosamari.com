@@ -47,8 +47,8 @@ function order (type) {
   return new Promise(function(resolve, reject) {
     var burger = cookBurger(type)
     berger.ready = function (err, burger) {
-      if (err) { 
-        return reject('Error while cooking a ' + type)
+      if (err) {
+        return reject(Error('Error while cooking'))
       }
       return resolve(burger)
     }
@@ -77,7 +77,7 @@ order('JakeBurger')
 <p>The tray is a promise from JakeShack that they will place its delicious burger on here once it's ready, and a buzzer is an indicator of order status. When buzzer is not beeping, it means the order is <strong>pending</strong> - the kitchen crew is busy at work processing your order. When buzzer turns red and beeps, it means the order is <strong>settled</strong>.</p>
 <p>A little bit of fine nuance here is that settled is not equal to &quot;ready&quot;. It means the order has been processed in the kitchen and calling the customer to take action on it. You as a customer probably want to go to the counter and claim your order, but in some case, you might just walk away. It's up to you.</p>
 <p>Let's look at what we have so far in code. When you call a function, it &quot;returns a promise&quot; (giving you a tray with a buzzer). A return value (a burger) should appear on the tray once the promise is fulfilled and called the callback. More on that in next section!</p>
-<p><img width="90%" alt="code1" src="https://cloud.githubusercontent.com/assets/4581495/22322896/0d7f4220-e36d-11e6-9bd7-6ca641219d46.png"></p>
+<p><img width="90%" alt="code1" src="https://cloud.githubusercontent.com/assets/4581495/22325508/64505dbe-e37c-11e6-8c53-2bae7a54e568.png"></p>
 <h2>Add Promise handlers</h2>
 <p>Looks like the buzzer is beeping, let's go to the counter and claim the order. There are two scenarios you can expect at this stage.</p>
 <p><img width="90%" alt="settled" src="https://cloud.githubusercontent.com/assets/4581495/22322847/d7c06e98-e36c-11e6-9c40-3d76dc381357.png"></p>
@@ -86,7 +86,7 @@ order('JakeBurger')
 <h4>2. Order rejected</h4>
 <p>Looks like the kitchen run out of burger patties, the promise of a burger was rejected. Make sure you get a refund for that!</p>
 <p>Here is how you might prepare for these two situations in code.</p>
-<p><img width="90%" alt="code2" src="https://cloud.githubusercontent.com/assets/4581495/22322877/fce48808-e36c-11e6-9ce5-59cfeb229895.png"></p>
+<p><img width="90%" alt="code2" src="https://cloud.githubusercontent.com/assets/4581495/22325486/4e11f0a8-e37c-11e6-8fe2-f2e05da50c5f.png"></p>
 <aside class="note-note"><code>.then()</code> takes another function as the second argument which can also be used as a reject handler. For the sake of simplicity, I only use <code>.catch()</code> for reject in this article. If you want to know more about the difference, you might want to check out <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#error_handling" target="blank">this article</a>.</aside>
 <h2>Chain the Promise</h2>
 <p>Let's say your order was fulfilled, but you realized in order to have an ultimate burger party, you also need a milkshake... so you walk up to the C-line (a special line for drinks, <a href="http://midtownlunch.com/2010/08/02/midtown-times-square-shake-shack-finally-add-a-c-line/" target="blanl">real thing at ShakeShack</a> for optimal crowd control). When you order a milkshake at the counter, a cashier gives you another tray and an another buzzer. Since milkshake is super quick to make, the cachier will hand you milkshake as well. No need to wait for the buzzer to beep (it's already beeping !).</p>
@@ -105,6 +105,7 @@ order('JakeBurger')
 <li><a href="http://azu.github.io/promises-book/" target="blank">JavaScript Promiseの本</a> written in Japanese (Chinese and Korean version available)</li>
 </ul>
 
+<p>Thanks to Jake Archibald and Nolan Lawson for proofreading this post and suggesting changes! </p>
   </article>
 
   <footer>
