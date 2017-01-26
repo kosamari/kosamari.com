@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Promise of a Burger Party - Mariko Kosaka</title>
+    <meta name="description" content="An illustrated guide to understanding JavaScript Promise" />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+    .note-note {
+      background-color:#f1f1f1;
+      border-radius: 5px;
+      padding:10px;
+      font-size: .85em
+    }
+    </style>
+  </head>
+
+  <body>
+  {{> topbar}}
+  <article id="main">
+    <time datetime="2017-01-25" pubdate>2017-01-25</time>
+    <h1>The Promise of a Burger Party</h1>
+<p>Two weeks ago, I was in a conversation about how I might implement a feature in JavaScript. It needed to be asynchronous to access external data, I said &quot;well, let's use <code>fetch()</code>...so in code... umm...&quot; while I paused to remember fetch API, the person I was talking to said, &quot;It returns a promise&quot;. I don't know why, but my brain froze, and I said: &quot;I honestly don't know what you mean...&quot; I've written promise based code plenty of times, but somehow things didn't connect in my brain this time. I realized I actually don't really &quot;get&quot; Promise after all.</p>
+<p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I can not tell you how hard it is to explain this sentence - &quot;It returns a Promise&quot;<br><br>but probably because I really don&#39;t understand Promise.</p>&mdash; Mariko Kosaka (@kosamari) <a href="https://twitter.com/kosamari/status/819972802220589056">January 13, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>If you know me from twitter, I'm a visual learner who <a href="https://twitter.com/kosamari/status/806941856777011200">draw code concepts</a> as <a href="https://twitter.com/kosamari/status/807303762188574720">physical metaphor</a>. It is how I cope with a double layer of abstraction (programming language &amp; English as a second language). So naturally, I had to draw it this time as well.</p>
+<p>
+<img width="90%" alt="title" src="https://cloud.githubusercontent.com/assets/4581495/22322821/a770251c-e36c-11e6-9361-021ee20bbb9d.png"></p>
+<p>Here is a piece of code we are going to look at in this story.</p>
+<pre><code class="language-javascript">// asynchronous operation
+function cookBurger (type) { ... }
+
+// regular operation
+function makeMilkshake (type) { ... }
+
+// order function which returns promise
+function order (type) {
+  return new Promise(function(resolve, reject) {
+    var burger = cookBurger(type)
+    berger.ready = function (err, burger) {
+      if (err) { 
+        return reject('Error while cooking a ' + type)
+      }
+      return resolve(burger)
+    }
+  })
+}
+
+order('JakeBurger')
+  .then( burger =&gt; {
+    const milkshake = makeMilkshake('vanila')
+    return { burger: burger, shake: milkshake }
+  })
+  .then( foodItems =&gt; {
+    console.log('BURGER PARTY !', foodItems)
+  })
+  .catch( err =&gt; {
+    console.log(err)
+  })
+</code></pre>
+
+<h2>Let's have a burger party</h2>
+<p>Welcome to Promise Square Park, home of a burger joint JakeShack. The burger at JakeShack is very popular but it has a limited number of cash registers to take orders, so the line is always long. However, the back kitchen is well staffed to take multiple orders at a time.</p>
+<aside class="note-note">In case you are not familiar, <a href="http://www.foodsmackdown.com/2011/08/shake-shack-new-york-madison-square-park/" target="blank">Madison Square Park and ShakeShack is a thing in New York City</a>. It's <em>really good</em>, but the line is always long.</aside>
+<h2>Promisify the action</h2>
+<p>In order to take orders as quickly as possible, JakeShack uses a buzzer system. When a customer makes an order at a cash register, register staff hand you a tray and a buzzer in exchange of payment.</p>
+<p><img width="90%" alt="promise" src="https://cloud.githubusercontent.com/assets/4581495/22322842/ca748288-e36c-11e6-9ee5-dcac2edaf041.png"></p>
+<p>The tray is a promise from JakeShack that they will place its delicious burger on here once it's ready, and a buzzer is an indicator of order status. When buzzer is not beeping, it means the order is <strong>pending</strong> - the kitchen crew is busy at work processing your order. When buzzer turns red and beeps, it means the order is <strong>settled</strong>.</p>
+<p>A little bit of fine nuance here is that settled is not equal to &quot;ready&quot;. It means the order has been processed in the kitchen and calling the customer to take action on it. You as a customer probably want to go to the counter and claim your order, but in some case, you might just walk away. It's up to you.</p>
+<p>Let's look at what we have so far in code. When you call a function, it &quot;returns a promise&quot; (giving you a tray with a buzzer). A return value (a burger) should appear on the tray once the promise is fulfilled and called the callback. More on that in next section!</p>
+<p><img width="90%" alt="code1" src="https://cloud.githubusercontent.com/assets/4581495/22322896/0d7f4220-e36d-11e6-9bd7-6ca641219d46.png"></p>
+<h2>Add Promise handlers</h2>
+<p>Looks like the buzzer is beeping, let's go to the counter and claim the order. There are two scenarios you can expect at this stage.</p>
+<p><img width="90%" alt="settled" src="https://cloud.githubusercontent.com/assets/4581495/22322847/d7c06e98-e36c-11e6-9c40-3d76dc381357.png"></p>
+<h4>1. Order fulfilled</h4>
+<p>Hooray! your burger is ready, the kitchen staff hands you a freshly made burger. The promise of a good burger was fulfilled!</p>
+<h4>2. Order rejected</h4>
+<p>Looks like the kitchen run out of burger patties, the promise of a burger was rejected. Make sure you get a refund for that!</p>
+<p>Here is how you might prepare for these two situations in code.</p>
+<p><img width="90%" alt="code2" src="https://cloud.githubusercontent.com/assets/4581495/22322877/fce48808-e36c-11e6-9ce5-59cfeb229895.png"></p>
+<aside class="note-note"><code>.then()</code> takes another function as the second argument which can also be used as a reject handler. For the sake of simplicity, I only use <code>.catch()</code> for reject in this article. If you want to know more about the difference, you might want to check out <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#error_handling" target="blank">this article</a>.</aside>
+<h2>Chain the Promise</h2>
+<p>Let's say your order was fulfilled, but you realized in order to have an ultimate burger party, you also need a milkshake... so you walk up to the C-line (a special line for drinks, <a href="http://midtownlunch.com/2010/08/02/midtown-times-square-shake-shack-finally-add-a-c-line/" target="blanl">real thing at ShakeShack</a> for optimal crowd control). When you order a milkshake at the counter, a cashier gives you another tray and an another buzzer. Since milkshake is super quick to make, the cachier will hand you milkshake as well. No need to wait for the buzzer to beep (it's already beeping !).</p>
+<p><img width="90%" alt="chaining" src="https://cloud.githubusercontent.com/assets/4581495/22322865/e95a7b58-e36c-11e6-9947-ed7505a92558.png"></p>
+<p>Let's look at how it works in code. Chaining promise is as easy as adding another <code>.then()</code> in your code. Return from <code>.then()</code> is always a promise. Just remember each <code>.then()</code> returns you a tray and a buzzer, and an actual return value is passed as an argument to the callback.</p>
+<p><img width="90%" alt="code3" src="https://cloud.githubusercontent.com/assets/4581495/22324122/5913c8d4-e375-11e6-8171-29f232dd0d0b.png"></p>
+<p>Now that you have burger and milkshake, you are ready to BURGER PARTY</p>
+<h2>More party tricks!</h2>
+<p>There are few more methods in Promise that let you perform cool tricks.</p>
+<p><code>Promise.all()</code> creates a promise that takes an array of promises (items). This promise fulfills when all of its items (each one is a promise) are fulfilled. Imagine you ordered 5 different burgers for your group but want to minimize a trip to the counter to only once when all 5 orders are ready. <code>Promise.all()</code> is a good solution for this.</p>
+<p><code>Promise.race()</code> is similar to <code>Promise.all()</code>. But it is fulfilled or rejected as soon as one item fulfills or rejects. This can be used to simulate try and grab. If you are super hungry, you might order a burger, a cheeseburger, and a hot dog at the same time, only to pick up whatever the 1st order came out of the kitchen. (Note, in this analogy if the kitchen is out of burger patty and rejects the burger promise first, then the entire race promise will turn to rejected state.)</p>
+<p>There are more details to cover in promises. Here is a further reading suggestion.</p>
+<ul>
+<li><a href="https://github.com/mattdesl/promise-cookbook/blob/master/README.md" target="blank">promise-cookbook</a> written in English (Chinese version available)</li>
+<li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" target="blank">JavaScript Promises: an Introduction</a> written in English</li>
+<li><a href="http://azu.github.io/promises-book/" target="blank">JavaScript Promiseの本</a> written in Japanese (Chinese and Korean version available)</li>
+</ul>
+
+  </article>
+
+  <footer>
+    <p>
+      <small>This post is published under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="link to CC license">CC BY-NC-SA 4.0 license</a>.</small>
+    </p>
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{> ga}}
+  </body>
+</html>
