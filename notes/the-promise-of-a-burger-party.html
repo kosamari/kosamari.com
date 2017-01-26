@@ -29,7 +29,12 @@
   <article id="main">
     <time datetime="2017-01-25" pubdate>2017-01-25</time>
     <h1>The Promise of a Burger Party</h1>
-<p>Two weeks ago, I was in a conversation about how I might implement a feature in JavaScript. It needed to be asynchronous to access external data, I said &quot;well, let's use <code>fetch()</code>...so in code... umm...&quot; while I paused to remember fetch API, the person I was talking to said, &quot;It returns a promise&quot;. I don't know why, but my brain froze, and I said: &quot;I honestly don't know what you mean...&quot; I've written promise based code plenty of times, but somehow things didn't connect in my brain this time. I realized I actually don't really &quot;get&quot; Promise after all.</p>
+<aside class="note-note">
+  I wrote this as an alternative <em>introduction</em> to JavaScript promise. This is something I sketched on my notebook when I was reading various promise articles. If you need in-depth tutorial, I listed further reading suggestion at the bottom of the article 👍
+</aside>
+<br>
+<p>Two weeks ago, I was in a conversation about how I might implement a feature in JavaScript. It needed to be asynchronous to access external data, I said &quot;well, let's use <code>fetch()</code>...so in code... umm...&quot; while I paused to remember fetch API, the person I was talking to said, &quot;It returns a promise&quot;. My brain froze, and I said: &quot;I honestly don't know what you mean...&quot;</p><p>
+I've written promise based code plenty of times, but somehow things didn't connect in my brain this time. I realized I actually don't &quot;get&quot; promise after all.</p>
 <p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I can not tell you how hard it is to explain this sentence - &quot;It returns a Promise&quot;<br><br>but probably because I really don&#39;t understand Promise.</p>&mdash; Mariko Kosaka (@kosamari) <a href="https://twitter.com/kosamari/status/819972802220589056">January 13, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 <p>If you know me from twitter, I'm a visual learner who <a href="https://twitter.com/kosamari/status/806941856777011200">draw code concepts</a> as <a href="https://twitter.com/kosamari/status/807303762188574720">physical metaphor</a>. It is how I cope with a double layer of abstraction (programming language &amp; English as a second language). So naturally, I had to draw it this time as well.</p>
@@ -69,14 +74,14 @@ order('JakeBurger')
 </code></pre>
 
 <h2>Let's have a burger party</h2>
-<p>Welcome to Promise Square Park, home of a burger joint JakeShack. The burger at JakeShack is very popular but it has a limited number of cash registers to take orders, so the line is always long. However, the back kitchen is well staffed to take multiple orders at a time.</p>
+<p>Welcome to the Promise Square Park, home of a burger joint JakeShack. The burger at JakeShack is very popular but it has a limited number of cash registers to take orders, so the line is always long. However, the back kitchen is well staffed to take multiple orders at a time.</p>
 <aside class="note-note">In case you are not familiar, <a href="http://www.foodsmackdown.com/2011/08/shake-shack-new-york-madison-square-park/" target="blank">Madison Square Park and ShakeShack is a thing in New York City</a>. It's <em>really good</em>, but the line is always long.</aside>
 <h2>Promisify the action</h2>
 <p>In order to take orders as quickly as possible, JakeShack uses a buzzer system. When a customer makes an order at a cash register, register staff hand you a tray and a buzzer in exchange of payment.</p>
 <p><img width="90%" alt="promise" src="https://cloud.githubusercontent.com/assets/4581495/22322842/ca748288-e36c-11e6-9ee5-dcac2edaf041.png"></p>
 <p>The tray is a promise from JakeShack that they will place its delicious burger on here once it's ready, and a buzzer is an indicator of order status. When buzzer is not beeping, it means the order is <strong>pending</strong> - the kitchen crew is busy at work processing your order. When buzzer turns red and beeps, it means the order is <strong>settled</strong>.</p>
-<p>A little bit of fine nuance here is that settled is not equal to &quot;ready&quot;. It means the order has been processed in the kitchen and calling the customer to take action on it. You as a customer probably want to go to the counter and claim your order, but in some case, you might just walk away. It's up to you.</p>
-<p>Let's look at what we have so far in code. When you call a function, it &quot;returns a promise&quot; (giving you a tray with a buzzer). A return value (a burger) should appear on the tray once the promise is fulfilled and called the callback. More on that in next section!</p>
+<p>A bit of fine nuance here on <strong>settled</strong>. It is not equal to &quot;ready&quot;. It means the order has been processed in the kitchen and calling the customer to take action on it. You (a customer) probably want to pick up your order at the counter, but in some case, you might just walk away. It's up to you.</p>
+<p>Let's look at what we have so far in code. When you call the <code>order</code> function, it &quot;returns a promise&quot; (giving you a tray with a buzzer). A return value (a burger) should appear on the tray once the promise is fulfilled and callback function called. More on that in next section!</p>
 <p><img width="90%" alt="code1" src="https://cloud.githubusercontent.com/assets/4581495/22325508/64505dbe-e37c-11e6-8c53-2bae7a54e568.png"></p>
 <h2>Add Promise handlers</h2>
 <p>Looks like the buzzer is beeping, let's go to the counter and claim the order. There are two scenarios you can expect at this stage.</p>
@@ -93,12 +98,12 @@ order('JakeBurger')
 <p><img width="90%" alt="chaining" src="https://cloud.githubusercontent.com/assets/4581495/22322865/e95a7b58-e36c-11e6-9947-ed7505a92558.png"></p>
 <p>Let's look at how it works in code. Chaining promise is as easy as adding another <code>.then()</code> in your code. Return from <code>.then()</code> is always a promise. Just remember each <code>.then()</code> returns you a tray and a buzzer, and an actual return value is passed as an argument to the callback.</p>
 <p><img width="90%" alt="code3" src="https://cloud.githubusercontent.com/assets/4581495/22324122/5913c8d4-e375-11e6-8171-29f232dd0d0b.png"></p>
-<p>Now that you have burger and milkshake, you are ready to BURGER PARTY</p>
+<p>Now that you have burger and milkshake, you are ready to BURGER PARTY 🎉</p>
 <h2>More party tricks!</h2>
-<p>There are few more methods in Promise that let you perform cool tricks.</p>
+<p>There are few more methods in promise that let you perform cool tricks.</p>
 <p><code>Promise.all()</code> creates a promise that takes an array of promises (items). This promise fulfills when all of its items (each one is a promise) are fulfilled. Imagine you ordered 5 different burgers for your group but want to minimize a trip to the counter to only once when all 5 orders are ready. <code>Promise.all()</code> is a good solution for this.</p>
 <p><code>Promise.race()</code> is similar to <code>Promise.all()</code>. But it is fulfilled or rejected as soon as one item fulfills or rejects. This can be used to simulate try and grab. If you are super hungry, you might order a burger, a cheeseburger, and a hot dog at the same time, only to pick up whatever the 1st order came out of the kitchen. (Note, in this analogy if the kitchen is out of burger patty and rejects the burger promise first, then the entire race promise will turn to rejected state.)</p>
-<p>There are more details to cover in promises. Here is a further reading suggestion.</p>
+<p>There are more details to cover in promise. Here is a further reading suggestion.</p>
 <ul>
 <li><a href="https://github.com/mattdesl/promise-cookbook/blob/master/README.md" target="blank">promise-cookbook</a> written in English (Chinese version available)</li>
 <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" target="blank">JavaScript Promises: an Introduction</a> written in English</li>
