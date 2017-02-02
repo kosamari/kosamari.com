@@ -49,11 +49,13 @@ console.log('listening on port 5000');
  FUNCTIONS
 */
 function checknotes (req, res, next){
+
   //if the request has file extension, move next (= static file)
   if(req.url.split('.').length>2) return next();
-  var dir = req.url.split('/');
 
-  if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) !== -1) return routes.notes(req,res,next,dir[2]);
+  var dir = req.url.split('/');
+  var article = dir[2].split('?')[0]
+  if(dir[1] === 'notes' && notesPath.indexOf(article) !== -1) return routes.notes(req,res,next,article);
   if(dir[1] === 'notes' && notesPath.indexOf(dir[2]) === -1) return notfound(req,res,next);
 
   return next();
