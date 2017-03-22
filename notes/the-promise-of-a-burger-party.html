@@ -37,7 +37,7 @@
 I've written promise based code plenty of times, but somehow things didn't connect in my brain this time. I realized I actually don't &quot;get&quot; promise after all.</p>
 <p><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I can not tell you how hard it is to explain this sentence - &quot;It returns a Promise&quot;<br><br>but probably because I really don&#39;t understand Promise.</p>&mdash; Mariko Kosaka (@kosamari) <a href="https://twitter.com/kosamari/status/819972802220589056">January 13, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<p>If you know me from twitter, I'm a visual learner who <a href="https://twitter.com/kosamari/status/806941856777011200">draw code concepts</a> as <a href="https://twitter.com/kosamari/status/807303762188574720">physical metaphor</a>. It is how I cope with a double layer of abstraction (programming language &amp; English as a second language). So naturally, I had to draw it this time as well.</p>
+<p>If you know me from twitter, I'm a visual learner who <a href="https://twitter.com/kosamari/status/806941856777011200">draws code concepts</a> as <a href="https://twitter.com/kosamari/status/807303762188574720">physical metaphor</a>. It is how I cope with a double layer of abstraction (programming language &amp; English as a second language). So naturally, I had to draw it this time as well.</p>
 <p>
 <img width="90%" alt="title" src="https://cloud.githubusercontent.com/assets/4581495/22322821/a770251c-e36c-11e6-9361-021ee20bbb9d.png"></p>
 <p>Here is a piece of code we are going to look at in this story.</p>
@@ -62,7 +62,7 @@ function order (type) {
 
 order('JakeBurger')
   .then( burger =&gt; {
-    const milkshake = makeMilkshake('vanila')
+    const milkshake = makeMilkshake('vanilla')
     return { burger: burger, shake: milkshake }
   })
   .then( foodItems =&gt; {
@@ -89,7 +89,7 @@ order('JakeBurger')
 <h4>1. Order fulfilled</h4>
 <p>Hooray! your burger is ready, the kitchen staff hands you a freshly made burger. The promise of a good burger was fulfilled!</p>
 <h4>2. Order rejected</h4>
-<p>Looks like the kitchen run out of burger patties, the promise of a burger was rejected. Make sure you get a refund for that!</p>
+<p>Looks like the kitchen ran out of burger patties, the promise of a burger was rejected. Make sure you get a refund for that!</p>
 <p>Here is how you might prepare for these two situations in code.</p>
 <p><img width="90%" alt="code2" src="https://cloud.githubusercontent.com/assets/4581495/22364173/966f03a6-e43d-11e6-942c-95a2c191af3f.png"></p>
 <aside class="note-note"><code>.then()</code> takes another function as the second argument which can also be used as a reject handler. For the sake of simplicity, I only use <code>.catch()</code> for reject in this article. If you want to know more about the difference, you might want to check out <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#error_handling" target="blank">this article</a>.</aside>
