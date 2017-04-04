@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Start of a New Adventure - Mariko Kosaka</title>
+    <meta name="description" content="Looking back the past two years" />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+    .note-note {
+      background-color:#f1f1f1;
+      border-radius: 5px;
+      padding:10px;
+      line-height: 1.5em;
+      /*font-size: .85em*/
+    }
+    li {
+      padding-bottom: 5px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+  {{> topbar}}
+  <article id="main">
+    <time datetime="2017-01-25" pubdate>2017-04-03</time>
+    <h1>Start of a New Adventure</h1>
+<p>It's been two years since the weekend tried to use JavaScript to knit. The combination was natural, I wanted to program my knitting machine and I was a JavaScript developer.
+</p><p>
+This little silly side project turned out to be a much bigger thing than I ever expected. The project scope expanded from just a file transfer program to <a href="64sts.com" title="">domain specific language</a> to <a href="https://kosamari.github.io/sweaterify/" title="">digital pattern visualizer</a> to <a href="https://twitter.com/kosamari/status/808367065967067136">production tool for T-shirts design</a>. I got to present in front of many people about the project, it got me more visibility in the community, and landed me a 1st product developer job.
+</p>
+<p>
+<b>It has been an amazing ride for past 2 years, but I'm ready for new adventure.</b>
+</p>
+<aside class="note-note">
+<pre>&lt;sarcasm&gt;</pre>
+Now, this is the part where I'm supposed to tell you <em>"After ___ years of wonderful time at tech company ___, I'm joining another tech company to do ___. This is a great opportunity and I'm excited about the new adventure, I'll be staying in/moving to [city name], but first I'm off to [vacation/time off with family]."</em> ... if I were a basic af tech person who blogs on the TED talks of blogging (definition of the medium dot com by <a href="https://twitter.com/jennschiffer/" title="">@jennschiffer</a>).
+
+But, you all know that I'm not that basic and extremely cynical about tech culture (otherwise, why are you reading this?).
+<pre>&lt;/sarcasm&gt;</pre>
+</aside>
+<br>
+<p>
+It is true that the knitting project initiated lots of opportunities for me (including <a href="https://twitter.com/kosamari/status/848934055601201153" title="">the new job I just started</a>), but it is also true that I spent last a year and a half trying to grow out of "the knitting person". In fact, I spent more time on other projects and didn't do enough knitting. What I learned doing lots of project is that...
+<ol>
+  <li>I like graphics programming, anything that let me draw an image on a screen, I'm happy.</li>
+  <li> I like digging into history and learning about how the past (and now obsolete) technology influenced what we do now.</li>
+  <li>I give zero fuck about sounding smart or being an expert. I care more about explaining things in the digestible format for everybody.</li>
+</ol>
+</p>
+<p>Since I got your attention thus far, let me tell you some of my favorite projects & research I've done.</p>
+<ul>
+  <li>Punchcards are cool and we all should learn about the automation, computation, and communication history. (<a href="https://www.youtube.com/watch?v=e7wwuZnnM9k">Talk at Reject.js 2015</a>)</li>
+  <li>Tech is f*cking dominated by English, native English speaker should help non-native English speakers with this simple tricks.(<a href="https://www.youtube.com/watch?v=OOzAly5Rs7g">Talk at Open Source and Feelings 2015</a>)</li>
+  <li>Image Processing is cool & you don't always need to write in C++... in fact, Canvas + WebWorkers works great.
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=-6REd8lLsPM">Talk at OpenVis Conf 2016</a> (image filters)</li>
+      <li><a href="https://www.youtube.com/watch?v=KQjIl6I-bn8">Talk at Nordic.js 2016</a> (image processing)</li>
+      <li><a href="http://grafijs.org/">Grafi.js</a> (simple image processing library)</li>
+    </ul>
+  </li>
+
+  <li>Typesetting machine - the page layout coding of the past has a deep influence on CSS & and HTML <a href="http://opbeat.com/community/posts/thats-so-metal-mechanical-words-through-the-ages-by-mariko-kosaka/" title="">(Talk at WebRebels 2016)</a></li>
+  <li>EMOJIs - the history <a href="https://www.youtube.com/watch?v=9BaLTBTqHmw">(Talk at ffconf 2016)</a></li>
+  <li>Dealing with electronics is as easy as web development. (<a href="https://www.youtube.com/watch?v=Rs4xWafMQfc" title="">Talk at FrontTrends 2016</a>)</li>
+  <li>Compiler explained, in simple language and drawings.
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=47LJ-H-Jeic
+" title="">Talk at JSConf Colombia 2016</a></li>
+    <li><a href="https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4">Blog post</a></li>
+  </ul>
+  </li>
+  <li><a href="./Service-Worker-what-are-you.html" title="">More</a>. <a href="./the-promise-of-a-burger-party.html" title="">drawings</a>. <a href="https://twitter.com/kosamari/status/836252624752095237" title="">of</a>. <a href="https://twitter.com/kosamari/status/837650274672082944" title="">tech</a>. <a href="https://twitter.com/kosamari/status/818969996663681026" title="">concepts</a>.</li>
+</ul>
+
+<p>I'm currently working on a project with <a href="https://twitter.com/noopkat">@noopkat</a> to learn more about binary data communication technology (hint: FAX machine) you can catch us present our learnings at <a href="http://2017.jsconf.eu/speakers/mariko-kosaka-suz-hinton-can-you-read-me-creative-javascript-to-make-computer-science-fun.html">JSConf EU in May</a>!
+</p>
+<p>It has been fun 2 years & can not thank enough for my friends who accepted my strange ideas and supported me along the way ✨. I don't really think switching job is a new adventure, rather I hope to make the community I belong more inclusive, so that more people can do awesome and fun projects. 💯🙌💕</p>
+  </article>
+  <footer>
+    <p>
+      Copyright © 2017 by Mariko Kosaka. All rights reserved.
+    </p>
+  </footer>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css"><!-- 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> -->
+  {{> ga}}
+  </body>
+</html>
