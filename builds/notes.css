@@ -14,8 +14,9 @@ article {
     font-size: 18px;
     margin-bottom: 10px; }
   article p {
-    font-size: 16px;
-    line-height: 1.6em; }
+    font-size: 18px;
+    line-height: 1.6em;
+    padding: 10px 0px; }
   article blockquote {
     margin: 16px;
     padding: 0 15px;
