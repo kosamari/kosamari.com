@@ -59,6 +59,7 @@ $fileInput.addEventListener('change', function (event) {
   // you'll need to pass that to FileRader :)
 }, false)
 </code></pre>
+<p></p>
 <h3>Issue 1: <code>change</code> event fires inconsistently across browsers.</h3>
 <p>One thing I got really annoyed this time was the fact this <code>change</code> event did not fire in Chrome or Safari if I selected a file with the same name again even though contents of a file is completely different. I was generating different test images and overwriting in the same file name.</p>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2GhYwUP6f00?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
