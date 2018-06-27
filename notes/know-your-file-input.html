@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>know your file input - Mariko Kosaka</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+
+    </style>
+  </head>
+
+  <body>
+  {{> topbar}}
+  <article id="main">
+    <time datetime="2018-06-27" pubdate>2018-06-27</time>
+    <h1>Know Your File Input</h1>
+<h2>It always starts with messy code (part 1)</h2>
+<p>Hello and welcome to a blog post that is actually about code. It's been a while but I'm still alive👋.</p>
+<p>Over the weekend, I wrote a small web app called <a href="https://knitlify.netlify.com/">Knitlify</a> which let you import colorwork chart (or pixel art) to visualize as a knit fabric. It was a seemingly simple app that I've written 90% functionality in one way or the other in the past, but it tuned out to be lots of learning experience. In other words, I thought I can glue together bits and pieces of code from my old projects and be done in a few hours (LOL, no). In reality, I discovered things I didn't know and learned some of the code I've been writing was not good.</p>
+<p>Over the next few posts, I'm gonna share what I learned. Tentatively calling this series &quot;It always starts with messy code&quot;. Because it's the truth for every single project I do. I am extremely <em>not</em> great web developer. My strength is in explaining things, not in making tidy sophisticated code.</p>
+<p>Some of the things I plan to write are</p>
+<ul>
+<li><code>change</code>, <code>click</code>, or <code>input</code>... which event do I want for my app?</li>
+<li>Styling input elements OMG</li>
+<li>Setters and Getters in JavaScript Object</li>
+<li>Refactoring event-based code to state-based code</li>
+<li>How to draw 2D canvas performantly</li>
+<li>drag, pinch, scroll, zoom, interaction</li>
+<li>transform and matrix</li>
+</ul>
+<p>Today's post is about events!</p>
+<h2><code>change</code> and <code>input</code> insonsitency in File Input</h2>
+<p>Takeaways</p>
+<ul>
+<li>For <code>&lt;input type=&quot;file&quot;&gt;</code>, using <code>change</code> event would be your only option at the moment</li>
+<li>but the definition of file <code>change</code> varies by browsers</li>
+<li>make sure to clean up the value on file input element for consistent behavior</li>
+</ul>
+<h2>Fighting with File Input</h2>
+<p>My app has minimal functionalities based on the state of <code>&lt;input&gt;</code> elements just like normal web apps do.</p>
+<p>I use <code>&lt;input type=&quot;file&quot;&gt;</code> to accept image file from user, use <code>&lt;input type=&quot;number&quot;&gt;</code> for size configuration, and <code>&lt;input type=&quot;checkbox&quot;&gt;</code> for toggling display mode.</p>
+<p>One of the first things I added to the app is <code>&lt;input type=&quot;file&quot;&gt;</code>. Now here is the confession and messy start of this app. I copy and paste following code snippet from other projects. This is what I've been using ever since I learned to write JavaScript. (Seriously, File API was the first Web API I used.)</p>
+<pre><code class="language-html">&lt;input type=&quot;file&quot; name=&quot;file&quot; id=&quot;file&quot; accept=&quot;image/*&quot; &gt;
+&lt;label id=&quot;filename&quot; for=&quot;file&quot; &gt;select an image file&lt;/label&gt;
+</code></pre>
+<pre><code class="language-javascript">const $fileInput = document.getElementById('file')
+$fileInput.addEventListener('change', function (event) {
+  // event.target.files[0] is selected file
+  // you'll need to pass that to FileRader :)
+}, false)
+</code></pre>
+<h3>Issue 1: <code>change</code> event fires inconsistently across browsers.</h3>
+<p>One thing I got really annoyed this time was the fact this <code>change</code> event did not fire in Chrome or Safari if I selected a file with the same name again even though contents of a file is completely different. I was generating different test images and overwriting in the same file name.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/2GhYwUP6f00?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>While FireFox triggered <code>change</code> event everytime I selected a file from prompt, I had to re-load the app every time I want to test different image (with the same filename) for Chrome and Safari.</p>
+<p>At first, I thought it is logical because the name of a file is the same, so the file has not &quot;changed&quot;. But who is it to decide what &quot;change&quot; means? the file size and binary for the file were completely different, yet Chrome and Safari treated like &quot;oh that file you selected is the same file as the one before, so not gonna tell you it's changed.&quot;</p>
+<p>Enter, <code>input</code> event.</p>
+<h3>Issue 2: <code>input</code> event doesn't work either</h3>
+<p>Upon reading MDN, I learned <code>&lt;input type=&quot;file&quot;&gt;</code> should trigger <code>input</code> and <code>change</code> events. If change is ignored (in my logic at the time: because of the same filename) then surely <code>input</code> should be fired everytime user interacts with input element right???</p>
+<p>The answer is no.</p>
+<p>Chrome and Safari do not fire both <code>input</code> and <code>change</code> events if you select a file with the same filename as the previous selection.
+Furthermore, Safari does not fire <code>input</code> altogether, so switching to <code>input</code> event meant I would not be able to handle image select action from Safari user.</p>
+<h3>Solution: Clean up after your file input element</h3>
+<p>There is one line of code you can add to make sure browser thinks you are not selecting the same file again. It's simple. just delete the fact the file was selected.</p>
+<pre><code class="language-javascript">const $fileInput = document.getElementById('file')
+$fileInput.addEventListener('change', function (event) {
+  // -- busy doing application work --
+
+  // clean up after file input
+  $fileInput.value = ''
+}, false)
+</code></pre>
+<p>In the <code>-- busy doing application work --</code> section, I record filename in state object and load the data onto <code>Image</code> object. Both are data I need for this app, but once those two are in other places, I don't need to refer back to the value attached to <code>$fileInput</code> again. So just clear the value with an empty string.</p>
+<p>The issue that I never really knew it was an issue is now solved in just one line of code. Now I should update dozens of more apps I've made with this code snippet.</p>
+<p>I still think that the FireFox does the right thing by firing input and change events every time user hit <code>open</code> on file prompt. I've filed bug to <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=856911">Chromium</a> and <a href="https://bugs.webkit.org/show_bug.cgi?id=187084">Webkit</a>, and asked <a href="https://github.com/whatwg/html/issues/3780">WHATWG to clarify this</a> in HTML Specification.</p>
+
+  </article>
+
+  <footer>
+    <p>
+      {{> copy}}
+    </p>
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{> ga}}
+  </body>
+</html>
