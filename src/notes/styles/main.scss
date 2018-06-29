@@ -21,15 +21,15 @@ article{
     font-size:18px;
     line-height:1.6em;
     padding:10px 0px;
+    code{
+      font-size: 14px;
+    }
   }
   blockquote{
     margin: 16px;
     padding:0 15px;
     color: #666;
     border-left:4px solid #ddd;
-  }
-  code{
-    font-size: 14px;
   }
   time{
     font-size: 14px;

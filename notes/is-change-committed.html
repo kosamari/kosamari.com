@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <title>is change committed - Mariko Kosaka</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Mariko Kosaka" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{#css}}
+      <link href="{{path}}.css" rel="stylesheet">
+    {{/css}}
+    <style type="text/css" media="screen">
+
+    </style>
+  </head>
+
+  <body>
+  {{> topbar}}
+  <article id="main">
+    <time datetime="2018-06-29" pubdate>2018-06-29</time>
+    <h1>Is this <code>change</code> committed?</h1>
+<h2>It always starts with messy code (part 2)</h2>
+<p>Hello! welcome back to the series where I'll discuss things I learned while writing <a href="https://knitlify.netlify.com/">Knitlify</a>.</p>
+<p><a href="https://kosamari.com/notes/know-your-file-input">Previouse post</a> focused on <code>change</code> event on file input, we are going to keep looking at <code>change</code> event but this time, on <code>&lt;input type=&quot;number&quot;&gt;</code></p>
+<p>Takeaways</p>
+<ul>
+<li><code>change</code> event on input only fires when the changes are <em>committed</em> by the user</li>
+<li>definition of &quot;<em>committed</em>&quot; varies by browser</li>
+<li><code>input</code> or <code>click</code> event might be suited for your app</li>
+</ul>
+<h2>Slow action on the number input</h2>
+<p>My app has 3 number inputs to specify size and proportion of knit stitch. Every time these numbers are changed, I re-render the image on canvas.</p>
+<p>The messy job I did was that I just choose to listen to <code>change</code> event and did not even think about other options.</p>
+<p>Here is the thing, at this point, every user-selectable parts had the event listener for <code>change</code> event. File input? <code>change</code> event(see <a href="https://kosamari.com/notes/know-your-file-input">previouse post</a>). Checkbox? <code>change</code> event. Select element? <code>change</code> event. I thought I would just use <code>change</code> event for number input as well.</p>
+<pre><code class="language-javascript">$pps.addEventListener('change', function () {
+  settings.setData = {pps: parseInt(this.value)}
+}, false)
+  
+$sts.addEventListener('change', function () {
+  settings.setData = {sts: parseInt(this.value)}
+}, false)
+
+$row.addEventListener('change', function () {
+  settings.setData = {row: parseInt(this.value)}
+}, false)
+
+$direction.addEventListener('change', function () {
+  settings.setData = {direction: this.value}
+}, false)
+
+$horizontal.addEventListener('change', function () {
+  settings.setData = {horizontal: this.checked}
+}, false) 
+
+$vertical.addEventListener('change', function () {
+  settings.setData = {vertical: this.checked}
+}, false)
+</code></pre>
+<h2>Issue: &quot;Sometimes&quot; change event takes a long time to fire</h2>
+<p>My application seemed to work fine. I was switching between Chrome, Firefox, and Safari to make sure my app worked cross-browser.</p>
+<p>Sometimes, I notice a small lag between my click till the new image is drawn, but I'm dealing with large size 2d canvas, drawing many paths and filling colors. That's maybe expected, right? None of those shiny fast WebGL business here.</p>
+<p>The app went on live with <code>change</code> event listener. A few hours later, I got a message from <a href="https://twitter.com/paul_irish">Paul Irish</a>.</p>
+<p><em>Paul: &quot;heyyyyyyyyya. have you noticed some weird delay on knitlify's change events when you change the number inputs?&quot;</em></p>
+<p>I mean, what do you do when an engineer who works on Chrome DevTools and frequently talks about web performance messages you that your app has &quot;delay&quot;???</p>
+<p>I quickly replied with not-really-answer thinking I could maybe save myself from being shamed for writing messy code, but the conversation goes unexpected direction.</p>
+<p><em>Me: &quot;oh that code is a weekend project and I'm sure it's not performant...(please don't judge me)&quot;</em></p>
+<p><em>Paul: &quot;haha I read your source already, it's not your perf bug. I looked at trace, I'm gonna file a bug on Chrome.&quot;</em></p>
+<p>Turns out, in Chrome, change event on Number input is not fired after the click, if user's mouse didn't move... to explain Paul has created <a href="https://glib-snowman.glitch.me">smal app to demonstrate this</a>.</p>
+<p>In the video, you can see change event being fired <em>only</em> when I move the mouse cursor.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/eN4npRR65Z0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<h2>Is browser variance &quot;a bug&quot;?</h2>
+<p>Description of <code>change</code> event from MDN says</p>
+<pre><code>    The change event is fired for `&lt;input&gt;`, `&lt;select&gt;`, and `&lt;textarea&gt;` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
+</code></pre>
+<p>The interpretation of &quot;value is committed&quot; seems to differ depending on the browser.
+When you hold down on ↑↓ buttons to change the value on number input, Safari fires change event on every tick (= 1 click event, many change events). In Firefox, the change event is only fired when you release the click (= 1 click event, 1 change event).</p>
+<p>None the less Chrome's way of waiting until &quot;mouse move&quot; seems not intuitive. But the question is... is this a bug or just &quot;each browser is different&quot;?</p>
+<p><em>Me: &quot;I was gonna ask... is this just annoying browser variance or actual 'bug'?&quot;</em></p>
+<p><em>Paul: &quot;IMO any annoying browser variance should be considered a bug.&quot;</em></p>
+<p>I have to admit, I spent many moons writing piles of code just to handle different browser behaviors. I would've never thought to file a bug if Paul didn't mention it.</p>
+<p>The bug is now <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=748073">tracked here</a>. Turns out, someone raised the issue before us.</p>
+<h2>Solution : Switch to <code>input</code> or <code>click</code> events</h2>
+<p>Since we identified the issue with <code>change</code> event for Chrome, I switched to using <code>input</code> event. Across Chrome/FireFox/Safari, <code>input</code> event seems to be fired on every tick.</p>
+<p>This works okay for what I'm doing (for now) If I want to reduce events (= reduce rerendering of canvas) I could switch to <code>click</code> event but then I'd also have to write another event handler for keyboard input...I wasn't gonna do that at the time.</p>
+<p>This has been part 2 of &quot;It always starts with messy code&quot;.
+Next post, I'm going to step back from browser quarks and talk about how my code evolved from event-driven to state-driven over the course of prototyping phase.</p>
+
+  </article>
+
+  <footer>
+    <p>
+      {{> copy}}
+    </p>
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {{> ga}}
+  </body>
+</html>

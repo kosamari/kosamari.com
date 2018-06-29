@@ -17,13 +17,13 @@ article {
     font-size: 18px;
     line-height: 1.6em;
     padding: 10px 0px; }
+    article p code {
+      font-size: 14px; }
   article blockquote {
     margin: 16px;
     padding: 0 15px;
     color: #666;
     border-left: 4px solid #ddd; }
-  article code {
-    font-size: 14px; }
   article time {
     font-size: 14px;
     padding-top: 25px;
