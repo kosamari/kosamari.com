@@ -15,7 +15,12 @@
       <link href="{{path}}.css" rel="stylesheet">
     {{/css}}
     <style type="text/css" media="screen">
-
+      .note-note {
+        background-color:#f1f1f1;
+        border-radius: 5px;
+        padding:10px;
+        line-height: 1.5em;
+      }
     </style>
   </head>
 
@@ -75,9 +80,9 @@ $vertical.addEventListener('change', function () {
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/eN4npRR65Z0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 <h2>Is browser variance &quot;a bug&quot;?</h2>
 <p>Description of <code>change</code> event from MDN says</p>
-<aside class="note-note">
+<p class="note-note">
   The change event is fired for `&lt;input&gt;`, `&lt;select&gt;`, and `&lt;textarea&gt;` elements when a change to the element's value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element's value.
-</aside>
+</p>
 <p>The interpretation of &quot;value is committed&quot; seems to differ depending on the browser.
 When you hold down on ↑↓ buttons to change the value on number input, Safari fires change event on every tick (= 1 click event, many change events). In Firefox, the change event is only fired when you release the click (= 1 click event, 1 change event).</p>
 <p>None the less Chrome's way of waiting until &quot;mouse move&quot; seems not intuitive. But the question is... is this a bug or just &quot;each browser is different&quot;?</p>
